@@ -1,7 +1,6 @@
 C:\Users\Windows 10\Documents\revit api\Lesson3\Lesson3\bin\Debug\Lesson3.dll
 C:\Users\Windows 10\Documents\revit api\Lesson3\Lesson3\bin\Debug\Lesson3.pdb
-C:\Users\Windows 10\Documents\revit api\Lesson3\Lesson3\obj\Debug\Lesson3.dll
-C:\Users\Windows 10\Documents\revit api\Lesson3\Lesson3\obj\Debug\Lesson3.pdb
-C:\Users\Windows 10\Documents\revit api\Lesson3\Lesson3\obj\Debug\Lesson3.csprojResolveAssemblyReference.cache
 C:\Users\Windows 10\Documents\revit api\Lesson3\Lesson3\obj\Debug\Lesson3.Properties.Resources.resources
 C:\Users\Windows 10\Documents\revit api\Lesson3\Lesson3\obj\Debug\Lesson3.csproj.GenerateResource.Cache
+C:\Users\Windows 10\Documents\revit api\Lesson3\Lesson3\obj\Debug\Lesson3.dll
+C:\Users\Windows 10\Documents\revit api\Lesson3\Lesson3\obj\Debug\Lesson3.pdb
