@@ -58,6 +58,7 @@
     <Compile Include="Command.cs" />
     <Compile Include="CreateDetailLine.cs" />
     <Compile Include="CreateSectionView.cs" />
+    <Compile Include="CreateTag.cs" />
     <Compile Include="CreateWorkPlane.cs" />
     <Compile Include="EntensionMethod.cs" />
     <Compile Include="GetElementMonitor.cs" />
@@ -70,6 +71,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <Compile Include="SelectionFilterCategory.cs" />
+    <Compile Include="ParameterRe.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Lesson3.addin" />
