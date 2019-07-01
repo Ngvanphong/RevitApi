@@ -20,12 +20,23 @@ namespace Lesson3
             //get document acttive
             UIDocument uiDoc = uiApp.ActiveUIDocument;
             Document doc = uiDoc.Document;
-            //get document setting to get category
+            //create collector connect to document
             FilteredElementCollector collector = new FilteredElementCollector(doc);
-            ElementCategoryFilter filters = new ElementCategoryFilter(BuiltInCategory.OST_Walls);
+
+            //create codition
+            //fileter category
+            ElementCategoryFilter filters = new ElementCategoryFilter(BuiltInCategory.OST_MechanicalEquipment);
+            // filter class
+            ElementClassFilter filerclass = new ElementClassFilter(typeof(FamilyInstance));
+
+            // return element true
             IList<Element> walls = collector.WherePasses(filters).WhereElementIsNotElementType().ToElements();
-            string prompt = "tuong hien tai du an:\n";
-            foreach(var item in walls)
+
+            ////
+            IEnumerable<Element> walls2 = walls.Distinct();
+            var total = walls.Count();
+            string prompt = "tuong hien tai du an:"+total+"/n";
+            foreach(var item in walls2)
             {
                 prompt = prompt + item.Name + "\n";
             };

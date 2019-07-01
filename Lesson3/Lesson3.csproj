@@ -56,7 +56,11 @@
     <Compile Include="App.cs" />
     <Compile Include="CategorySelect.cs" />
     <Compile Include="Command.cs" />
+    <Compile Include="CreateDetailLine.cs" />
+    <Compile Include="CreateSectionView.cs" />
+    <Compile Include="CreateWorkPlane.cs" />
     <Compile Include="EntensionMethod.cs" />
+    <Compile Include="GetElementMonitor.cs" />
     <Compile Include="GetElementR.cs" />
     <Compile Include="Hello.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -65,6 +69,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="SelectionFilterCategory.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Lesson3.addin" />
