@@ -34,13 +34,7 @@ namespace Lesson3
                 Curve curve = locationCurve.Curve;
                 Line lineWall = curve as Line;
                 ViewFamilyType familyView = new FilteredElementCollector(doc).OfClass(typeof(ViewFamilyType)).Where(x => x.Name == "Building Section").First() as ViewFamilyType;
-                BoundingBoxXYZ bb = element.get_BoundingBox(null);
-                Double minZ = bb.Min.Z;
-                Double maxZ = bb.Max.Z;
-                Double minX = bb.Min.X;
-                Double maxX = bb.Max.X;
-                Double minY = bb.Min.Y;
-                Double maxY = bb.Max.Y;
+                BoundingBoxXYZ bb = element.get_BoundingBox(null);               
                 Double d = width;
                 XYZ pt = lineWall.GetEndPoint(0);
                 XYZ qt = lineWall.GetEndPoint(1);                               
@@ -64,12 +58,10 @@ namespace Lesson3
                     q = new XYZ(md.X - Math.Sqrt(a) / 2, md.Y - v.Y * Math.Sqrt(a) / (2 * v.X), md.Z);
                 }
                 XYZ vc = q - p;
-                Double w = d;
-                Double h = maxZ - minZ;
-               
-                Double offset = 0.05 * w;
-                XYZ min = new XYZ(-w,-height, -offset);
-                XYZ max = new XYZ(w,2*height, offset);
+                      
+                Double offset = 0.05 * d;
+                XYZ min = new XYZ(-d,-height, -offset);
+                XYZ max = new XYZ(d,2*height, offset);
                 
                 XYZ walldir = vc.Normalize();
                 XYZ up = XYZ.BasisZ;
