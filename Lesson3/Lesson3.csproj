@@ -55,15 +55,20 @@
   <ItemGroup>
     <Compile Include="App.cs" />
     <Compile Include="CategorySelect.cs" />
+    <Compile Include="ChangeCategory.cs" />
     <Compile Include="Command.cs" />
     <Compile Include="CreateDetailLine.cs" />
+    <Compile Include="CreateSectionByElementId.cs" />
     <Compile Include="CreateSectionView.cs" />
     <Compile Include="CreateTag.cs" />
+    <Compile Include="CreateTextParameterForDoor.cs" />
+    <Compile Include="CreateTextParameterForDoorBinding.cs" />
     <Compile Include="CreateWorkPlane.cs" />
     <Compile Include="EntensionMethod.cs" />
     <Compile Include="GetElementMonitor.cs" />
     <Compile Include="GetElementR.cs" />
     <Compile Include="Hello.cs" />
+    <Compile Include="LookupParamaterRe.cs" />
     <Compile Include="ParameterBinding.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
