@@ -41,7 +41,7 @@ namespace Lesson3
             }
             Image img = Properties.Resources.laptop;
             ImageSource imgSrc = EntensionMethod.GetImageSource(img);
-            PushButtonData btnData = new PushButtonData("MyButton", "Hello buntton", Assembly.GetExecutingAssembly().Location, "Lesson3.CreateTextParameterForDoorBinding")
+            PushButtonData btnData = new PushButtonData("MyButton", "Hello buntton", Assembly.GetExecutingAssembly().Location, "Lesson3.CreateTextForDoorBinding")
             {
                 ToolTip = "Revit commant",
                 LongDescription = "Revit first",

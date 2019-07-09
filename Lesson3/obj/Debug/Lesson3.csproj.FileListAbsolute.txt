@@ -5,3 +5,9 @@ C:\Users\Windows 10\Documents\revit api\Lesson3\Lesson3\obj\Debug\Lesson3.csproj
 C:\Users\Windows 10\Documents\revit api\Lesson3\Lesson3\obj\Debug\Lesson3.dll
 C:\Users\Windows 10\Documents\revit api\Lesson3\Lesson3\obj\Debug\Lesson3.pdb
 C:\Users\Windows 10\Documents\revit api\Lesson3\Lesson3\obj\Debug\Lesson3.csprojResolveAssemblyReference.cache
+C:\Users\Windows 10\Documents\revit api\Lesson3\Lesson3\bin\Debug\ExtendedXmlSerializer.dll
+C:\Users\Windows 10\Documents\revit api\Lesson3\Lesson3\bin\Debug\System.Collections.Immutable.dll
+C:\Users\Windows 10\Documents\revit api\Lesson3\Lesson3\bin\Debug\System.Interactive.dll
+C:\Users\Windows 10\Documents\revit api\Lesson3\Lesson3\bin\Debug\ExtendedXmlSerializer.pdb
+C:\Users\Windows 10\Documents\revit api\Lesson3\Lesson3\bin\Debug\System.Collections.Immutable.xml
+C:\Users\Windows 10\Documents\revit api\Lesson3\Lesson3\bin\Debug\System.Interactive.xml

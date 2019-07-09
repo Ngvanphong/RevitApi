@@ -77,8 +77,9 @@ namespace Lesson3
                 sectionBox.Max = max;
                 using (Transaction t = new Transaction(doc))
                 {
-                    t.Start("create Section");
+                    t.Start("Create Section");
                     ViewSection view = ViewSection.CreateSection(doc, familyView.Id, sectionBox);
+                    view.Name = element.Id.ToString();                  
                     t.Commit();
                 }
             }

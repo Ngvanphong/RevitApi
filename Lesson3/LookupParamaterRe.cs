@@ -19,7 +19,7 @@ namespace Lesson3
             _doc = _uiApp.ActiveUIDocument.Document;
         }
 
-        public List<FamilyElement> LookValuePramaterType(string parameter, BuiltInCategory categoryType)
+        public List<FamilyElement> LookValuePramater(string parameter, BuiltInCategory categoryType)
         {
 
             FilteredElementCollector collector = new FilteredElementCollector(_doc);
@@ -66,16 +66,29 @@ namespace Lesson3
 
                 FamilyInstance element = _doc.GetElement(item.ElementIdSection) as FamilyInstance;
                 //Symbol if us share parameter
-                
-                var parameterfind = element.Symbol.LookupParameter(parameter);
-
-                string valueParameter = ParameterToString(parameterfind);
-
-                item.ValueParameter = valueParameter;
+                string[] arrListStrParameter = parameter.Split(';');
+                foreach(string para in arrListStrParameter)
+                {
+                    var parameterfind = element.Symbol.LookupParameter(para);
+                    if (parameterfind == null) parameterfind = element.LookupParameter(para);
+                    string valueParameter = ParameterToString(parameterfind);
+                    switch (para)
+                    {
+                        case "Width":
+                            item.Width = valueParameter;
+                                break;
+                        case "Height":
+                            item.Height = valueParameter;
+                            break;
+                        case "Door_W":
+                            item.Door_W = valueParameter;
+                            break;                           
+                    }
+                }
+               
             }
 
             return familyElemtents;
-
 
         }
 
@@ -134,12 +147,20 @@ namespace Lesson3
         public string NameFamily { get; set; }
         public string NameTypeFamily { set; get; }
         public ElementId ElementIdSection { set; get; }
-        public string ValueParameter { get; set; }
+        public string Width { get; set; }
+        public string Height { get; set; }
+        public string Door_W { get; set; }
+        public FamilyElement()
+        {
+
+        }
+
         public FamilyElement(string nameFamily, string nameTypeFamily, ElementId elementIdSection)
         {
             NameFamily = nameFamily;
             NameTypeFamily = nameTypeFamily;
             ElementIdSection = elementIdSection;
+           
         }
     }
 

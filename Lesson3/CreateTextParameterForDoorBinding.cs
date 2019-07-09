@@ -20,9 +20,11 @@ namespace Lesson3
             Document doc = uidoc.Document;
             List<FamilyElement> listElemtParamenter = new List<FamilyElement>();
             LookupParamaterRe lookupClass = new LookupParamaterRe(uiapp);
-            listElemtParamenter = lookupClass.LookValuePramaterType("Door_W", BuiltInCategory.OST_Doors);
+            listElemtParamenter = lookupClass.LookValuePramater("Width;Height;Door_W", BuiltInCategory.OST_Doors);
+            CtreateXmlParameterDoor createFileclass = new CtreateXmlParameterDoor();
+            createFileclass.CreateFileDoor(doc,listElemtParamenter);
             CreateSectionByElementId createViewClass = new CreateSectionByElementId(uiapp);
-            createViewClass.CreteListSection(listElemtParamenter);
+            createViewClass.CreteListSection(listElemtParamenter);          
             return Result.Succeeded;
         }
     }

@@ -39,6 +39,10 @@
     <StartProgram>$(ProgramW6432)\Autodesk\Revit 2018\Revit.exe</StartProgram>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="ExtendedXmlSerializer, Version=2.1.19.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ExtendedXmlSerializer.2.1.19\lib\net45\ExtendedXmlSerializer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="RevitAPI">
       <HintPath>$(ProgramW6432)\Autodesk\Revit 2018\RevitAPI.dll</HintPath>
@@ -49,7 +53,17 @@
       <Private>False</Private>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Collections.Immutable, Version=1.2.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Collections.Immutable.1.4.0\lib\portable-net45+win8+wp8+wpa81\System.Collections.Immutable.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Interactive, Version=3.0.1000.0, Culture=neutral, PublicKeyToken=94bc3704cddfc263, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Interactive.3.1.1\lib\net45\System.Interactive.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.XML" />
+    <Reference Include="System.Xml.Linq" />
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
@@ -61,12 +75,16 @@
     <Compile Include="CreateSectionByElementId.cs" />
     <Compile Include="CreateSectionView.cs" />
     <Compile Include="CreateTag.cs" />
+    <Compile Include="CreateTextForDoor.cs" />
+    <Compile Include="CreateTextForDoorBinding.cs" />
     <Compile Include="CreateTextParameterForDoor.cs" />
     <Compile Include="CreateTextParameterForDoorBinding.cs" />
     <Compile Include="CreateWorkPlane.cs" />
+    <Compile Include="CtreateXmlParameterDoor.cs" />
     <Compile Include="EntensionMethod.cs" />
     <Compile Include="GetElementMonitor.cs" />
     <Compile Include="GetElementR.cs" />
+    <Compile Include="GetValueXml.cs" />
     <Compile Include="Hello.cs" />
     <Compile Include="LookupParamaterRe.cs" />
     <Compile Include="ParameterBinding.cs" />
@@ -81,6 +99,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Lesson3.addin" />
+    <None Include="packages.config" />
     <None Include="Resources\laptop.png" />
     <EmbeddedResource Include="Resources\cms.png" />
     <None Include="Resources\Image1.bmp" />
