@@ -1,45 +1,27 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <Table>
   <TextDoor>
-    <Id>4095996</Id>
-    <ElementId>3610333</ElementId>
+    <Id>4096001</Id>
+    <Name>SD-13B-1</Name>
+    <ElementId>4083132</ElementId>
+    <Width>850</Width>
+    <Height>1800</Height>
+    <Door_W>none</Door_W>
+  </TextDoor>
+  <TextDoor>
+    <Id>4096002</Id>
+    <Name>SD-13B-1</Name>
+    <ElementId>4083132</ElementId>
+    <Width>850</Width>
+    <Height>1800</Height>
+    <Door_W>none</Door_W>
+  </TextDoor>
+  <TextDoor>
+    <Id>4096004</Id>
+    <Name>SD-3</Name>
+    <ElementId>3892364</ElementId>
     <Width>850</Width>
     <Height>2100</Height>
-    <Door_W>none</Door_W>
-  </TextDoor>
-  <TextDoor>
-    <Id>4095994</Id>
-    <ElementId>3638900</ElementId>
-    <Width>1800</Width>
-    <Height>2200</Height>
-    <Door_W>900</Door_W>
-  </TextDoor>
-  <TextDoor>
-    <Id>4095995</Id>
-    <ElementId>3611649</ElementId>
-    <Width>2200</Width>
-    <Height>3500</Height>
-    <Door_W>1100</Door_W>
-  </TextDoor>
-  <TextDoor>
-    <Id>4095996</Id>
-    <ElementId>3639483</ElementId>
-    <Width>2100</Width>
-    <Height>3100</Height>
-    <Door_W>1050</Door_W>
-  </TextDoor>
-  <TextDoor>
-    <Id>4095997</Id>
-    <ElementId>3850837</ElementId>
-    <Width>850</Width>
-    <Height>1800</Height>
-    <Door_W>none</Door_W>
-  </TextDoor>
-  <TextDoor>
-    <Id>4096048</Id>
-    <ElementId>3850837</ElementId>
-    <Width>850</Width>
-    <Height>1800</Height>
     <Door_W>none</Door_W>
   </TextDoor>
 </Table>

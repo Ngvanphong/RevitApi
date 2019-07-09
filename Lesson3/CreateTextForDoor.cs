@@ -46,6 +46,7 @@ namespace Lesson3
                             + valuePara.Height + "\n" + "Door_W: " + valuePara.Door_W;                                   
                         TextNote textNote = TextNote.Create(doc, doc.ActiveView.Id, pointDoor,0.18, text,typeText.Id);
                         valuePara.TextId = textNote.Id;
+                        valuePara.Name = door.Name;
                         result = valuePara;                  
                     };
                     t.Commit();
@@ -58,6 +59,7 @@ namespace Lesson3
         {
             ValueDoorText valueText = new ValueDoorText();
             valueText.ElementIdSection = element.Id;
+            valueText.Name = element.Name;
             string[] arrListStrParameter = parameter.Split(';');
             foreach (string para in arrListStrParameter)
             {
@@ -83,6 +85,7 @@ namespace Lesson3
     }
     public class ValueDoorText
     {
+        public string Name { get; set; }
         public ElementId ElementIdSection { set; get; }
         public ElementId TextId { get; set; }      
         public string Width { get; set; }

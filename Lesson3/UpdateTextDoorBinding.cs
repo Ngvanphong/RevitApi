@@ -10,7 +10,7 @@ using Autodesk.Revit.UI;
 namespace Lesson3
 {
     [Transaction(TransactionMode.Manual)]
-    public class CreateTextParameterForDoor : IExternalCommand
+    public class UpdateTextDoorBinding : IExternalCommand
     {
         public Result Execute(ExternalCommandData commandData, ref string message, ElementSet elements)
         {
@@ -18,8 +18,9 @@ namespace Lesson3
             UIDocument uidoc = uiapp.ActiveUIDocument;
             Application app = uiapp.Application;
             Document doc = uidoc.Document;
+            UpdateTextDoor updateText = new UpdateTextDoor();
+            updateText.UpdateText(uiapp);
             return Result.Succeeded;
         }
-        
     }
 }

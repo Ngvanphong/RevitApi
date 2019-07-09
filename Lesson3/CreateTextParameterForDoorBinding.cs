@@ -7,6 +7,8 @@ using Autodesk.Revit.ApplicationServices;
 using Autodesk.Revit.Attributes;
 using Autodesk.Revit.DB;
 using Autodesk.Revit.UI;
+using Lesson3.Common;
+
 namespace Lesson3
 {
     [Transaction(TransactionMode.Manual)]
@@ -20,7 +22,7 @@ namespace Lesson3
             Document doc = uidoc.Document;
             List<FamilyElement> listElemtParamenter = new List<FamilyElement>();
             LookupParamaterRe lookupClass = new LookupParamaterRe(uiapp);
-            listElemtParamenter = lookupClass.LookValuePramater("Width;Height;Door_W", BuiltInCategory.OST_Doors);
+            listElemtParamenter = lookupClass.LookValuePramater(ParameterCommon.Door, BuiltInCategory.OST_Doors);
             CtreateXmlParameterDoor createFileclass = new CtreateXmlParameterDoor();
             createFileclass.CreateFileDoor(doc,listElemtParamenter);
             CreateSectionByElementId createViewClass = new CreateSectionByElementId(uiapp);

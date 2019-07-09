@@ -57,11 +57,13 @@
       <HintPath>..\packages\System.Collections.Immutable.1.4.0\lib\portable-net45+win8+wp8+wpa81\System.Collections.Immutable.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Interactive, Version=3.0.1000.0, Culture=neutral, PublicKeyToken=94bc3704cddfc263, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Interactive.3.1.1\lib\net45\System.Interactive.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.XML" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="WindowsBase" />
@@ -71,6 +73,7 @@
     <Compile Include="CategorySelect.cs" />
     <Compile Include="ChangeCategory.cs" />
     <Compile Include="Command.cs" />
+    <Compile Include="Common\ParameterCommon.cs" />
     <Compile Include="CreateDetailLine.cs" />
     <Compile Include="CreateSectionByElementId.cs" />
     <Compile Include="CreateSectionView.cs" />
@@ -96,6 +99,10 @@
     </Compile>
     <Compile Include="SelectionFilterCategory.cs" />
     <Compile Include="ParameterRe.cs" />
+    <Compile Include="UpdateDoorBinding.cs" />
+    <Compile Include="UpdateSectionDoor.cs" />
+    <Compile Include="UpdateTextDoor.cs" />
+    <Compile Include="UpdateTextDoorBinding.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Lesson3.addin" />

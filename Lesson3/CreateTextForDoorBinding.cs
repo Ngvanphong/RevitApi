@@ -7,6 +7,8 @@ using Autodesk.Revit.ApplicationServices;
 using Autodesk.Revit.Attributes;
 using Autodesk.Revit.DB;
 using Autodesk.Revit.UI;
+using Lesson3.Common;
+
 namespace Lesson3
 {
     [Transaction(TransactionMode.Manual)]
@@ -19,7 +21,7 @@ namespace Lesson3
             Application app = uiapp.Application;
             Document doc = uidoc.Document;
             CreateTextForDoor textdoor = new CreateTextForDoor(uiapp);
-            ValueDoorText valueText= textdoor.CreateText("Width;Height;Door_W");
+            ValueDoorText valueText= textdoor.CreateText(ParameterCommon.Door);
             CtreateXmlParameterDoor createFile = new CtreateXmlParameterDoor();
             createFile.CreateFileTextDoor(doc, valueText);
             return Result.Succeeded;
