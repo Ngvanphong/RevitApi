@@ -38,8 +38,8 @@ namespace Lesson3
                 Double h = maxZ - minZ;
                 Double d = wall.WallType.Width;
                 Double offset = 0.1 * w;
-                XYZ min = new XYZ(-w, minZ - offset, 0);
-                XYZ max = new XYZ(w, maxZ + offset, offset);
+                XYZ min = new XYZ(-2*w, minZ - offset, 0);
+                XYZ max = new XYZ(2*w, maxZ + offset, offset);
                 XYZ midpoint = p + 0.5 * v;
                 XYZ walldir = v.Normalize();
                 XYZ up = XYZ.BasisZ;

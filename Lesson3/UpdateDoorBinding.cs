@@ -18,7 +18,8 @@ namespace Lesson3
             UIDocument uidoc = uiapp.ActiveUIDocument;
             Application app = uiapp.Application;
             Document doc = uidoc.Document;
-
+            UpdateSectionDoor moveSectionClass = new UpdateSectionDoor();
+            moveSectionClass.UpdateMoveDoor(uiapp, "3610154");
             return Result.Succeeded;
         }
     }

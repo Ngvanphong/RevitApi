@@ -8,6 +8,8 @@ using Autodesk.Revit.Attributes;
 using Autodesk.Revit.DB;
 using Autodesk.Revit.UI;
 using Autodesk.Revit.UI.Selection;
+using System.IO;
+
 namespace Lesson3
 {
     [Transaction(TransactionMode.Manual)]
@@ -40,30 +42,31 @@ namespace Lesson3
                 XYZ qt = lineWall.GetEndPoint(1);                               
                 XYZ v = qt - pt;
                 XYZ md = localPonint.Point;
-                XYZ p;
-                XYZ q;
-                //Get location two point of door
-                if (v.X == 0)
-                {
-                    p = new XYZ(md.X, md.Y - d / 2, md.Z);
-                    q = new XYZ(md.X, md.Y + d / 2, md.Z);
-                }else if (v.Y == 0)
-                {
-                    p = new XYZ(md.X - d / 2, md.Y, md.Z);
-                    q = new XYZ(md.X + d / 2, md.Y, md.Z);
-                }else
-                {
-                    var a = d*d / (1 + v.Y*v.Y/(v.X*v.X));
-                    p = new XYZ(md.X + Math.Sqrt(a) / 2, md.Y + v.Y * Math.Sqrt(a) / (2 * v.X),md.Z);
-                    q = new XYZ(md.X - Math.Sqrt(a) / 2, md.Y - v.Y * Math.Sqrt(a) / (2 * v.X), md.Z);
-                }
-                XYZ vc = q - p;
+
+                //XYZ p;
+                //XYZ q;
+                ////Get location two point of door
+                //if (v.X == 0)
+                //{
+                //    p = new XYZ(md.X, md.Y - d / 2, md.Z);
+                //    q = new XYZ(md.X, md.Y + d / 2, md.Z);
+                //}else if (v.Y == 0)
+                //{
+                //    p = new XYZ(md.X - d / 2, md.Y, md.Z);
+                //    q = new XYZ(md.X + d / 2, md.Y, md.Z);
+                //}else
+                //{
+                //    var a = d*d / (1 + v.Y*v.Y/(v.X*v.X));
+                //    p = new XYZ(md.X + Math.Sqrt(a) / 2, md.Y + v.Y * Math.Sqrt(a) / (2 * v.X),md.Z);
+                //    q = new XYZ(md.X - Math.Sqrt(a) / 2, md.Y - v.Y * Math.Sqrt(a) / (2 * v.X), md.Z);
+                //}
+                //XYZ vc = q - p;
                       
                 Double offset = 0.05 * d;
-                XYZ min = new XYZ(-d,-height, -offset);
-                XYZ max = new XYZ(d,2*height, offset);
+                XYZ min = new XYZ(-2*d,-height, -offset);
+                XYZ max = new XYZ(2*d,2*height, offset);
                 
-                XYZ walldir = vc.Normalize();
+                XYZ walldir = v.Normalize();
                 XYZ up = XYZ.BasisZ;
                 XYZ vierdir = walldir.CrossProduct(up);
                 Transform tTran = Transform.Identity;
@@ -89,18 +92,19 @@ namespace Lesson3
                 Element viewElement = new FilteredElementCollector(doc).OfCategory(BuiltInCategory.OST_Views)
                     .Where(x => x.Name == element.Id.ToString()).First() ;
                 var parameterfind = viewElement.LookupParameter("LocationDoor");
+                var parameterDoorId = viewElement.LookupParameter("DoorId");
                 if (parameterfind == null)
-                {
-                    DefinitionFile defitionFile = _uiApp.Application.OpenSharedParameterFile();
-                    parameter.CreateParamerterRe("Door", "LocationDoor", BuiltInCategory.OST_Views);
-                    using(Transaction tc= new Transaction(doc,"Assign To Element"))
-                    {
-                        tc.Start();
-                        parameter.SetNewParameterToInstance(defitionFile, BuiltInCategory.OST_Views, "Door", "LocationDoor");
-                        tc.Commit();
-                    }                
-                }                           
+                {  
+                    parameter.CreateParamerterRe("Door", "LocationDoor", BuiltInCategory.OST_Views);                  
+                }
+                if (parameterDoorId == null)
+                {                 
+                    parameter.CreateParamerterRe("Door", "DoorId", BuiltInCategory.OST_Views);  
+                }
+                parameterDoorId = viewElement.LookupParameter("DoorId");
+                parameterfind = viewElement.LookupParameter("LocationDoor");
                 parameter.SetValueParameter(parameterfind, pointDoor);
+                parameter.SetValueParameter(parameterDoorId, item.ElementIdSection.ToString());
 
             }
         }

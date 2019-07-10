@@ -12,7 +12,7 @@ using Autodesk.Revit.UI.Selection;
 namespace Lesson3
 {
     [Transaction(TransactionMode.Manual)]
-    class GetElementMonitor : IExternalCommand
+    public class GetElementMonitor : IExternalCommand
     {
         public Result Execute(ExternalCommandData commandData, ref string message, ElementSet elements)
         {
@@ -23,10 +23,9 @@ namespace Lesson3
 
             Category cat = doc.Settings.Categories.get_Item(BuiltInCategory.OST_MechanicalEquipment);
 
-            Reference refer = uIDoc.Selection.PickObject(ObjectType.Element, new SelectionFilterCategory(cat));
+            Reference refer = uIDoc.Selection.PickObject(ObjectType.Element/*, new SelectionFilterCategory(cat)*/);
 
-            Element element = doc.GetElement(refer);
-
+            Element element = doc.GetElement(refer);        
             IList<Element> referRec = uIDoc.Selection.PickElementsByRectangle(new SelectionFilterCategory(cat));
 
             return Result.Succeeded;

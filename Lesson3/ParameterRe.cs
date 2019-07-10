@@ -27,7 +27,7 @@ namespace Lesson3
             {
                 t.Start();
                 try { parameter.Set(value); }
-                catch { };                     
+                catch(Exception ex) { };                     
                 t.Commit();
             }
             
@@ -87,7 +87,13 @@ namespace Lesson3
                     if (item.Name == groupName)
                     {
                         myGroup = item;
-                        myDefination_ProductDate = item.Definitions.Single();
+                        myDefination_ProductDate = item.Definitions.get_Item(parameter);
+                        if (myDefitionfile == null)
+                        {
+                            ExternalDefinitionCreationOptions option = new ExternalDefinitionCreationOptions(parameter, ParameterType.Text);
+                            myDefination_ProductDate = myGroup.Definitions.Create(option);
+                        }
+                       
                         break;
                     }
                 }

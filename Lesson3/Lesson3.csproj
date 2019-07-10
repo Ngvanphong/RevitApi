@@ -99,6 +99,7 @@
     </Compile>
     <Compile Include="SelectionFilterCategory.cs" />
     <Compile Include="ParameterRe.cs" />
+    <Compile Include="UpdateDoor.cs" />
     <Compile Include="UpdateDoorBinding.cs" />
     <Compile Include="UpdateSectionDoor.cs" />
     <Compile Include="UpdateTextDoor.cs" />
