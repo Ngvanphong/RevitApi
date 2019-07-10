@@ -76,7 +76,7 @@
     <Compile Include="Common\ParameterCommon.cs" />
     <Compile Include="CreateDetailLine.cs" />
     <Compile Include="CreateSectionByElementId.cs" />
-    <Compile Include="CreateSectionView.cs" />
+    <Compile Include="CreateSectionViewClick.cs" />
     <Compile Include="CreateTag.cs" />
     <Compile Include="CreateTextForDoor.cs" />
     <Compile Include="CreateTextForDoorBinding.cs" />

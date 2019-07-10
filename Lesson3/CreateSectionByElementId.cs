@@ -75,13 +75,33 @@ namespace Lesson3
                 sectionBox.Transform = tTran;
                 sectionBox.Min = min;
                 sectionBox.Max = max;
+               
                 using (Transaction t = new Transaction(doc))
                 {
                     t.Start("Create Section");
                     ViewSection view = ViewSection.CreateSection(doc, familyView.Id, sectionBox);
-                    view.Name = element.Id.ToString();                  
-                    t.Commit();
+                    view.Name = element.Id.ToString();
+                    t.Commit();                  
                 }
+                ParameterRe parameter = new ParameterRe(_uiApp);
+                string pointDoor = md.ToString().TrimStart('(').TrimEnd(')').Replace(" ",string.Empty);
+
+                Element viewElement = new FilteredElementCollector(doc).OfCategory(BuiltInCategory.OST_Views)
+                    .Where(x => x.Name == element.Id.ToString()).First() ;
+                var parameterfind = viewElement.LookupParameter("LocationDoor");
+                if (parameterfind == null)
+                {
+                    DefinitionFile defitionFile = _uiApp.Application.OpenSharedParameterFile();
+                    parameter.CreateParamerterRe("Door", "LocationDoor", BuiltInCategory.OST_Views);
+                    using(Transaction tc= new Transaction(doc,"Assign To Element"))
+                    {
+                        tc.Start();
+                        parameter.SetNewParameterToInstance(defitionFile, BuiltInCategory.OST_Views, "Door", "LocationDoor");
+                        tc.Commit();
+                    }                
+                }                           
+                parameter.SetValueParameter(parameterfind, pointDoor);
+
             }
         }
     }

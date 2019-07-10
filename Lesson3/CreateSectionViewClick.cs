@@ -11,7 +11,7 @@ using Autodesk.Revit.UI.Selection;
 namespace Lesson3
 {
     [Transaction(TransactionMode.Manual)]
-    public class CreateSectionView : IExternalCommand
+    public class CreateSectionViewClick : IExternalCommand
     {
         public Result Execute(ExternalCommandData commandData, ref string message, ElementSet elements)
         {
@@ -55,7 +55,7 @@ namespace Lesson3
                 sectionBox.Max = max;
                 using (Transaction t = new Transaction(doc))
                 {
-                    t.Start("create Section");
+                    t.Start("Create Section");
                    ViewSection viewGoto= ViewSection.CreateSection(doc, familyView.Id, sectionBox);                
                     t.Commit();
                     uidoc.ActiveView = viewGoto;

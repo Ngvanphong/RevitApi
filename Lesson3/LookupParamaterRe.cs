@@ -137,9 +137,6 @@ namespace Lesson3
             }
             return val;
         }
-
-
-
     }
 
     public class FamilyElement
@@ -150,6 +147,7 @@ namespace Lesson3
         public string Width { get; set; }
         public string Height { get; set; }
         public string Door_W { get; set; }
+
         public FamilyElement()
         {
 

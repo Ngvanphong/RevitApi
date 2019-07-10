@@ -23,7 +23,7 @@ namespace Lesson3
             ParameterRe parameter = new ParameterRe(uiapp);
 
             //for column architecter
-            parameter.CreateParamerterRe("group_first", "parameter_name1", BuiltInCategory.OST_Columns);
+            parameter.CreateParamerterRe("group_first", "locationd", BuiltInCategory.OST_Columns);
 
             return Result.Succeeded;
         }

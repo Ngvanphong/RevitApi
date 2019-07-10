@@ -21,25 +21,16 @@ namespace Lesson3
             _uiApp = uIApp;
         }
         //set parameter
-        public bool SetValueParameter(Parameter parameter,string value)
-        {
-            bool status = false;
+        public void SetValueParameter(Parameter parameter,string value)
+        {           
             using(Transaction t = new Transaction(_uiApp.ActiveUIDocument.Document,"Set value parameter"))
             {
                 t.Start();
-                if (IsNumeric(value))
-                {
-                    parameter.Set(value);
-                }
-                else
-                {
-                    parameter.SetValueString(value);
-                }
-            
-                status = true;
+                try { parameter.Set(value); }
+                catch { };                     
                 t.Commit();
             }
-            return status;
+            
         }
 
         static bool IsNumeric(string value)
@@ -64,7 +55,7 @@ namespace Lesson3
             Application app = _uiApp.Application;
             Document doc = _uiApp.ActiveUIDocument.Document;
             DefinitionFile defitionFile = app.OpenSharedParameterFile();          
-            string path = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "ShareParameterArmo.txt");
+            string path = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ProgramFiles), @"\Autodesk\ShareParameterArmo.txt");
             if (defitionFile == null)
             {
                 StreamWriter stream;

@@ -2,26 +2,26 @@
 <Table>
   <TextDoor>
     <Id>4096001</Id>
-    <Name>SD-13B-1</Name>
+    <Name>700x700</Name>
     <ElementId>4083132</ElementId>
-    <Width>850</Width>
-    <Height>1800</Height>
+    <Width>620</Width>
+    <Height>660</Height>
     <Door_W>none</Door_W>
   </TextDoor>
   <TextDoor>
     <Id>4096002</Id>
-    <Name>SD-13B-1</Name>
+    <Name>700x700</Name>
     <ElementId>4083132</ElementId>
-    <Width>850</Width>
-    <Height>1800</Height>
+    <Width>620</Width>
+    <Height>660</Height>
     <Door_W>none</Door_W>
   </TextDoor>
   <TextDoor>
     <Id>4096004</Id>
-    <Name>SD-3</Name>
+    <Name>SD-16</Name>
     <ElementId>3892364</ElementId>
-    <Width>850</Width>
-    <Height>2100</Height>
+    <Width>600</Width>
+    <Height>600</Height>
     <Door_W>none</Door_W>
   </TextDoor>
 </Table>
