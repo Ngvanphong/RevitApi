@@ -22,9 +22,7 @@ namespace Lesson3
             FamilyInstance doorElement = doc.GetElement(doorId) as FamilyInstance;
             LocationPoint location = doorElement.Location as LocationPoint;
             XYZ pointDoor = location.Point;
-            string pointNewString = pointDoor.ToString().TrimStart('(').TrimEnd(')').Replace(" ", string.Empty);
-            var d = doorElement.Symbol.get_Parameter(BuiltInParameter.DOOR_WIDTH).AsDouble();
-            var height = doorElement.Symbol.get_Parameter(BuiltInParameter.DOOR_HEIGHT).AsDouble();
+            string pointNewString = pointDoor.ToString().TrimStart('(').TrimEnd(')').Replace(" ", string.Empty);        
             FilteredElementCollector filters = new FilteredElementCollector(doc).OfClass(typeof(ViewSection));
             Element sectionDoor = null;
             foreach (var filter in filters)

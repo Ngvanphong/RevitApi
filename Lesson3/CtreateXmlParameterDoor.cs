@@ -33,6 +33,40 @@ namespace Lesson3
             writer.Close();
 
         }
+        public void SaveFileDoor(Document doc,FamilyElement listElementDoor)
+        {
+            string name = doc.Title + ".xml";
+            string fullPath = Path.GetFullPath(name);
+            var xmlDoc = XDocument.Load(fullPath);
+            XElement elem = new XElement("Door",
+            new XElement("Id", listElementDoor.ElementIdSection.ToString()),
+            new XElement("NameFamily", listElementDoor.NameFamily),
+            new XElement("NameTypeFamily", listElementDoor.NameTypeFamily),
+            new XElement("Width", listElementDoor.Width),
+            new XElement("Height", listElementDoor.Height),
+            new XElement("Door_W", listElementDoor.Door_W)
+         );
+            xmlDoc.Element("Table").Add(elem);
+            var xmltex = xmlDoc.Element("Table");
+            xmlDoc.Save(name);
+
+        }
+        public void RemoveItemFileDoor(Document doc, FamilyElement listElementDoor)
+        {
+            string name = doc.Title + ".xml";
+            string fullPath = Path.GetFullPath(name);
+            var xmlDoc = XDocument.Load(fullPath);
+            var doorLists = xmlDoc.Element("Table").Elements("Door");
+            foreach(var item in doorLists)
+            {
+                if(item.Element("Id").Value== listElementDoor.ElementIdSection.ToString())
+                {
+                    item.Remove();
+                    break;                   
+                }
+            }   
+            xmlDoc.Save(name);
+        }
         public void CreateNodeFile(FamilyElement element, XmlTextWriter writer)
         {
             writer.WriteStartElement("Door");
@@ -56,6 +90,7 @@ namespace Lesson3
             writer.WriteEndElement();
             writer.WriteEndElement();
         }
+
         public void CreateFileTextDoor(Document doc, ValueDoorText valueText)
         {            
             string name = doc.Title + "valuetext.xml";

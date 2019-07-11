@@ -1,14 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <Table>
   <Door>
-    <Id>3610333</Id>
-    <NameFamily>K_片開き扉</NameFamily>
-    <NameTypeFamily>SD-3</NameTypeFamily>
-    <Width>850</Width>
-    <Height>2100</Height>
-    <Door_W>none</Door_W>
-  </Door>
-  <Door>
     <Id>3850837</Id>
     <NameFamily>K_片開き扉</NameFamily>
     <NameTypeFamily>SD-13B-1</NameTypeFamily>
@@ -127,21 +119,5 @@
     <Width>2200</Width>
     <Height>3500</Height>
     <Door_W>1100</Door_W>
-  </Door>
-  <Door>
-    <Id>3612321</Id>
-    <NameFamily>Door_2Slides</NameFamily>
-    <NameTypeFamily>SD-14</NameTypeFamily>
-    <Width>3000</Width>
-    <Height>3000</Height>
-    <Door_W>1500</Door_W>
-  </Door>
-  <Door>
-    <Id>3638900</Id>
-    <NameFamily>Door_2Slides</NameFamily>
-    <NameTypeFamily>SD-15</NameTypeFamily>
-    <Width>1800</Width>
-    <Height>2200</Height>
-    <Door_W>900</Door_W>
   </Door>
 </Table>
