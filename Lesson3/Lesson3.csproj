@@ -70,6 +70,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App.cs" />
+    <Compile Include="Button\CreateTextForDoorButton.cs" />
+    <Compile Include="Button\UpdateSectionForDoorButton.cs" />
     <Compile Include="CategorySelect.cs" />
     <Compile Include="ChangeCategory.cs" />
     <Compile Include="Command.cs" />
@@ -88,7 +90,7 @@
     <Compile Include="GetElementMonitor.cs" />
     <Compile Include="GetElementR.cs" />
     <Compile Include="GetValueXml.cs" />
-    <Compile Include="Hello.cs" />
+    <Compile Include="Button\CreateSectionForDoorButton.cs" />
     <Compile Include="LookupParamaterRe.cs" />
     <Compile Include="ParameterBinding.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -108,15 +110,17 @@
   <ItemGroup>
     <Content Include="Lesson3.addin" />
     <None Include="packages.config" />
-    <None Include="Resources\laptop.png" />
-    <EmbeddedResource Include="Resources\cms.png" />
-    <None Include="Resources\Image1.bmp" />
+    <None Include="Resources\iconfinder_48_62705.png" />
+    <None Include="Resources\iconfinder_back_undo_62658.png" />
+    <None Include="Resources\iconfinder_Create_132699.png" />
+    <Content Include="Resources\laptop.png" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="Resources\cms.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

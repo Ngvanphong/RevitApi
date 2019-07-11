@@ -21,7 +21,7 @@ namespace Lesson3
             Application app = uiapp.Application;
             Document doc = uidoc.Document;
 
-            TaskDialog.Show("title hello", "hello");
+            TaskDialog.Show("Title hello", "Hello");
 
             return Result.Succeeded;
         }

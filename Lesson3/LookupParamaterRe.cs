@@ -42,7 +42,7 @@ namespace Lesson3
                     foreach (FamilyInstance item in elementCategories)
                     {
 
-                        if ( item.Symbol.FamilyName != "枠")
+                        if (item.Symbol.FamilyName != "枠")
                         {
                             if (item.Symbol.FamilyName == family.Name)
                             {
@@ -67,7 +67,7 @@ namespace Lesson3
                 FamilyInstance element = _doc.GetElement(item.ElementIdSection) as FamilyInstance;
                 //Symbol if us share parameter
                 string[] arrListStrParameter = parameter.Split(';');
-                foreach(string para in arrListStrParameter)
+                foreach (string para in arrListStrParameter)
                 {
                     var parameterfind = element.Symbol.LookupParameter(para);
                     if (parameterfind == null) parameterfind = element.LookupParameter(para);
@@ -76,19 +76,52 @@ namespace Lesson3
                     {
                         case "Width":
                             item.Width = valueParameter;
-                                break;
+                            break;
                         case "Height":
                             item.Height = valueParameter;
                             break;
                         case "Door_W":
                             item.Door_W = valueParameter;
-                            break;                           
+                            break;
                     }
                 }
-               
+
             }
 
             return familyElemtents;
+
+        }
+
+        public FamilyElement LookValuePramaterForOneElement(string parameter, BuiltInCategory categoryType, FamilyInstance elementDoor)
+        {
+
+            FamilyElement familyElemtent = new FamilyElement();
+            familyElemtent.NameFamily = elementDoor.Symbol.FamilyName;
+            familyElemtent.NameTypeFamily = elementDoor.Name;
+            familyElemtent.ElementIdSection = elementDoor.Id;
+            //Symbol if us share parameter
+            string[] arrListStrParameter = parameter.Split(';');
+            foreach (string para in arrListStrParameter)
+            {
+                var parameterfind = elementDoor.Symbol.LookupParameter(para);
+                if (parameterfind == null) parameterfind = elementDoor.LookupParameter(para);
+                string valueParameter = ParameterToString(parameterfind);
+                switch (para)
+                {
+                    case "Width":
+                        familyElemtent.Width = valueParameter;
+                        break;
+                    case "Height":
+                        familyElemtent.Height = valueParameter;
+                        break;
+                    case "Door_W":
+                        familyElemtent.Door_W = valueParameter;
+                        break;
+                }
+            }
+
+
+            return familyElemtent;
 
         }
 
@@ -117,7 +150,7 @@ namespace Lesson3
             switch (param.StorageType)
             {
                 case StorageType.Double:
-                    double dVal = param.AsDouble() * 0.3048*1000;
+                    double dVal = param.AsDouble() * 0.3048 * 1000;
                     val = dVal.ToString();
                     break;
                 case StorageType.Integer:
@@ -158,7 +191,7 @@ namespace Lesson3
             NameFamily = nameFamily;
             NameTypeFamily = nameTypeFamily;
             ElementIdSection = elementIdSection;
-           
+
         }
     }
 

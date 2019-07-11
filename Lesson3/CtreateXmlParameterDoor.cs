@@ -102,6 +102,7 @@ namespace Lesson3
                 XElement elem = new XElement("TextDoor",
                 new XElement("Id", valueText.TextId.ToString()),
                 new XElement("Name", valueText.Name),
+                new XElement("NameFamily", valueText.NameFamily),
                 new XElement("ElementId", valueText.ElementIdSection.ToString()),
                 new XElement("Width", valueText.Width),
                 new XElement("Height", valueText.Height),
@@ -133,6 +134,9 @@ namespace Lesson3
             writer.WriteEndElement();
             writer.WriteStartElement("Name");
             writer.WriteString(element.Name);
+            writer.WriteEndElement();
+            writer.WriteStartElement("NameFamily");
+            writer.WriteString(element.NameFamily);
             writer.WriteEndElement();
             writer.WriteStartElement("ElementId");
             writer.WriteString(element.ElementIdSection.ToString());

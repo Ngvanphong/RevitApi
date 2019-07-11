@@ -10,16 +10,16 @@ using System.Windows.Media;
 
 namespace Lesson3
 {
-  public  class Hello
+  public  class CreateSectionForDoorButton
     {
-        public Hello()
+        public CreateSectionForDoorButton()
         {
 
         }
-        public void HelloMethod(UIControlledApplication application)
+        public void CreateSection(UIControlledApplication application)
         {
             const string ribbonTag = "ArmoApi";
-            const string ribbonPanel = "Example";
+            const string ribbonPanel = "DoorSection";
             try
             {
                 application.CreateRibbonTab(ribbonTag);
@@ -39,12 +39,12 @@ namespace Lesson3
             {
                 panel = application.CreateRibbonPanel(ribbonTag, ribbonPanel);
             }
-            Image img = Properties.Resources.laptop;
+            Image img = Properties.Resources.iconfinder_Create_132699;
             ImageSource imgSrc = EntensionMethod.GetImageSource(img);
-            PushButtonData btnData = new PushButtonData("MyButton", "Hello buntton", Assembly.GetExecutingAssembly().Location, "Lesson3.UpdateDoorBinding")
+            PushButtonData btnData = new PushButtonData("DoorCreate", "Create", Assembly.GetExecutingAssembly().Location, "Lesson3.CreateTextParameterForDoorBinding")
             {
-                ToolTip = "Revit commant",
-                LongDescription = "Revit first",
+                ToolTip = "Create section for door",
+                LongDescription = "Create section for door",
                 Image = imgSrc,
                 LargeImage = imgSrc,
             };

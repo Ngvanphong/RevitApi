@@ -1,6 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <Table>
   <Door>
+    <Id>3610907</Id>
+    <NameFamily>K_片開き扉</NameFamily>
+    <NameTypeFamily>SD-3</NameTypeFamily>
+    <Width>850</Width>
+    <Height>2100</Height>
+    <Door_W>none</Door_W>
+  </Door>
+  <Door>
     <Id>3850837</Id>
     <NameFamily>K_片開き扉</NameFamily>
     <NameTypeFamily>SD-13B-1</NameTypeFamily>
@@ -11,13 +19,21 @@
   <Door>
     <Id>3892364</Id>
     <NameFamily>K_片開き扉</NameFamily>
-    <NameTypeFamily>SD-16</NameTypeFamily>
+    <NameTypeFamily>SD-16 2</NameTypeFamily>
     <Width>600</Width>
     <Height>600</Height>
     <Door_W>none</Door_W>
   </Door>
   <Door>
     <Id>4083132</Id>
+    <NameFamily>K_片開き扉</NameFamily>
+    <NameTypeFamily>700x700 2</NameTypeFamily>
+    <Width>620</Width>
+    <Height>660</Height>
+    <Door_W>none</Door_W>
+  </Door>
+  <Door>
+    <Id>4083284</Id>
     <NameFamily>K_片開き扉</NameFamily>
     <NameTypeFamily>700x700</NameTypeFamily>
     <Width>620</Width>
@@ -65,14 +81,6 @@
     <Door_W>1200</Door_W>
   </Door>
   <Door>
-    <Id>3609895</Id>
-    <NameFamily>Door_Single_PanelSteel</NameFamily>
-    <NameTypeFamily>SD-13A</NameTypeFamily>
-    <Width>700</Width>
-    <Height>2500</Height>
-    <Door_W>none</Door_W>
-  </Door>
-  <Door>
     <Id>3611158</Id>
     <NameFamily>Door_Single_PanelSteel</NameFamily>
     <NameTypeFamily>SD-13B</NameTypeFamily>
@@ -81,17 +89,9 @@
     <Door_W>none</Door_W>
   </Door>
   <Door>
-    <Id>3609539</Id>
-    <NameFamily>Door_2Slides</NameFamily>
-    <NameTypeFamily>SD-5</NameTypeFamily>
-    <Width>1700</Width>
-    <Height>2100</Height>
-    <Door_W>850</Door_W>
-  </Door>
-  <Door>
     <Id>3610026</Id>
     <NameFamily>Door_2Slides</NameFamily>
-    <NameTypeFamily>SD-1A</NameTypeFamily>
+    <NameTypeFamily>SD-1A 2</NameTypeFamily>
     <Width>1700</Width>
     <Height>2100</Height>
     <Door_W>850</Door_W>
@@ -107,7 +107,15 @@
   <Door>
     <Id>3610442</Id>
     <NameFamily>Door_2Slides</NameFamily>
-    <NameTypeFamily>SD-2</NameTypeFamily>
+    <NameTypeFamily>SD-2 7</NameTypeFamily>
+    <Width>1700</Width>
+    <Height>2100</Height>
+    <Door_W>850</Door_W>
+  </Door>
+  <Door>
+    <Id>3610675</Id>
+    <NameFamily>Door_2Slides</NameFamily>
+    <NameTypeFamily>SD-1B 2</NameTypeFamily>
     <Width>1700</Width>
     <Height>2100</Height>
     <Door_W>850</Door_W>
@@ -119,5 +127,21 @@
     <Width>2200</Width>
     <Height>3500</Height>
     <Door_W>1100</Door_W>
+  </Door>
+  <Door>
+    <Id>3612321</Id>
+    <NameFamily>Door_2Slides</NameFamily>
+    <NameTypeFamily>SD-14</NameTypeFamily>
+    <Width>3000</Width>
+    <Height>3000</Height>
+    <Door_W>1500</Door_W>
+  </Door>
+  <Door>
+    <Id>3638900</Id>
+    <NameFamily>Door_2Slides</NameFamily>
+    <NameTypeFamily>SD-15</NameTypeFamily>
+    <Width>1800</Width>
+    <Height>2200</Height>
+    <Door_W>900</Door_W>
   </Door>
 </Table>

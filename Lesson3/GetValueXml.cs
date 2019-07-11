@@ -58,6 +58,7 @@ namespace Lesson3
                     ValueDoorText valueText = new ValueDoorText();
                     valueText.TextId = new ElementId(int.Parse(item.Element("Id").Value));
                     valueText.Name = item.Element("Name").Value;
+                    valueText.NameFamily = item.Element("NameFamily").Value;
                     valueText.ElementIdSection = new ElementId(int.Parse(item.Element("ElementId").Value));
                     valueText.Width = item.Element("Width").Value;
                     valueText.Height = item.Element("Height").Value;

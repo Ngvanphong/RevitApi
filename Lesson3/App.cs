@@ -11,6 +11,7 @@ using System.Windows.Media.Imaging;
 using System.IO;
 using System.Drawing.Imaging;
 using System.Windows.Media;
+using Lesson3.Button;
 #endregion
 
 namespace Lesson3
@@ -24,9 +25,12 @@ namespace Lesson3
 
         public Result OnStartup(UIControlledApplication application)
         {
-            Hello hellocls = new Hello();
-            hellocls.HelloMethod(application);
-
+            CreateSectionForDoorButton createSectionClass = new CreateSectionForDoorButton();
+            createSectionClass.CreateSection(application);
+            CreateTextForDoorButton createTextClass = new CreateTextForDoorButton();
+            createTextClass.CreateText(application);
+            UpdateSectionForDoorButton updateDoorClass = new UpdateSectionForDoorButton();
+            updateDoorClass.UpdateDoorSection(application);
             return Result.Succeeded;
         }
 

@@ -60,6 +60,7 @@ namespace Lesson3
             ValueDoorText valueText = new ValueDoorText();
             valueText.ElementIdSection = element.Id;
             valueText.Name = element.Name;
+            valueText.NameFamily = element.Symbol.FamilyName;
             string[] arrListStrParameter = parameter.Split(';');
             foreach (string para in arrListStrParameter)
             {
@@ -86,6 +87,7 @@ namespace Lesson3
     public class ValueDoorText
     {
         public string Name { get; set; }
+        public string NameFamily { get; set; }
         public ElementId ElementIdSection { set; get; }
         public ElementId TextId { get; set; }      
         public string Width { get; set; }

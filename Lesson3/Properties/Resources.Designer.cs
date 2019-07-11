@@ -63,9 +63,9 @@ namespace Lesson3.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap cms {
+        internal static System.Drawing.Bitmap iconfinder_48_62705 {
             get {
-                object obj = ResourceManager.GetObject("cms", resourceCulture);
+                object obj = ResourceManager.GetObject("iconfinder_48_62705", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -73,9 +73,19 @@ namespace Lesson3.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap laptop {
+        internal static System.Drawing.Bitmap iconfinder_back_undo_62658 {
             get {
-                object obj = ResourceManager.GetObject("laptop", resourceCulture);
+                object obj = ResourceManager.GetObject("iconfinder_back_undo_62658", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap iconfinder_Create_132699 {
+            get {
+                object obj = ResourceManager.GetObject("iconfinder_Create_132699", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
