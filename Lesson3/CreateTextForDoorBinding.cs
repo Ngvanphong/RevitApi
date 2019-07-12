@@ -21,9 +21,13 @@ namespace Lesson3
             Application app = uiapp.Application;
             Document doc = uidoc.Document;
             CreateTextForDoor textdoor = new CreateTextForDoor(uiapp);
-            ValueDoorText valueText= textdoor.CreateText(ParameterCommon.Door);
-            CtreateXmlParameterDoor createFile = new CtreateXmlParameterDoor();
-            createFile.CreateFileTextDoor(doc, valueText);
+            bool success;
+            ValueDoorText valueText= textdoor.CreateText(ParameterCommon.Door,out success);
+            if (success)
+            {
+                CtreateXmlParameterDoor createFile = new CtreateXmlParameterDoor();
+                createFile.CreateFileTextDoor(doc, valueText);
+            }            
             return Result.Succeeded;
         }
     }

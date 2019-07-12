@@ -23,10 +23,14 @@ namespace Lesson3
             List<FamilyElement> listElemtParamenter = new List<FamilyElement>();
             LookupParamaterRe lookupClass = new LookupParamaterRe(uiapp);
             listElemtParamenter = lookupClass.LookValuePramater(ParameterCommon.Door, BuiltInCategory.OST_Doors);
-            CtreateXmlParameterDoor createFileclass = new CtreateXmlParameterDoor();
-            createFileclass.CreateFileDoor(doc,listElemtParamenter);
             CreateSectionByElementId createViewClass = new CreateSectionByElementId(uiapp);
-            createViewClass.CreteListSection(listElemtParamenter);          
+            var success =createViewClass.CreteListSection(listElemtParamenter);
+            if (success)
+            {
+                CtreateXmlParameterDoor createFileclass = new CtreateXmlParameterDoor();
+                createFileclass.CreateFileDoor(doc, listElemtParamenter);
+            }
+                 
             return Result.Succeeded;
         }
     }

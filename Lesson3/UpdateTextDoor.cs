@@ -30,8 +30,7 @@ namespace Lesson3
                 {
                     valueTextModel = getValueTextClass.GetValueText(element, ParameterCommon.Door);
                     valueTextModel.TextId = item.TextId;
-                    if (item.Door_W != valueTextModel.Door_W || item.Height != valueTextModel.Height
-                        || item.Width != valueTextModel.Width || item.Name != valueTextModel.Name)
+                    if (item.NameFamily!=valueTextModel.NameFamily||item.Name!=valueTextModel.Name)
                     {
                         string name = doc.Title + "valuetext.xml";
                         string fullPath = Path.GetFullPath(name);
