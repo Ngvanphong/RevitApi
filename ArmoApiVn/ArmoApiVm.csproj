@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>
+      None
+    </ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C868C7B5-35CD-45A1-A5D1-D498868B9576}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ArmoApiVn</RootNamespace>
+    <AssemblyName>ArmoApiVn</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <StartAction>Program</StartAction>
+    <StartProgram>$(ProgramW6432)\Autodesk\Revit 2018\Revit.exe</StartProgram>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <StartAction>Program</StartAction>
+    <StartProgram>$(ProgramW6432)\Autodesk\Revit 2018\Revit.exe</StartProgram>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AdWindows">
+      <HintPath>..\..\..\..\AppData\Roaming\Autodesk\Revit\Addins\2018\AdWindows.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="RevitAPI">
+      <HintPath>$(ProgramW6432)\Autodesk\Revit 2018\RevitAPI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="RevitAPIUI">
+      <HintPath>$(ProgramW6432)\Autodesk\Revit 2018\RevitAPIUI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App.cs" />
+    <Compile Include="Button\CreateSectionForDoorButton.cs" />
+    <Compile Include="Button\CreateTextForDoorButton.cs" />
+    <Compile Include="Button\UpdateSectionForDoorButton.cs" />
+    <Compile Include="CategorySelect.cs" />
+    <Compile Include="ChangeCategory.cs" />
+    <Compile Include="Command.cs" />
+    <Compile Include="Common\ParameterCommon.cs" />
+    <Compile Include="CreateDetailLine.cs" />
+    <Compile Include="CreateSectionByElementId.cs" />
+    <Compile Include="CreateSectionViewClick.cs" />
+    <Compile Include="CreateTag.cs" />
+    <Compile Include="CreateTextForDoor.cs" />
+    <Compile Include="CreateTextForDoorBinding.cs" />
+    <Compile Include="CreateTextParameterForDoor.cs" />
+    <Compile Include="CreateTextParameterForDoorBinding.cs" />
+    <Compile Include="CreateWorkPlane.cs" />
+    <Compile Include="CtreateXmlParameterDoor.cs" />
+    <Compile Include="EntensionMethod.cs" />
+    <Compile Include="GetElementMonitor.cs" />
+    <Compile Include="GetElementR.cs" />
+    <Compile Include="GetValueXml.cs" />
+    <Compile Include="LookupParamaterRe.cs" />
+    <Compile Include="ParameterBinding.cs" />
+    <Compile Include="ParameterRe.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <DependentUpon>Resources.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="SelectionFilterCategory.cs" />
+    <Compile Include="UpdateDoor.cs" />
+    <Compile Include="UpdateDoorBinding.cs" />
+    <Compile Include="UpdateSectionDoor.cs" />
+    <Compile Include="UpdateTextDoor.cs" />
+    <Compile Include="UpdateTextDoorBinding.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ArmoApiVn.addin" />
+    <Content Include="Resources\laptop.png" />
+    <None Include="packages.config" />
+    <None Include="Resources\iconfinder_Create_132699.png" />
+    <None Include="Resources\iconfinder_back_undo_62658.png" />
+    <None Include="Resources\iconfinder_48_62705.png" />
+    <EmbeddedResource Include="Resources\cms.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>copy "$(ProjectDir)*.addin" "$(AppData)\Autodesk\REVIT\Addins\2018"
+copy "$(ProjectDir)bin\debug\*.dll" "$(AppData)\Autodesk\REVIT\Addins\2018"</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <Target Name="AfterClean">
+    <Delete Files="$(AppData)\Autodesk\REVIT\Addins\2018\ArmoApiVn.addin" />
+    <Delete Files="$(AppData)\Autodesk\REVIT\Addins\2018\ArmoApiVn.dll" />
+  </Target>
+</Project>

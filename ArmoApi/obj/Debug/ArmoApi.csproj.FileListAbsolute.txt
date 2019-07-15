@@ -1,0 +1,13 @@
+C:\Users\Windows 10\Documents\revit api\ArmoApi\ArmoApi\bin\Debug\ExtendedXmlSerializer.dll
+C:\Users\Windows 10\Documents\revit api\ArmoApi\ArmoApi\bin\Debug\RevitAddInUtility.dll
+C:\Users\Windows 10\Documents\revit api\ArmoApi\ArmoApi\bin\Debug\System.Collections.Immutable.dll
+C:\Users\Windows 10\Documents\revit api\ArmoApi\ArmoApi\bin\Debug\System.Interactive.dll
+C:\Users\Windows 10\Documents\revit api\ArmoApi\ArmoApi\bin\Debug\ExtendedXmlSerializer.pdb
+C:\Users\Windows 10\Documents\revit api\ArmoApi\ArmoApi\bin\Debug\System.Collections.Immutable.xml
+C:\Users\Windows 10\Documents\revit api\ArmoApi\ArmoApi\bin\Debug\System.Interactive.xml
+C:\Users\Windows 10\Documents\revit api\ArmoApi\ArmoApi\obj\Debug\ArmoApi.csproj.GenerateResource.Cache
+C:\Users\Windows 10\Documents\revit api\ArmoApi\ArmoApi\obj\Debug\ArmoApi.Properties.Resources.resources
+C:\Users\Windows 10\Documents\revit api\ArmoApi\ArmoApi\bin\Debug\ArmoApi.dll
+C:\Users\Windows 10\Documents\revit api\ArmoApi\ArmoApi\bin\Debug\ArmoApi.pdb
+C:\Users\Windows 10\Documents\revit api\ArmoApi\ArmoApi\obj\Debug\ArmoApi.dll
+C:\Users\Windows 10\Documents\revit api\ArmoApi\ArmoApi\obj\Debug\ArmoApi.pdb
