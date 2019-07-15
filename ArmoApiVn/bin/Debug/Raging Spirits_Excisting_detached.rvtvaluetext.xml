@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Table>
+  <TextDoor>
+    <Id>2982005</Id>
+    <Name>W1200 H2100 2</Name>
+    <NameFamily>140_Door_Uneven_Flush</NameFamily>
+    <ElementId>2981929</ElementId>
+    <Width>1200</Width>
+    <Height>2000</Height>
+    <Door_W>none</Door_W>
+  </TextDoor>
+  <TextDoor>
+    <Id>2982173</Id>
+    <Name>W1200 H2100</Name>
+    <NameFamily>140_Door_Sliding</NameFamily>
+    <ElementId>2982137</ElementId>
+    <Width>1200</Width>
+    <Height>2100</Height>
+    <Door_W>none</Door_W>
+  </TextDoor>
+  <TextDoor>
+    <Id>2982250</Id>
+    <Name>W1200 H2100</Name>
+    <NameFamily>140_Door_Sliding</NameFamily>
+    <ElementId>2982137</ElementId>
+    <Width>1200</Width>
+    <Height>2100</Height>
+    <Door_W>none</Door_W>
+  </TextDoor>
+</Table>

@@ -5,3 +5,4 @@ C:\Users\Windows 10\Documents\revit api\ArmoApi\ArmoApiVn\obj\Debug\ArmoApiVn.Pr
 C:\Users\Windows 10\Documents\revit api\ArmoApi\ArmoApiVn\obj\Debug\ArmoApiVm.csproj.GenerateResource.Cache
 C:\Users\Windows 10\Documents\revit api\ArmoApi\ArmoApiVn\obj\Debug\ArmoApiVn.dll
 C:\Users\Windows 10\Documents\revit api\ArmoApi\ArmoApiVn\obj\Debug\ArmoApiVn.pdb
+C:\Users\Windows 10\Documents\revit api\ArmoApi\ArmoApiVn\obj\Debug\ArmoApiVm.csprojResolveAssemblyReference.cache

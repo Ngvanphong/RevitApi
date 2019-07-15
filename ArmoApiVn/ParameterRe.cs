@@ -12,8 +12,8 @@ using System.IO;
 
 namespace ArmoApiVn
 {
-  
-    public class ParameterRe 
+
+    public class ParameterRe
     {
         UIApplication _uiApp;
         public ParameterRe(UIApplication uIApp)
@@ -21,16 +21,15 @@ namespace ArmoApiVn
             _uiApp = uIApp;
         }
         //set parameter
-        public void SetValueParameter(Parameter parameter,string value)
-        {           
-            using(Transaction t = new Transaction(_uiApp.ActiveUIDocument.Document,"Set value parameter"))
+        public void SetValueParameter(Parameter parameter, string value)
+        {
+            using (Transaction t = new Transaction(_uiApp.ActiveUIDocument.Document, "Set value parameter"))
             {
                 t.Start();
                 try { parameter.Set(value); }
-                catch(Exception ex) { };                     
+                catch (Exception ex) { };
                 t.Commit();
             }
-            
         }
 
         static bool IsNumeric(string value)
@@ -50,50 +49,49 @@ namespace ArmoApiVn
 
 
         //Create ShareParameter
-       public void CreateParamerterRe(string groupName, string parameterName, BuiltInCategory category)
+        public void CreateParamerterRe(string groupName, string parameterName, BuiltInCategory category)
         {
             Application app = _uiApp.Application;
             Document doc = _uiApp.ActiveUIDocument.Document;
-            DefinitionFile defitionFile = app.OpenSharedParameterFile();          
+            DefinitionFile defitionFile = app.OpenSharedParameterFile();
             string path = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ProgramFiles), @"\Autodesk\ShareParameterArmo.txt");
             if (defitionFile == null)
             {
                 StreamWriter stream;
                 stream = new StreamWriter(path);
                 stream.Close();
-                app.SharedParametersFilename = path;                             
+                app.SharedParametersFilename = path;
                 defitionFile = app.OpenSharedParameterFile();
             }
-            using(Transaction t = new Transaction(doc,"Create shareparameter"))
+            using (Transaction t = new Transaction(doc, "Create shareparameter"))
             {
                 t.Start();
                 //set paramneter
                 SetNewParameterToInstance(defitionFile, category, groupName, parameterName);
                 t.Commit();
-            }  
+            }
 
         }
 
         //add parameter
-        public bool SetNewParameterToInstance(DefinitionFile myDefitionfile, BuiltInCategory category,string groupName,string parameter)
+        public bool SetNewParameterToInstance(DefinitionFile myDefitionfile, BuiltInCategory category, string groupName, string parameter)
         {
             try
             {
                 DefinitionGroups myGroups = myDefitionfile.Groups;
                 DefinitionGroup myGroup = null;
-                Definition myDefination_ProductDate=null;
-                foreach(var item in myGroups)
+                Definition myDefination_ProductDate = null;
+                foreach (var item in myGroups)
                 {
                     if (item.Name == groupName)
                     {
                         myGroup = item;
                         myDefination_ProductDate = item.Definitions.get_Item(parameter);
-                        if (myDefitionfile == null)
+                        if (myDefination_ProductDate == null)
                         {
                             ExternalDefinitionCreationOptions option = new ExternalDefinitionCreationOptions(parameter, ParameterType.Text);
                             myDefination_ProductDate = myGroup.Definitions.Create(option);
                         }
-                       
                         break;
                     }
                 }
@@ -110,17 +108,17 @@ namespace ArmoApiVn
                 InstanceBinding instantBinding = _uiApp.Application.Create.NewInstanceBinding(categorySet);
                 BindingMap bindingMap = _uiApp.ActiveUIDocument.Document.ParameterBindings;
 
-                bool instanceBindOk=bindingMap.Insert(myDefination_ProductDate, instantBinding,BuiltInParameterGroup.PG_TEXT);
+                bool instanceBindOk = bindingMap.Insert(myDefination_ProductDate, instantBinding, BuiltInParameterGroup.PG_TEXT);
 
                 return instanceBindOk;
-  
+
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 return false;
             }
         }
 
-        
+
     }
 }
