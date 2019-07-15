@@ -59,6 +59,7 @@ namespace ArmoApiVn
                     if (paraElementModel.NameFamily == item.NameFamily && paraElementModel.NameTypeFamily == item.NameTypeFamily)
                     {
                         updateSectionClass.UpdateMoveDoor(_uiApp, item.ElementIdSection.ToString());
+                        updateTextClass.UpdateText(_uiApp);
                     }
                     else
                     {

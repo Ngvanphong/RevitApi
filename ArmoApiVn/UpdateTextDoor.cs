@@ -30,7 +30,7 @@ namespace ArmoApiVn
                 {
                     valueTextModel = getValueTextClass.GetValueText(element, ParameterCommon.Door);
                     valueTextModel.TextId = item.TextId;
-                    if (item.NameFamily!=valueTextModel.NameFamily||item.Name!=valueTextModel.Name)
+                    if (CheckSemillarText(item,valueTextModel)==false)
                     {
                         string name = doc.Title + "valuetext.xml";
                         string fullPath = Path.GetFullPath(name);
@@ -58,8 +58,7 @@ namespace ArmoApiVn
                                     }
                                     catch {
                                         t.Commit();
-                                        continue; }
-                                    
+                                        continue; }                                   
                                 }
 
                             }
@@ -89,7 +88,7 @@ namespace ArmoApiVn
                     {
                         valueTextModel = getValueTextClass.GetValueText(element, ParameterCommon.Door);
                         valueTextModel.TextId = item.TextId;
-                        if (item.NameFamily!=valueTextModel.NameFamily || item.Name != valueTextModel.Name)
+                        if (CheckSemillarText(item, valueTextModel)==false)
                         {
                             string name = doc.Title + "valuetext.xml";
                             string fullPath = Path.GetFullPath(name);
@@ -131,8 +130,20 @@ namespace ArmoApiVn
                     }
                 }
                 
-
             }
+        }
+
+        public bool CheckSemillarText(ValueDoorText valueDoorOld,ValueDoorText valueDoorModel) 
+        {
+            bool result = true;
+            if (valueDoorOld.NameFamily != valueDoorModel.NameFamily || valueDoorOld.Name != valueDoorModel.Name ||
+                valueDoorOld.Width != valueDoorModel.Width || valueDoorOld.Height != valueDoorModel.Height ||
+                valueDoorOld.Door_W != valueDoorModel.Door_W)
+            {
+                result = false;
+            } 
+            return result;
+
         }
     }
 
