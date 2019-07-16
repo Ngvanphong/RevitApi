@@ -20,7 +20,7 @@ namespace ArmoApiVn
             Application app = uIApp.Application;
             UIDocument uIDoc = uIApp.ActiveUIDocument;
             Document doc = uIDoc.Document;
-
+            
             Category cat = doc.Settings.Categories.get_Item(BuiltInCategory.OST_MechanicalEquipment);
 
             Reference refer = uIDoc.Selection.PickObject(ObjectType.Element/*, new SelectionFilterCategory(cat)*/);
