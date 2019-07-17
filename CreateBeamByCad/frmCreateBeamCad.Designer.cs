@@ -34,14 +34,14 @@
             this.fileSystemWatcher1 = new System.IO.FileSystemWatcher();
             this.label1 = new System.Windows.Forms.Label();
             this.goupPosition = new System.Windows.Forms.GroupBox();
+            this.radioOriginBeam = new System.Windows.Forms.RadioButton();
             this.radioLeftBeam = new System.Windows.Forms.RadioButton();
             this.radioCenterBeam = new System.Windows.Forms.RadioButton();
-            this.radioOriginBeam = new System.Windows.Forms.RadioButton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txtStartOffset = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.txtEndOffset = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtStartOffset = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).BeginInit();
             this.goupPosition.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -109,6 +109,17 @@
             this.goupPosition.TabStop = false;
             this.goupPosition.Text = "Position of beam";
             // 
+            // radioOriginBeam
+            // 
+            this.radioOriginBeam.AutoSize = true;
+            this.radioOriginBeam.Location = new System.Drawing.Point(32, 18);
+            this.radioOriginBeam.Name = "radioOriginBeam";
+            this.radioOriginBeam.Size = new System.Drawing.Size(52, 17);
+            this.radioOriginBeam.TabIndex = 2;
+            this.radioOriginBeam.TabStop = true;
+            this.radioOriginBeam.Text = "Origin";
+            this.radioOriginBeam.UseVisualStyleBackColor = true;
+            // 
             // radioLeftBeam
             // 
             this.radioLeftBeam.AutoSize = true;
@@ -132,17 +143,6 @@
             this.radioCenterBeam.UseVisualStyleBackColor = true;
             this.radioCenterBeam.CheckedChanged += new System.EventHandler(this.radioMiddle_CheckedChanged);
             // 
-            // radioOriginBeam
-            // 
-            this.radioOriginBeam.AutoSize = true;
-            this.radioOriginBeam.Location = new System.Drawing.Point(32, 18);
-            this.radioOriginBeam.Name = "radioOriginBeam";
-            this.radioOriginBeam.Size = new System.Drawing.Size(52, 17);
-            this.radioOriginBeam.TabIndex = 2;
-            this.radioOriginBeam.TabStop = true;
-            this.radioOriginBeam.Text = "Origin";
-            this.radioOriginBeam.UseVisualStyleBackColor = true;
-            // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.txtEndOffset);
@@ -156,22 +156,13 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Level Offset";
             // 
-            // label2
+            // txtEndOffset
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(27, 27);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(60, 13);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Start Offset";
-            // 
-            // txtStartOffset
-            // 
-            this.txtStartOffset.Location = new System.Drawing.Point(97, 24);
-            this.txtStartOffset.Name = "txtStartOffset";
-            this.txtStartOffset.Size = new System.Drawing.Size(100, 20);
-            this.txtStartOffset.TabIndex = 1;
-            this.txtStartOffset.Text = "0";
+            this.txtEndOffset.Location = new System.Drawing.Point(311, 24);
+            this.txtEndOffset.Name = "txtEndOffset";
+            this.txtEndOffset.Size = new System.Drawing.Size(100, 20);
+            this.txtEndOffset.TabIndex = 3;
+            this.txtEndOffset.Text = "0";
             // 
             // label3
             // 
@@ -182,13 +173,22 @@
             this.label3.TabIndex = 2;
             this.label3.Text = "End Offset";
             // 
-            // txtEndOffset
+            // txtStartOffset
             // 
-            this.txtEndOffset.Location = new System.Drawing.Point(311, 24);
-            this.txtEndOffset.Name = "txtEndOffset";
-            this.txtEndOffset.Size = new System.Drawing.Size(100, 20);
-            this.txtEndOffset.TabIndex = 3;
-            this.txtEndOffset.Text = "0";
+            this.txtStartOffset.Location = new System.Drawing.Point(97, 24);
+            this.txtStartOffset.Name = "txtStartOffset";
+            this.txtStartOffset.Size = new System.Drawing.Size(100, 20);
+            this.txtStartOffset.TabIndex = 1;
+            this.txtStartOffset.Text = "0";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(27, 27);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(60, 13);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Start Offset";
             // 
             // frmCreateBeamCad
             // 
@@ -216,7 +216,6 @@
         }
 
         #endregion
-        private System.Windows.Forms.Button btnSelectLine;
         private System.IO.FileSystemWatcher fileSystemWatcher1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox goupPosition;
@@ -230,5 +229,6 @@
         private System.Windows.Forms.Label label2;
         public System.Windows.Forms.TextBox txtEndOffset;
         public System.Windows.Forms.TextBox txtStartOffset;
+        public System.Windows.Forms.Button btnSelectLine;
     }
 }
