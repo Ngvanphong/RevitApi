@@ -38,15 +38,15 @@ namespace IFCInformation
                     setting.SetCutFillPatternId(pSolidFillPattern.Id);
                     setting.SetCutFillPatternId(pSolidFillPattern.Id);
                     setting.SetProjectionFillPatternVisible(true);
-                    setting.SetCutFillPatternVisible(true);                   
+                    setting.SetCutFillPatternVisible(true);
                     setting.SetSurfaceTransparency(0);
                     doc.ActiveView.SetElementOverrides(element.Id, setting);
                     ICollection<ElementId> Lmats = element.GetMaterialIds(false);
                     foreach (ElementId mat in Lmats)
                     {
                         Element elementMaterial = doc.GetElement(mat);
-                        Material ma = GetMaterialValue(doc, elementMaterial.Name) as Material;                        
-                        ma.Color = color;
+                        Material ma = GetMaterialValue(doc, elementMaterial.Name) as Material;
+                        ma.Color = color;                     
                     }
                     t.Commit();
                 }
