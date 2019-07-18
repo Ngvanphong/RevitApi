@@ -38,8 +38,7 @@ namespace IFCInformation
                     setting.SetCutFillPatternId(pSolidFillPattern.Id);
                     setting.SetCutFillPatternId(pSolidFillPattern.Id);
                     setting.SetProjectionFillPatternVisible(true);
-                    setting.SetCutFillPatternVisible(true);
-                   
+                    setting.SetCutFillPatternVisible(true);                   
                     setting.SetSurfaceTransparency(0);
                     doc.ActiveView.SetElementOverrides(element.Id, setting);
                     ICollection<ElementId> Lmats = element.GetMaterialIds(false);
@@ -54,7 +53,7 @@ namespace IFCInformation
             }
             catch
             {
-                TaskDialog.Show("Error", "You must create MaterialIFC in Material");
+                TaskDialog.Show("Error", "You must create MaterialIFC in Materials");
             }
         }
         public Material GetMaterialValue(Document doc, string matName)
