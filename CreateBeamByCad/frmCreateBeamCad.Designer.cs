@@ -202,8 +202,12 @@
             this.Controls.Add(this.dropNameBeam);
             this.Controls.Add(this.btnSelectLine);
             this.Controls.Add(this.btnBeamCreating);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmCreateBeamCad";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmCreateBeamCad";
+            this.TopMost = true;
             this.Load += new System.EventHandler(this.frmCreateBeamCad_Load);
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).EndInit();
             this.goupPosition.ResumeLayout(false);
