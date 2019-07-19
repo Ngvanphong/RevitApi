@@ -25,7 +25,7 @@ namespace IFCInformation
                 var pSolidFillPattern = new FilteredElementCollector(doc).OfClass((typeof(FillPatternElement)))
                     .OfType<FillPatternElement>().Where<FillPatternElement>(p => p.GetFillPattern().IsSolidFill).ToList().First();
                 Color color;
-                using (Transaction t = new Transaction(doc, "Change meterial"))
+                using (Transaction t = new Transaction(doc, "Change material"))
                 {
                     t.Start();
                     element.Category.Material = m;

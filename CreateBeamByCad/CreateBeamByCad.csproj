@@ -58,9 +58,18 @@
   <ItemGroup>
     <Compile Include="App.cs" />
     <Compile Include="AppPanel.cs" />
+    <Compile Include="AppPanelAll.cs" />
+    <Compile Include="Button\CreateBeamAllButton.cs" />
     <Compile Include="Button\CreateBeamButton.cs" />
     <Compile Include="Command.cs" />
+    <Compile Include="CreateBeamAllBinding.cs" />
     <Compile Include="CreateBeamBinding.cs" />
+    <Compile Include="frmCreateBeamAll.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCreateBeamAll.Designer.cs">
+      <DependentUpon>frmCreateBeamAll.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmCreateBeamCad.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -68,6 +77,7 @@
       <DependentUpon>frmCreateBeamCad.cs</DependentUpon>
     </Compile>
     <Compile Include="HandlerCreateBeam.cs" />
+    <Compile Include="HandlerCreateBeamAll.cs" />
     <Compile Include="HandlerSelectLine.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
@@ -78,9 +88,13 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="CreateBeamByCad.addin" />
+    <None Include="Resources\nine-black-tiles.png" />
     <None Include="Resources\beam.png" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="frmCreateBeamAll.resx">
+      <DependentUpon>frmCreateBeamAll.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmCreateBeamCad.resx">
       <DependentUpon>frmCreateBeamCad.cs</DependentUpon>
     </EmbeddedResource>

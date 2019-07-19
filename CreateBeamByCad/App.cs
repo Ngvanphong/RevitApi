@@ -16,7 +16,9 @@ namespace CreateBeamByCad
         public Result OnStartup(UIControlledApplication a)
         {
             CreateBeamButton createBeamClass = new CreateBeamButton();
-            createBeamClass.CreateBeam(a);           
+            createBeamClass.CreateBeam(a);
+            CreateBeamAllButton createBeamAllClass = new CreateBeamAllButton();
+            createBeamAllClass.CreateButtonAll(a);          
             return Result.Succeeded;
         }
 
