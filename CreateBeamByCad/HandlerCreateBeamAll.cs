@@ -54,8 +54,7 @@ namespace CreateBeamByCad
         }
         public List<InformationBeam> GetInformation(UIApplication uiApp)
         {
-            List<InformationBeam> listInforBeam = new List<InformationBeam>();
-            //myFormAll = AppPanelAll.formCreateBeamAll;
+            List<InformationBeam> listInforBeam = new List<InformationBeam>();          
             Document doc = uiApp.ActiveUIDocument.Document;
             string lineStypeBeam = myFormAll.dropLineStyle.GetItemText(myFormAll.dropLineStyle.SelectedItem);
 
@@ -84,7 +83,7 @@ namespace CreateBeamByCad
                 {
                     Curve line = deline.GeometryCurve;
                     XYZ v = (line.GetEndPoint(1) - line.GetEndPoint(0));
-                    if (v.Normalize().IsAlmostEqualTo(XYZ.BasisX) && v.GetLength() > double.Parse(myFormAll.txtMinimun.Text) / (0.3048 * 1000))
+                    if ((v.Normalize().IsAlmostEqualTo(XYZ.BasisX)|| v.Normalize().IsAlmostEqualTo(-XYZ.BasisX)) && v.GetLength() > double.Parse(myFormAll.txtMinimun.Text) / (0.3048 * 1000))
                     {
                         listLines.Add(line);
                     }
@@ -97,7 +96,7 @@ namespace CreateBeamByCad
                 {
                     Curve line = deline.GeometryCurve;
                     XYZ v = (line.GetEndPoint(1) - line.GetEndPoint(0));
-                    if (v.Normalize().IsAlmostEqualTo(XYZ.BasisY) && v.GetLength() > double.Parse(myFormAll.txtMinimun.Text) / (0.3048 * 1000))
+                    if ((v.Normalize().IsAlmostEqualTo(XYZ.BasisY)|| v.Normalize().IsAlmostEqualTo(-XYZ.BasisY)) && v.GetLength() > double.Parse(myFormAll.txtMinimun.Text) / (0.3048 * 1000))
                     {
                         listLines.Add(line);
                     }
@@ -120,19 +119,22 @@ namespace CreateBeamByCad
             {
                 if (myFormAll.radioHorizontal.Checked)
                 {
-                    Curve middleLineMid = GetMinLine(item, listLines);
-                    if (CheckExitMiddle(listLineMiddels, middleLineMid) == false)
+                    XYZ st = item.GetEndPoint(0);
+                    XYZ et = item.GetEndPoint(1);
+                    XYZ vet = et - st;
+                    if (vet.Normalize().IsAlmostEqualTo(XYZ.BasisX)|| vet.Normalize().IsAlmostEqualTo(-XYZ.BasisX))
                     {
-                        listLineMiddels.Add(middleLineMid);
+                        Curve middleLineMid = GetMinLine(item, listLines);
+                        if (CheckExitMiddle(listLineMiddels, middleLineMid) == false)
+                        {
+                            listLineMiddels.Add(middleLineMid);
+                        }
                     }
+                   
                 }
                 else if (myFormAll.radioVertical.Checked)
                 {
-                    Curve middleLineMid = GetMinLine(item, listLines);
-                    if (CheckExitMiddle(listLineMiddels, middleLineMid) == false)
-                    {
-                        listLineMiddels.Add(middleLineMid);
-                    }
+                  
                 }
                 else
                 {
@@ -163,21 +165,26 @@ namespace CreateBeamByCad
                     XYZ sitem = item.GetEndPoint(0);
                     XYZ eitem = item.GetEndPoint(1);
                     XYZ midItem = (sitem + eitem) / 2;
+                    XYZ vector = eitem - sitem;
                     XYZ v = (midItem + mid) / 2;
-                    double distance = (mid.Y - midItem.Y) * (mid.Y - midItem.Y);
-                    if (minlength == 0)
+                    if (vector.Normalize().IsAlmostEqualTo(XYZ.BasisX)|| vector.Normalize().IsAlmostEqualTo(-XYZ.BasisX))
                     {
-                        minlength = distance;
-                        result = Line.CreateBound(new XYZ(start.X, v.Y, start.Z), new XYZ(end.X, v.Y, end.Z));
-                    }
-                    else
-                    {
-                        if (minlength > distance)
+                        double distance = Math.Sqrt((mid.Y - midItem.Y) * (mid.Y - midItem.Y) + (mid.X - midItem.X) * (mid.X - midItem.X));
+                        if (minlength == 0)
                         {
                             minlength = distance;
                             result = Line.CreateBound(new XYZ(start.X, v.Y, start.Z), new XYZ(end.X, v.Y, end.Z));
                         }
+                        else
+                        {
+                            if (minlength > distance && distance > 0)
+                            {
+                                minlength = distance;
+                                result = Line.CreateBound(new XYZ(start.X, v.Y, start.Z), new XYZ(end.X, v.Y, end.Z));
+                            }
+                        }
                     }
+                   
 
                 }
             }
@@ -238,7 +245,11 @@ namespace CreateBeamByCad
             XYZ start = middle.GetEndPoint(0);
             XYZ end = middle.GetEndPoint(1);
             XYZ midpoint = (start + end) / 2;
-            foreach (var item in listMiddle)
+            IList<Curve> listDelete = new List<Curve>();
+            listDelete.Add(middle);
+            IEnumerable<Curve> listCheck = new List<Curve>();
+            listCheck=listMiddle.Except(listDelete);
+            foreach (var item in listCheck)
             {
                 XYZ sitem = item.GetEndPoint(0);
                 XYZ eitem = item.GetEndPoint(1);
@@ -258,29 +269,27 @@ namespace CreateBeamByCad
             XYZ startLine = lineMiddle.GetEndPoint(0);
             XYZ endLine = lineMiddle.GetEndPoint(1);
             XYZ middlePoint = (startLine + endLine) / 2;
-            IEnumerable<TextNode> collectionText;
+            var collection = new FilteredElementCollector(doc, doc.ActiveView.Id).OfClass(typeof(TextNote)).Cast<TextNote>();
             if (myFormAll.radioHorizontal.Checked)
             {
-                collectionText = new FilteredElementCollector(doc, doc.ActiveView.Id).OfClass(typeof(TextNode)).Cast<TextNode>()
-                     .Where(x => x.GetType().Name == textStyle).Where(x => x.UpDirection.IsAlmostEqualTo(XYZ.BasisY));
+               collection=  collection.Where(x => x.Name == textStyle).Where(x => x.UpDirection.IsAlmostEqualTo(XYZ.BasisY));
+               
             }
             else if (myFormAll.radioVertical.Checked)
             {
-                collectionText = new FilteredElementCollector(doc, doc.ActiveView.Id).OfClass(typeof(TextNode)).Cast<TextNode>()
-                    .Where(x => x.GetType().Name == textStyle).Where(x => x.UpDirection.IsAlmostEqualTo(XYZ.BasisX));
+               
             }
             else
             {
-                collectionText = new FilteredElementCollector(doc, doc.ActiveView.Id).OfClass(typeof(TextNode)).Cast<TextNode>()
-                   .Where(x => x.GetType().Name == textStyle);
+              
             }
-
+           
             double minDistance = 0;
             string valueText = "";
-            foreach (TextNode textitem in collectionText)
+            foreach (var textitem in collection)
             {
-                XYZ pointText = textitem.Position;
-                double distance = Math.Sqrt((middlePoint.X - pointText.X) * (middlePoint.X - pointText.X) + (middlePoint.Y - pointText.Y) * (middlePoint.X - pointText.X));
+                XYZ pointText = textitem.Coord as XYZ;              
+                var distance = Math.Sqrt((middlePoint.X - pointText.X) * (middlePoint.X - pointText.X) + (middlePoint.Y - pointText.Y) * (middlePoint.Y - pointText.Y));
                 if (minDistance == 0)
                 {
                     minDistance = distance;

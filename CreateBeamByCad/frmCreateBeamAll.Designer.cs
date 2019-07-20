@@ -72,13 +72,13 @@
             this.radioVertical.Name = "radioVertical";
             this.radioVertical.Size = new System.Drawing.Size(60, 17);
             this.radioVertical.TabIndex = 1;
-            this.radioVertical.TabStop = true;
             this.radioVertical.Text = "Vertical";
             this.radioVertical.UseVisualStyleBackColor = true;
             // 
             // radioHorizontal
             // 
             this.radioHorizontal.AutoSize = true;
+            this.radioHorizontal.Checked = true;
             this.radioHorizontal.Location = new System.Drawing.Point(63, 19);
             this.radioHorizontal.Name = "radioHorizontal";
             this.radioHorizontal.Size = new System.Drawing.Size(72, 17);
