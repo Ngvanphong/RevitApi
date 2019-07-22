@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Autodesk.Revit.UI;
+using System.Threading;
+
 namespace CreateBeamByCad
 {
     public partial class frmCreateBeamAll : Form
@@ -19,10 +21,16 @@ namespace CreateBeamByCad
             InitializeComponent();
             _event = mevent;
             _handler = handler;
+            
         }
 
         private void frmCreateBeamAll_Load(object sender, EventArgs e)
         {
+           
+        }
+        protected override void OnLoad(EventArgs e)
+        {
+            base.OnLoad(e);
 
         }
 
@@ -33,7 +41,8 @@ namespace CreateBeamByCad
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            
         }
+       
     }
 }

@@ -13,6 +13,7 @@ namespace CreateBeamByCad
     public class CreateBeamAllBinding : IExternalCommand
     {
         public frmCreateBeamAll myFormAll;
+        
         public Result Execute(ExternalCommandData commandData, ref string message, ElementSet elements)
         {
            
@@ -53,7 +54,8 @@ namespace CreateBeamByCad
 
             return Result.Succeeded;
         }
-     
+       
+
     }
    
 }

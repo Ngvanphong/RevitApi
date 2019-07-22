@@ -104,17 +104,10 @@ namespace CreateBeamByCad
             }
             else
             {
-                foreach (DetailLine deline in listDetailLine)
-                {
-                    Curve line = deline.GeometryCurve;
-                    XYZ v = (line.GetEndPoint(1) - line.GetEndPoint(0));
-                    if (v.GetLength() > double.Parse(myFormAll.txtMinimun.Text) / (0.3048 * 1000))
-                    {
-                        listLines.Add(line);
-                    }
-                }
+                
             }
 
+            List<Curve> ListMiddleLineTest = new List<Curve>();
             foreach (var item in listLines)
             {
                 if (myFormAll.radioHorizontal.Checked)
@@ -125,6 +118,7 @@ namespace CreateBeamByCad
                     if (vet.Normalize().IsAlmostEqualTo(XYZ.BasisX)|| vet.Normalize().IsAlmostEqualTo(-XYZ.BasisX))
                     {
                         Curve middleLineMid = GetMinLine(item, listLines);
+                        
                         if (CheckExitMiddle(listLineMiddels, middleLineMid) == false)
                         {
                             listLineMiddels.Add(middleLineMid);
@@ -134,7 +128,19 @@ namespace CreateBeamByCad
                 }
                 else if (myFormAll.radioVertical.Checked)
                 {
-                  
+                    XYZ st = item.GetEndPoint(0);
+                    XYZ et = item.GetEndPoint(1);
+                    XYZ vet = et - st;
+                    if (vet.Normalize().IsAlmostEqualTo(XYZ.BasisY) || vet.Normalize().IsAlmostEqualTo(-XYZ.BasisY))
+                    {
+                        Curve middleLineMid = GetMinLine(item, listLines);
+
+                        if (CheckExitMiddle(listLineMiddels, middleLineMid) == false)
+                        {
+                            listLineMiddels.Add(middleLineMid);
+                        }
+                    }
+
                 }
                 else
                 {
@@ -157,6 +163,7 @@ namespace CreateBeamByCad
             Curve result = null;
             XYZ start = line.GetEndPoint(0);
             XYZ end = line.GetEndPoint(1);
+            double lengthMain = line.Length;
             XYZ mid = (start + end) / 2;
             if (myFormAll.radioHorizontal.Checked)
             {
@@ -167,20 +174,35 @@ namespace CreateBeamByCad
                     XYZ midItem = (sitem + eitem) / 2;
                     XYZ vector = eitem - sitem;
                     XYZ v = (midItem + mid) / 2;
+                    double lengthSub = item.Length;                  
                     if (vector.Normalize().IsAlmostEqualTo(XYZ.BasisX)|| vector.Normalize().IsAlmostEqualTo(-XYZ.BasisX))
                     {
                         double distance = Math.Sqrt((mid.Y - midItem.Y) * (mid.Y - midItem.Y) + (mid.X - midItem.X) * (mid.X - midItem.X));
                         if (minlength == 0)
                         {
                             minlength = distance;
-                            result = Line.CreateBound(new XYZ(start.X, v.Y, start.Z), new XYZ(end.X, v.Y, end.Z));
+                            if (lengthMain < lengthSub)
+                            {
+                                result = Line.CreateBound(new XYZ(start.X, v.Y, start.Z), new XYZ(end.X, v.Y, end.Z));
+                            }else
+                            {
+                                result = Line.CreateBound(new XYZ(sitem.X, v.Y, start.Z), new XYZ(eitem.X, v.Y, end.Z));
+                            }
+                            
                         }
                         else
                         {
                             if (minlength > distance && distance > 0)
                             {
                                 minlength = distance;
-                                result = Line.CreateBound(new XYZ(start.X, v.Y, start.Z), new XYZ(end.X, v.Y, end.Z));
+                                if (lengthMain < lengthSub)
+                                {
+                                    result = Line.CreateBound(new XYZ(start.X, v.Y, start.Z), new XYZ(end.X, v.Y, end.Z));
+                                }else
+                                {
+                                    result = Line.CreateBound(new XYZ(sitem.X, v.Y, start.Z), new XYZ(eitem.X, v.Y, end.Z));
+                                }
+                                    
                             }
                         }
                     }
@@ -195,46 +217,47 @@ namespace CreateBeamByCad
                     XYZ sitem = item.GetEndPoint(0);
                     XYZ eitem = item.GetEndPoint(1);
                     XYZ midItem = (sitem + eitem) / 2;
+                    XYZ vector = eitem - sitem;
                     XYZ v = (midItem + mid) / 2;
-                    double distance = (mid.X - midItem.X) * (mid.X - midItem.X);
-                    if (minlength == 0)
+                    double lengthSub = item.Length;
+                    if (vector.Normalize().IsAlmostEqualTo(XYZ.BasisY) || vector.Normalize().IsAlmostEqualTo(-XYZ.BasisY))
                     {
-                        minlength = distance;
-                        result = Line.CreateBound(new XYZ(v.X / 2, start.Y, start.Z), new XYZ(v.X / 2, end.Y, end.Z));
-                    }
-                    else
-                    {
-                        if (minlength > distance)
+                        double distance = Math.Sqrt((mid.Y - midItem.Y) * (mid.Y - midItem.Y) + (mid.X - midItem.X) * (mid.X - midItem.X));
+
+                        if (minlength == 0)
                         {
                             minlength = distance;
-                            result = Line.CreateBound(new XYZ(v.X / 2, start.Y, start.Z), new XYZ(v.X / 2, end.Y, end.Z));
+                            if (lengthMain < lengthSub)
+                            {
+                                result = Line.CreateBound(new XYZ(v.X, start.Y, start.Z), new XYZ(v.X, end.Y, end.Z));
+                            }else
+                            {
+                                result = Line.CreateBound(new XYZ(v.X, sitem.Y, start.Z), new XYZ(v.X, eitem.Y, end.Z));
+                            }
+                               
+                           
+                        }
+                        else
+                        {
+                            if (minlength > distance&& distance > 0)
+                            {
+                                minlength = distance;
+                                if (lengthMain < lengthSub)
+                                {
+                                    result = Line.CreateBound(new XYZ(v.X, start.Y, start.Z), new XYZ(v.X, end.Y, end.Z));
+                                }else
+                                {
+                                    result = Line.CreateBound(new XYZ(v.X, sitem.Y, start.Z), new XYZ(v.X, eitem.Y, end.Z));
+                                }                                   
+                            }
                         }
                     }
+                       
                 }
             }
             else
             {
-                foreach (var item in listLine)
-                {
-                    XYZ sitem = item.GetEndPoint(0);
-                    XYZ eitem = item.GetEndPoint(1);
-                    XYZ midItem = (sitem + eitem) / 2;
-                    XYZ v = (midItem + mid) / 2;
-                    double distance = (mid.X - midItem.X) * (mid.X - midItem.X) + (mid.Y - midItem.Y) * (mid.Y - midItem.Y);
-                    if (minlength == 0)
-                    {
-                        minlength = distance;
-                        result = null;
-                    }
-                    else
-                    {
-                        if (minlength > distance)
-                        {
-                            minlength = distance;
-                            result = null;
-                        }
-                    }
-                }
+               
             }
             return result;
 
@@ -259,6 +282,7 @@ namespace CreateBeamByCad
                     result = true;
                     return result;
                 }
+                
             }
             return result;
         }
@@ -272,12 +296,12 @@ namespace CreateBeamByCad
             var collection = new FilteredElementCollector(doc, doc.ActiveView.Id).OfClass(typeof(TextNote)).Cast<TextNote>();
             if (myFormAll.radioHorizontal.Checked)
             {
-               collection=  collection.Where(x => x.Name == textStyle).Where(x => x.UpDirection.IsAlmostEqualTo(XYZ.BasisY));
+               collection=  collection.Where(x => x.Name == textStyle).Where(x => x.UpDirection.Normalize().IsAlmostEqualTo(XYZ.BasisY));
                
             }
             else if (myFormAll.radioVertical.Checked)
             {
-               
+                collection = collection.Where(x => x.Name == textStyle).Where(x => x.UpDirection.Normalize().IsAlmostEqualTo(-XYZ.BasisX));
             }
             else
             {

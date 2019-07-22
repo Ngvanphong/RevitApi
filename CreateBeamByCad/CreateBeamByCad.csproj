@@ -76,6 +76,12 @@
     <Compile Include="frmCreateBeamCad.Designer.cs">
       <DependentUpon>frmCreateBeamCad.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmLoad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLoad.Designer.cs">
+      <DependentUpon>frmLoad.cs</DependentUpon>
+    </Compile>
     <Compile Include="HandlerCreateBeam.cs" />
     <Compile Include="HandlerCreateBeamAll.cs" />
     <Compile Include="HandlerSelectLine.cs" />
@@ -97,6 +103,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmCreateBeamCad.resx">
       <DependentUpon>frmCreateBeamCad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLoad.resx">
+      <DependentUpon>frmLoad.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

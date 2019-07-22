@@ -144,9 +144,9 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(319, 53);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(100, 13);
+            this.label4.Size = new System.Drawing.Size(104, 13);
             this.label4.TabIndex = 8;
-            this.label4.Text = "Offset Level Normal";
+            this.label4.Text = "Offset Level Default:";
             // 
             // txtOffsetLevelBeam
             // 
@@ -175,7 +175,6 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmCreateBeamAll";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmCreateBeamAll";
             this.TopMost = true;
             this.Load += new System.EventHandler(this.frmCreateBeamAll_Load);
