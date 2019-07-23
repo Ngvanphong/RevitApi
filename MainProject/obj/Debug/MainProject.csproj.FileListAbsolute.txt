@@ -3,5 +3,8 @@ C:\Users\Windows 10\Documents\revit api\ArmoApi\MainProject\bin\Debug\MainProjec
 C:\Users\Windows 10\Documents\revit api\ArmoApi\MainProject\bin\Debug\Common.dll
 C:\Users\Windows 10\Documents\revit api\ArmoApi\MainProject\bin\Debug\Common.pdb
 C:\Users\Windows 10\Documents\revit api\ArmoApi\MainProject\obj\Debug\MainProject.csprojResolveAssemblyReference.cache
+C:\Users\Windows 10\Documents\revit api\ArmoApi\MainProject\obj\Debug\MainProject.EntendForBeam.fromExtendBeam.resources
+C:\Users\Windows 10\Documents\revit api\ArmoApi\MainProject\obj\Debug\MainProject.Properties.Resources.resources
+C:\Users\Windows 10\Documents\revit api\ArmoApi\MainProject\obj\Debug\MainProject.csproj.GenerateResource.Cache
 C:\Users\Windows 10\Documents\revit api\ArmoApi\MainProject\obj\Debug\MainProject.dll
 C:\Users\Windows 10\Documents\revit api\ArmoApi\MainProject\obj\Debug\MainProject.pdb

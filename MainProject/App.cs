@@ -5,6 +5,7 @@ using Autodesk.Revit.ApplicationServices;
 using Autodesk.Revit.Attributes;
 using Autodesk.Revit.DB;
 using Autodesk.Revit.UI;
+using MainProject.Button;
 #endregion
 
 namespace MainProject
@@ -13,6 +14,8 @@ namespace MainProject
     {
         public Result OnStartup(UIControlledApplication a)
         {
+            ExtendBeamButton extendbtClass = new ExtendBeamButton();
+            extendbtClass.ExtendButton(a);
             return Result.Succeeded;
         }
 

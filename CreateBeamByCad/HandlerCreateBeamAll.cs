@@ -206,8 +206,6 @@ namespace CreateBeamByCad
                             }
                         }
                     }
-                   
-
                 }
             }
             else if (myFormAll.radioVertical.Checked)
@@ -233,9 +231,7 @@ namespace CreateBeamByCad
                             }else
                             {
                                 result = Line.CreateBound(new XYZ(v.X, sitem.Y, start.Z), new XYZ(v.X, eitem.Y, end.Z));
-                            }
-                               
-                           
+                            }     
                         }
                         else
                         {
