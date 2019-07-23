@@ -175,6 +175,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmCreateBeamAll";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmCreateBeamAll";
             this.TopMost = true;
             this.Load += new System.EventHandler(this.frmCreateBeamAll_Load);

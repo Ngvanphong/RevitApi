@@ -12,26 +12,16 @@ namespace CreateBeamByCad
 {
     public partial class frmLoad : Form
     {
-        public Action Worker { set; get; }
-        public frmLoad(Action worker)
+      
+        public frmLoad()
         {
-            InitializeComponent();
-            if (worker == null)
-            {
-                throw new ArgumentException();
-            }
-            Worker = worker;
-            AppPanelAll.frmLoadProgess = this;
+            InitializeComponent();    
         }
 
         private void frmLoad_Load(object sender, EventArgs e)
         {
             
         }
-        protected override void OnLoad(EventArgs e)
-        {
-            base.OnLoad(e);
-            Task.Factory.StartNew(Worker).ContinueWith(t => { this.Close(); }, TaskScheduler.FromCurrentSynchronizationContext());
-        }
+        
     }
 }

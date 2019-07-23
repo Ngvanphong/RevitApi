@@ -116,13 +116,13 @@
             this.radioOriginBeam.Name = "radioOriginBeam";
             this.radioOriginBeam.Size = new System.Drawing.Size(52, 17);
             this.radioOriginBeam.TabIndex = 2;
-            this.radioOriginBeam.TabStop = true;
             this.radioOriginBeam.Text = "Origin";
             this.radioOriginBeam.UseVisualStyleBackColor = true;
             // 
             // radioLeftBeam
             // 
             this.radioLeftBeam.AutoSize = true;
+            this.radioLeftBeam.Checked = true;
             this.radioLeftBeam.Location = new System.Drawing.Point(134, 18);
             this.radioLeftBeam.Name = "radioLeftBeam";
             this.radioLeftBeam.Size = new System.Drawing.Size(43, 17);
@@ -138,7 +138,6 @@
             this.radioCenterBeam.Name = "radioCenterBeam";
             this.radioCenterBeam.Size = new System.Drawing.Size(56, 17);
             this.radioCenterBeam.TabIndex = 0;
-            this.radioCenterBeam.TabStop = true;
             this.radioCenterBeam.Text = "Center";
             this.radioCenterBeam.UseVisualStyleBackColor = true;
             this.radioCenterBeam.CheckedChanged += new System.EventHandler(this.radioMiddle_CheckedChanged);
