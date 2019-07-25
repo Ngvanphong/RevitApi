@@ -54,7 +54,7 @@ namespace ArmoApiVn
             Application app = _uiApp.Application;
             Document doc = _uiApp.ActiveUIDocument.Document;
             DefinitionFile defitionFile = app.OpenSharedParameterFile();
-            string path = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ProgramFiles), @"\Autodesk\ShareParameterArmo.txt");
+            string path = Path.Combine(Environment.SystemDirectory, @"\Autodesk\ShareParameterArmo.txt");
             if (defitionFile == null)
             {
                 StreamWriter stream;
@@ -95,12 +95,7 @@ namespace ArmoApiVn
                         break;
                     }
                 }
-                if (myGroup == null)
-                {
-                    myGroup = myGroups.Create(groupName);
-                    ExternalDefinitionCreationOptions option = new ExternalDefinitionCreationOptions(parameter, ParameterType.Text);
-                    myDefination_ProductDate = myGroup.Definitions.Create(option);
-                }
+               
 
                 CategorySet categorySet = _uiApp.Application.Create.NewCategorySet();
                 Category myCategory = _uiApp.ActiveUIDocument.Document.Settings.Categories.get_Item(category);
