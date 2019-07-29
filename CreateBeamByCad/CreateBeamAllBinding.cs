@@ -51,12 +51,20 @@ namespace CreateBeamByCad
         {
             bool result = false;                   
             myFormAll = AppPanelAll.formCreateBeamAll;
-            var textType = new FilteredElementCollector(doc).OfClass(typeof(TextNoteType));
+            var colectionText= new FilteredElementCollector(doc,doc.ActiveView.Id).OfClass(typeof(TextNote)).Cast<TextNote>();
+            List<string> textType = new List<string>();
+            foreach (var text in colectionText)
+            {
+                if (!textType.Exists(x => x == text.Name))
+                {                    
+                    textType.Add(text.Name);
+                }
+            }         
             myFormAll.dropTextStyle.DisplayMember = "Text";
             myFormAll.dropTextStyle.ValueMember = "Value";
             foreach (var item in textType)
             {
-                myFormAll.dropTextStyle.Items.Add(new { Text = item.Name, Value = item.Name });
+                myFormAll.dropTextStyle.Items.Add(new { Text = item, Value = item});
             }
 
             var colectionDetail = new FilteredElementCollector(doc, doc.ActiveView.Id).OfCategory(BuiltInCategory.OST_Lines);
