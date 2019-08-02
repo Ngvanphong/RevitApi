@@ -81,21 +81,18 @@ namespace ArmoApiVn
                 DefinitionGroups myGroups = myDefitionfile.Groups;
                 DefinitionGroup myGroup = null;
                 Definition myDefination_ProductDate = null;
-                foreach (var item in myGroups)
+                myGroup = myGroups.get_Item(groupName);
+                if (myGroup == null)
                 {
-                    if (item.Name == groupName)
-                    {
-                        myGroup = item;
-                        myDefination_ProductDate = item.Definitions.get_Item(parameter);
-                        if (myDefination_ProductDate == null)
-                        {
-                            ExternalDefinitionCreationOptions option = new ExternalDefinitionCreationOptions(parameter, ParameterType.Text);
-                            myDefination_ProductDate = myGroup.Definitions.Create(option);
-                        }
-                        break;
-                    }
+                    myGroup = myDefitionfile.Groups.Create(groupName);
                 }
-               
+
+                myDefination_ProductDate = myGroup.Definitions.get_Item(parameter);
+                if (myDefination_ProductDate == null)
+                {
+                    ExternalDefinitionCreationOptions option = new ExternalDefinitionCreationOptions(parameter, ParameterType.Text);
+                    myDefination_ProductDate = myGroup.Definitions.Create(option);
+                }
 
                 CategorySet categorySet = _uiApp.Application.Create.NewCategorySet();
                 Category myCategory = _uiApp.ActiveUIDocument.Document.Settings.Categories.get_Item(category);

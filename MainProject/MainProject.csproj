@@ -60,8 +60,6 @@
   <ItemGroup>
     <Compile Include="App.cs" />
     <Compile Include="Button\ExtendBeamButton.cs" />
-    <Compile Include="ChangeColorComponent\ChangeColor.cs" />
-    <Compile Include="ChangeColorComponent\ChangeColorBinding.cs" />
     <Compile Include="Command.cs" />
     <Compile Include="EntendForBeam\AppPanelExtend.cs" />
     <Compile Include="EntendForBeam\ExtendBeamHandler.cs" />

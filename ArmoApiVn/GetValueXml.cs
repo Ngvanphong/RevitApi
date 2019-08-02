@@ -38,7 +38,7 @@ namespace ArmoApiVn
             }
             catch
             {
-                TaskDialog.Show("Error", "Contact to creater");
+                
             }
             
             return listElements;
@@ -66,7 +66,7 @@ namespace ArmoApiVn
             }
             catch
             {
-                TaskDialog.Show("Error", "Contact to creater");
+               
             }
             
             return listValue;

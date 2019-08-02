@@ -10,6 +10,7 @@ using Autodesk.Revit.DB;
 using Autodesk.Revit.UI;
 using Autodesk.Revit.UI.Selection;
 using System.Xml;
+using ArmoApiVn.Common;
 
 namespace ArmoApiVn
 {
@@ -50,10 +51,10 @@ namespace ArmoApiVn
                     {
                         t.Start();
                         TextNoteType typeText = new FilteredElementCollector(doc)
-                            .OfClass(typeof(TextNoteType)).Where(x => x.Name == "2.5mm Arial").First() as TextNoteType;
+                            .OfClass(typeof(TextNoteType)).Where(x => x.Name == ParameterCommon.TextTypeChose).First() as TextNoteType;
 
                         if (typeText == null)
-                        { TaskDialog.Show("Create Text", "Create Text: 2.5mm Arial "); }
+                        { TaskDialog.Show("Create Text", "Create Text: "+ParameterCommon.TextTypeChose); }
                         else
                         {
                             ValueDoorText valuePara = GetValueText(door, parameter);
@@ -71,7 +72,7 @@ namespace ArmoApiVn
             catch
             {
                 success = false;
-                TaskDialog.Show("Error", "Seclect an door");
+                TaskDialog.Show("Error", "Seclect an door or don't create: "+ParameterCommon.TextTypeChose);
             }
                        
             return result;

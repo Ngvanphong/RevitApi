@@ -28,7 +28,7 @@ namespace ArmoApiVn
             if (success)
             {
                 CtreateXmlParameterDoor createFileclass = new CtreateXmlParameterDoor();
-                createFileclass.CreateFileDoor(doc, listElemtParamenter);
+                createFileclass.CreateFileDoor(uiapp, listElemtParamenter);
             }
                  
             return Result.Succeeded;

@@ -9,6 +9,7 @@ using Autodesk.Revit.DB;
 using Autodesk.Revit.UI;
 using Autodesk.Revit.UI.Selection;
 using System.IO;
+using ArmoApiVn.Common;
 
 namespace ArmoApiVn
 {
@@ -38,7 +39,7 @@ namespace ArmoApiVn
                     LocationCurve locationCurve = hostWall.Location as LocationCurve;
                     Curve curve = locationCurve.Curve;
                     Line lineWall = curve as Line;
-                    ViewFamilyType familyView = new FilteredElementCollector(doc).OfClass(typeof(ViewFamilyType)).Where(x => x.Name == "Building Section").First() as ViewFamilyType;
+                    ViewFamilyType familyView = new FilteredElementCollector(doc).OfClass(typeof(ViewFamilyType)).Where(x => x.Name == ParameterCommon.SectionStypeChose).First() as ViewFamilyType;
                     BoundingBoxXYZ bb = element.get_BoundingBox(null);
                     Double d = width;
                     XYZ pt = lineWall.GetEndPoint(0);
@@ -136,7 +137,7 @@ namespace ArmoApiVn
             LocationCurve locationCurve = hostWall.Location as LocationCurve;
             Curve curve = locationCurve.Curve;
             Line lineWall = curve as Line;
-            ViewFamilyType familyView = new FilteredElementCollector(doc).OfClass(typeof(ViewFamilyType)).Where(x => x.Name == "Building Section").First() as ViewFamilyType;
+            ViewFamilyType familyView = new FilteredElementCollector(doc).OfClass(typeof(ViewFamilyType)).Where(x => x.Name == ParameterCommon.SectionStypeChose).First() as ViewFamilyType;
             BoundingBoxXYZ bb = element.get_BoundingBox(null);
             Double d = width;
             XYZ pt = lineWall.GetEndPoint(0);
