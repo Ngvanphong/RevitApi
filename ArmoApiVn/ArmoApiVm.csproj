@@ -65,7 +65,7 @@
     <Compile Include="Button\CreateSectionForDoorButton.cs" />
     <Compile Include="Button\CreateTextForDoorButton.cs" />
     <Compile Include="Button\UpdateSectionForDoorButton.cs" />
-    <Compile Include="CategorySelect.cs" />
+    <Compile Include="Examples\CategorySelect.cs" />
     <Compile Include="Examples\ChangeCategory.cs" />
     <Compile Include="Command.cs" />
     <Compile Include="Common\ParameterCommon.cs" />
