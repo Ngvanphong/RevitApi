@@ -11,8 +11,7 @@ using Autodesk.Revit.UI.Selection;
 using System.IO;
 using System.Xml.Linq;
 using Autodesk.Revit.ApplicationServices;
-using System.Net;
-using System.Runtime.Serialization.Json;
+
 
 
 
@@ -25,11 +24,7 @@ namespace ArmoApiVn
         {
             Document doc = uiApp.ActiveUIDocument.Document;
             Application app = uiApp.Application;
-            string name = doc.Title + ".xml";
-            //String hostId = "192.168.3.8";
-            //String rootFolder = "|";
-            //ModelPath serverPath = ServerCentral.FindWSAPIModelPathOnServer(app, hostId, rootFolder, name);
-            //String sourcePath = ModelPathUtils.ConvertModelPathToUserVisiblePath(serverPath);
+            string name = doc.Title + ".xml";            
             XmlTextWriter writer = new XmlTextWriter(name, System.Text.Encoding.UTF8);
             writer.WriteStartDocument(true);
             writer.Formatting = Formatting.Indented;
@@ -164,123 +159,5 @@ namespace ArmoApiVn
             writer.WriteEndElement();
         }
     }
-    public static class ServerCentral
-    {
-        public static ModelPath FindWSAPIModelPathOnServer(Application app, string hostId, string folderName, string fileName)
-        {
-            // Connect to host to find list of available models (the "/contents" flag)
-            XmlDictionaryReader reader = GetResponse(app, hostId, folderName + "/contents");
-            bool found = false;
-
-            // Look for the target model name in top level folder
-            List<String> folders = new List<String>();
-            while (reader.Read())
-            {
-                // Save a list of subfolders, if found
-                if (reader.NodeType == XmlNodeType.Element && reader.Name == "Folders")
-                {
-                    while (reader.Read())
-                    {
-                        if (reader.NodeType == XmlNodeType.EndElement && reader.Name == "Folders")
-                            break;
-
-                        if (reader.NodeType == XmlNodeType.Element && reader.Name == "Name")
-                        {
-                            reader.Read();
-                            folders.Add(reader.Value);
-                        }
-                    }
-                }
-                // Check for a matching model at this folder level
-                if (reader.NodeType == XmlNodeType.Element && reader.Name == "Models")
-                {
-                    found = FindModelInServerResponseJson(reader, fileName);
-                    if (found)
-                        break;
-                }
-            }
-
-            reader.Close();
-
-            // Build the model path to match the found model on the server
-            if (found)
-            {
-                // Server URLs use "|" for folder separation, Revit API uses "/"
-                String folderNameFragment = folderName.Replace('|', '/');
-
-                // Add trailing "/" if not present
-                if (!folderNameFragment.EndsWith("/"))
-                    folderNameFragment += "/";
-
-                // Build server path
-                ModelPath modelPath = new ServerPath(hostId, folderNameFragment + fileName);
-                return modelPath;
-            }
-            else
-            {
-                // Try subfolders
-                foreach (String folder in folders)
-                {
-                    ModelPath modelPath = FindWSAPIModelPathOnServer(app, hostId, folder, fileName);
-                    if (modelPath != null)
-                        return modelPath;
-                }
-            }
-
-            return null;
-        }
-
-        // This string is different for each RevitServer version
-        private static string s_revitServerVersion = "/RevitServerAdminRESTService2014/AdminRESTService.svc/";
-
-        /// <summary>
-        /// Connect to server to get list of available models and return server response
-        /// </summary>
-        private static XmlDictionaryReader GetResponse(Application app, string hostId, string info)
-        {
-            // Create request	
-            WebRequest request = WebRequest.Create("http://" + hostId + s_revitServerVersion + info);
-            request.Method = "GET";
-
-            // Add the information the request needs
-
-            request.Headers.Add("User-Name", app.Username);
-            request.Headers.Add("User-Machine-Name", app.Username);
-            request.Headers.Add("Operation-GUID", Guid.NewGuid().ToString());
-
-            // Read the response
-            XmlDictionaryReaderQuotas quotas =
-                new XmlDictionaryReaderQuotas();
-            XmlDictionaryReader jsonReader =
-                JsonReaderWriterFactory.CreateJsonReader(request.GetResponse().GetResponseStream(), quotas);
-
-            return jsonReader;
-        }
-
-        /// <summary>
-        /// Read through server response to find particular model
-        /// </summary>
-        private static bool FindModelInServerResponseJson(XmlDictionaryReader reader, string fileName)
-        {
-            // Read through entries in this section
-            while (reader.Read())
-            {
-                if (reader.NodeType == XmlNodeType.EndElement && reader.Name == "Models")
-                    break;
-
-                if (reader.NodeType == XmlNodeType.Element && reader.Name == "Name")
-                {
-                    reader.Read();
-                    String modelName = reader.Value;
-                    if (modelName.Equals(fileName))
-                    {
-                        // Match found, stop looping and return
-                        return true;
-                    }
-                }
-            }
-
-            return false;
-        }
-    }
+   
 }
