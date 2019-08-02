@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace ArmoApiVn.Common
 {
-  public static class ParameterCommon
+    public static class ParameterCommon
     {
-       public const string Door = "Width;Height;Door_W";
+        public const string Door = "Width;Height;Door_W";
 
         public const string TextTypeChose = "2.5mm Arial";
 
