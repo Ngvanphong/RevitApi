@@ -118,7 +118,7 @@ namespace ArmoApiVn
             catch(Exception ex)
             {
                 result = false;
-                TaskDialog.Show("Error", "Error, You delete section before create");
+                TaskDialog.Show("Error", "You must delete section or don't create: "+ParameterCommon.SectionStypeChose);
                 return result;
             }
             return result;
