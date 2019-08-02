@@ -40,16 +40,16 @@ namespace ArmoApiVn
                         {
                             if (row.Element("ElementId").Value == item.ElementIdSection.ToString())
                             {
-                                row.Element("Name").Value = valueTextModel.Name;
-                                row.Element("Width").Value = valueTextModel.Width;
-                                row.Element("Height").Value = valueTextModel.Height;
-                                row.Element("Door_W").Value = valueTextModel.Door_W;
+                                row.Element(ParameterCommon.Door2).Value = valueTextModel.Name;
+                                row.Element(ParameterCommon.Door3).Value = valueTextModel.Door3;
+                                row.Element(ParameterCommon.Door4).Value = valueTextModel.Door4;
+                                row.Element(ParameterCommon.Door5).Value = valueTextModel.Door5;
                                 xmlDoc.Save(name);
                                 using (Transaction t = new Transaction(doc, "Update Text Door"))
                                 {
                                     t.Start();
-                                    string text = "Name: " + element.Name + "\n" + "With: " + valueTextModel.Width + "\n" + "Height: "
-                                     + valueTextModel.Height + "\n" + "Door_W: " + valueTextModel.Door_W;
+                                    string text = ParameterCommon.Door2+": " + element.Name + "\n" + ParameterCommon.Door3+": " + valueTextModel.Door3 + "\n" + ParameterCommon.Door4+": "
+                                     + valueTextModel.Door4 + "\n" + ParameterCommon.Door5+": " + valueTextModel.Door5;
                                     try
                                     {
                                         TextNote textElement = doc.GetElement(item.TextId) as TextNote;
@@ -98,16 +98,16 @@ namespace ArmoApiVn
                             {
                                 if (row.Element("ElementId").Value == item.ElementIdSection.ToString())
                                 {
-                                    row.Element("Name").Value = valueTextModel.Name;
-                                    row.Element("Width").Value = valueTextModel.Width;
-                                    row.Element("Height").Value = valueTextModel.Height;
-                                    row.Element("Door_W").Value = valueTextModel.Door_W;
+                                    row.Element(ParameterCommon.Door2).Value = valueTextModel.Name;
+                                    row.Element(ParameterCommon.Door3).Value = valueTextModel.Door3;
+                                    row.Element(ParameterCommon.Door4).Value = valueTextModel.Door4;
+                                    row.Element(ParameterCommon.Door5).Value = valueTextModel.Door5;
                                     xmlDoc.Save(name);
                                     using (Transaction t = new Transaction(doc, "Update Text Door"))
                                     {
                                         t.Start();
-                                        string text = "Name: " + element.Name + "\n" + "With: " + valueTextModel.Width + "\n" + "Height: "
-                                         + valueTextModel.Height + "\n" + "Door_W: " + valueTextModel.Door_W;
+                                        string text = ParameterCommon.Door2+": " + element.Name + "\n" + ParameterCommon.Door3+": " + valueTextModel.Door3 + "\n" + ParameterCommon.Door4+": "
+                                         + valueTextModel.Door4 + "\n" + ParameterCommon.Door5+": " + valueTextModel.Door5;
                                         try
                                         {
                                             TextNote textElement = doc.GetElement(item.TextId) as TextNote;
@@ -137,8 +137,8 @@ namespace ArmoApiVn
         {
             bool result = true;
             if (valueDoorOld.NameFamily != valueDoorModel.NameFamily || valueDoorOld.Name != valueDoorModel.Name ||
-                valueDoorOld.Width != valueDoorModel.Width || valueDoorOld.Height != valueDoorModel.Height ||
-                valueDoorOld.Door_W != valueDoorModel.Door_W)
+                valueDoorOld.Door3 != valueDoorModel.Door3 || valueDoorOld.Door4 != valueDoorModel.Door4 ||
+                valueDoorOld.Door5 != valueDoorModel.Door5)
             {
                 result = false;
             } 

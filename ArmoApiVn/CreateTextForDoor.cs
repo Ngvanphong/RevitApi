@@ -58,8 +58,8 @@ namespace ArmoApiVn
                         else
                         {
                             ValueDoorText valuePara = GetValueText(door, parameter);
-                            string text = "Name: " + door.Name + "\n" + "With: " + valuePara.Width + "\n" + "Height: "
-                                + valuePara.Height + "\n" + "Door_W: " + valuePara.Door_W;
+                            string text = ParameterCommon.Door2+": " + door.Name + "\n" + ParameterCommon.Door3+": " + valuePara.Door3 + "\n" + ParameterCommon.Door4+": "
+                                + valuePara.Door4+ "\n" + ParameterCommon.Door5+": " + valuePara.Door5;
                             TextNote textNote = TextNote.Create(doc, doc.ActiveView.Id, pointText, 0.18, text, typeText.Id);
                             valuePara.TextId = textNote.Id;
                             valuePara.Name = door.Name;
@@ -92,14 +92,14 @@ namespace ArmoApiVn
                 string valueParameter = LookupParamaterRe.ParameterToString(parameterfind);
                 switch (para)
                 {
-                    case "Width":
-                        valueText.Width = valueParameter;
+                    case ParameterCommon.Door3:
+                        valueText.Door3 = valueParameter;
                         break;
-                    case "Height":
-                        valueText.Height = valueParameter;
+                    case ParameterCommon.Door4:
+                        valueText.Door4 = valueParameter;
                         break;
-                    case "Door_W":
-                        valueText.Door_W = valueParameter;
+                    case ParameterCommon.Door5:
+                        valueText.Door5 = valueParameter;
                         break;
                 }
             }
@@ -112,10 +112,13 @@ namespace ArmoApiVn
         public string Name { get; set; }
         public string NameFamily { get; set; }
         public ElementId ElementIdSection { set; get; }
-        public ElementId TextId { get; set; }      
-        public string Width { get; set; }
-        public string Height { get; set; }
-        public string Door_W { get; set; }
+        public ElementId TextId { get; set; }  
+        //Set similar constants door    
+        public string Door3 { get; set; }
+
+        public string Door4 { get; set; }
+
+        public string Door5 { get; set; }
     }
 
 

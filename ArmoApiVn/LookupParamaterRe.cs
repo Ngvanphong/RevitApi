@@ -7,6 +7,8 @@ using Autodesk.Revit.ApplicationServices;
 using Autodesk.Revit.Attributes;
 using Autodesk.Revit.DB;
 using Autodesk.Revit.UI;
+using ArmoApiVn.Common;
+
 namespace ArmoApiVn
 {
     public class LookupParamaterRe
@@ -42,7 +44,7 @@ namespace ArmoApiVn
                     foreach (FamilyInstance item in elementCategories)
                     {
 
-                        if (item.Symbol.FamilyName != "枠")
+                        if (item.Symbol.FamilyName != ParameterCommon.FamilyNotUser&& item.Symbol.FamilyName != ParameterCommon.FamilyNotUser2)
                         {
                             if (item.Symbol.FamilyName == family.Name)
                             {
@@ -63,7 +65,6 @@ namespace ArmoApiVn
 
             foreach (var item in familyElemtents)
             {
-
                 FamilyInstance element = _doc.GetElement(item.ElementIdSection) as FamilyInstance;
                 //Symbol if us share parameter
                 string[] arrListStrParameter = parameter.Split(';');
@@ -74,14 +75,14 @@ namespace ArmoApiVn
                     string valueParameter = ParameterToString(parameterfind);
                     switch (para)
                     {
-                        case "Width":
-                            item.Width = valueParameter;
+                        case ParameterCommon.Door3:
+                            item.Door3 = valueParameter;
                             break;
-                        case "Height":
-                            item.Height = valueParameter;
+                        case ParameterCommon.Door4:
+                            item.Door4 = valueParameter;
                             break;
-                        case "Door_W":
-                            item.Door_W = valueParameter;
+                        case ParameterCommon.Door5:
+                            item.Door5 = valueParameter;
                             break;
                     }
                 }
@@ -108,14 +109,14 @@ namespace ArmoApiVn
                 string valueParameter = ParameterToString(parameterfind);
                 switch (para)
                 {
-                    case "Width":
-                        familyElemtent.Width = valueParameter;
+                    case ParameterCommon.Door3:
+                        familyElemtent.Door3 = valueParameter;
                         break;
-                    case "Height":
-                        familyElemtent.Height = valueParameter;
+                    case ParameterCommon.Door4:
+                        familyElemtent.Door4 = valueParameter;
                         break;
-                    case "Door_W":
-                        familyElemtent.Door_W = valueParameter;
+                    case ParameterCommon.Door5:
+                        familyElemtent.Door5 = valueParameter;
                         break;
                 }
             }
@@ -177,9 +178,10 @@ namespace ArmoApiVn
         public string NameFamily { get; set; }
         public string NameTypeFamily { set; get; }
         public ElementId ElementIdSection { set; get; }
-        public string Width { get; set; }
-        public string Height { get; set; }
-        public string Door_W { get; set; }
+        //Change when add parameter;
+        public string Door3 { get; set; }
+        public string Door4 { get; set; }
+        public string Door5 { get; set; }
 
         public FamilyElement()
         {

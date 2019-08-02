@@ -10,6 +10,7 @@ using Autodesk.Revit.UI;
 using Autodesk.Revit.UI.Selection;
 using System.Xml.Linq;
 using System.Xml.Serialization;
+using ArmoApiVn.Common;
 
 namespace ArmoApiVn
 {
@@ -30,9 +31,9 @@ namespace ArmoApiVn
                     familyElement.NameFamily = item.Element("NameFamily").Value;
                     familyElement.ElementIdSection = new ElementId(int.Parse(item.Element("Id").Value));
                     familyElement.NameTypeFamily = item.Element("NameTypeFamily").Value;
-                    familyElement.Width = item.Element("Width").Value;
-                    familyElement.Height = item.Element("Height").Value;
-                    familyElement.Door_W = item.Element("Door_W").Value;
+                    familyElement.Door3 = item.Element(ParameterCommon.Door3).Value;
+                    familyElement.Door4 = item.Element(ParameterCommon.Door4).Value;
+                    familyElement.Door5 = item.Element(ParameterCommon.Door5).Value;
                     listElements.Add(familyElement);
                 }
             }
@@ -58,9 +59,9 @@ namespace ArmoApiVn
                     valueText.Name = item.Element("Name").Value;
                     valueText.NameFamily = item.Element("NameFamily").Value;
                     valueText.ElementIdSection = new ElementId(int.Parse(item.Element("ElementId").Value));
-                    valueText.Width = item.Element("Width").Value;
-                    valueText.Height = item.Element("Height").Value;
-                    valueText.Door_W = item.Element("Door_W").Value;
+                    valueText.Door3 = item.Element(ParameterCommon.Door3).Value;
+                    valueText.Door4 = item.Element(ParameterCommon.Door4).Value;
+                    valueText.Door5 = item.Element(ParameterCommon.Door5).Value;
                     listValue.Add(valueText);
                 }
             }
