@@ -54,7 +54,7 @@ namespace ArmoApiVn
             Application app = _uiApp.Application;
             Document doc = _uiApp.ActiveUIDocument.Document;
             DefinitionFile defitionFile = app.OpenSharedParameterFile();
-            string path = Path.Combine(Environment.SystemDirectory, @"\Autodesk\ShareParameterArmo.txt");
+            string path = @"C:\Autodesk\ShareParameterArmo.txt";
             if (defitionFile == null)
             {
                 StreamWriter stream;

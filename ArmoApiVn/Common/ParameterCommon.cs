@@ -13,6 +13,7 @@ namespace ArmoApiVn.Common
         public const string Door1 = "NameFamily";
 
         public const string Door2 = "Name";
+
         //Can change ( Must change class: "ValueDoorText", "FamilyElement")
         public const string Door3 = "Width";
 
