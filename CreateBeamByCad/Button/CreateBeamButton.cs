@@ -20,7 +20,7 @@ namespace CreateBeamByCad.Button
         public void CreateBeam(UIControlledApplication application)
         {
             const string ribbonTag = "ArmoApiVn";
-            const string ribbonPanel = "CreateBeam";
+            const string ribbonPanel = "Beam";
             try
             {
                 application.CreateRibbonTab(ribbonTag);

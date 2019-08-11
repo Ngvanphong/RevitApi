@@ -1,8 +1,11 @@
+C:\Users\Windows 10\Documents\revit api\ArmoApi\ArmoApiVn\obj\Debug\ArmoApiVn.pdb
 C:\Users\Windows 10\Documents\revit api\ArmoApi\ArmoApiVn\bin\Debug\ArmoApiVn.dll
 C:\Users\Windows 10\Documents\revit api\ArmoApi\ArmoApiVn\bin\Debug\ArmoApiVn.pdb
 C:\Users\Windows 10\Documents\revit api\ArmoApi\ArmoApiVn\bin\Debug\AdWindows.dll
 C:\Users\Windows 10\Documents\revit api\ArmoApi\ArmoApiVn\obj\Debug\ArmoApiVn.Properties.Resources.resources
 C:\Users\Windows 10\Documents\revit api\ArmoApi\ArmoApiVn\obj\Debug\ArmoApiVm.csproj.GenerateResource.Cache
 C:\Users\Windows 10\Documents\revit api\ArmoApi\ArmoApiVn\obj\Debug\ArmoApiVn.dll
-C:\Users\Windows 10\Documents\revit api\ArmoApi\ArmoApiVn\obj\Debug\ArmoApiVn.pdb
+C:\Users\Windows 10\Documents\revit api\ArmoApi\ArmoApiVn\bin\Debug\Common.dll
+C:\Users\Windows 10\Documents\revit api\ArmoApi\ArmoApiVn\bin\Debug\FoxLearn.License.dll
+C:\Users\Windows 10\Documents\revit api\ArmoApi\ArmoApiVn\bin\Debug\Common.pdb
 C:\Users\Windows 10\Documents\revit api\ArmoApi\ArmoApiVn\obj\Debug\ArmoApiVm.csprojResolveAssemblyReference.cache

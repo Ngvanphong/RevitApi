@@ -8,6 +8,7 @@ using Autodesk.Revit.UI;
 using Autodesk.Revit.Attributes;
 using Autodesk.Revit.ApplicationServices;
 using MainProject.EntendForBeam;
+using Common.Extension;
 
 namespace MainProject
 {
@@ -16,6 +17,10 @@ namespace MainProject
     {
         public Result Execute(ExternalCommandData commandData, ref string message, ElementSet elements)
         {
+            if (CheckLicenseApi.CheckLicense() == false)
+            {
+                return Result.Succeeded;
+            }
             UIApplication uiapp = commandData.Application;
             UIDocument uidoc = uiapp.ActiveUIDocument;
             Application app = uiapp.Application;

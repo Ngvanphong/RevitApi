@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Table>
+  <TextDoor>
+    <Id>4150893</Id>
+    <Name>SD-1B 9</Name>
+    <NameFamily>Door_2Slides</NameFamily>
+    <ElementId>3610272</ElementId>
+    <Width>1700</Width>
+    <Height>2100</Height>
+    <Door_W>850</Door_W>
+  </TextDoor>
+  <TextDoor>
+    <Id>4150895</Id>
+    <Name>SD-15</Name>
+    <NameFamily>Door_2Slides</NameFamily>
+    <ElementId>3610442</ElementId>
+    <Width>1800</Width>
+    <Height>2200</Height>
+    <Door_W>900</Door_W>
+  </TextDoor>
+</Table>

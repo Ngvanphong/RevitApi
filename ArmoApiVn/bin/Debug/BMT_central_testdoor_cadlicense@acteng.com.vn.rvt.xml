@@ -1,23 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <Table>
   <Door>
-    <Id>3610563</Id>
-    <NameFamily>140_Door_Double_Flush</NameFamily>
-    <NameTypeFamily>W1800 H2100</NameTypeFamily>
-    <Width>1800</Width>
-    <Height>2100</Height>
-    <Door_W>none</Door_W>
-  </Door>
-  <Door>
     <Id>3601537</Id>
-    <NameFamily>140_Door_Sliding</NameFamily>
-    <NameTypeFamily>W900xH2100</NameTypeFamily>
-    <Width>900</Width>
-    <Height>2100</Height>
-    <Door_W>none</Door_W>
-  </Door>
-  <Door>
-    <Id>3610335</Id>
     <NameFamily>140_Door_Uneven_Flush</NameFamily>
     <NameTypeFamily>W1200 H2100</NameTypeFamily>
     <Width>1200</Width>

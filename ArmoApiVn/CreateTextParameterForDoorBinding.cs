@@ -8,6 +8,7 @@ using Autodesk.Revit.Attributes;
 using Autodesk.Revit.DB;
 using Autodesk.Revit.UI;
 using ArmoApiVn.Common;
+using Common.Extension;
 
 namespace ArmoApiVn
 {
@@ -16,6 +17,10 @@ namespace ArmoApiVn
     {
         public Result Execute(ExternalCommandData commandData, ref string message, ElementSet elements)
         {
+            if (CheckLicenseApi.CheckLicense() == false)
+            {
+                return Result.Succeeded;
+            }
             UIApplication uiapp = commandData.Application;
             UIDocument uidoc = uiapp.ActiveUIDocument;
             Application app = uiapp.Application;

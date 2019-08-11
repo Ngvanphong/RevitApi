@@ -8,6 +8,7 @@ using Autodesk.Revit.DB;
 using Autodesk.Revit.UI;
 using Autodesk.Revit.UI.Selection;
 using System.Threading;
+using Common.Extension;
 
 namespace CreateBeamByCad
 {
@@ -17,17 +18,21 @@ namespace CreateBeamByCad
       
         public  Result Execute(ExternalCommandData commandData, ref string message, ElementSet elements)
         {
-           
+            if (CheckLicenseApi.CheckLicense() == false)
+            {
+                return Result.Succeeded;
+            }
             UIApplication uiApp = commandData.Application;          
             Document doc = uiApp.ActiveUIDocument.Document;
             AppPanelAll.ShowCreateForm(uiApp);
-            Thread newThread = new Thread(DoSomething);
-            newThread.Start();
+            //Thread newThread = new Thread(DoSomething);
+            //newThread.Start();
             GetForm getForm = new GetForm(uiApp,doc);
             getForm.GetInforForm();
-            newThread.Abort();         
+            //newThread.Abort();         
             return Result.Succeeded;
-        }             
+        } 
+                    
         public void DoSomething()
         {          
             using (frmLoad frm = new frmLoad())

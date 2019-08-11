@@ -1,3 +1,4 @@
+C:\Users\Windows 10\Documents\revit api\ArmoApi\IFCInformation\obj\Debug\IFCInformation.pdb
 C:\Users\Windows 10\Documents\revit api\ArmoApi\IFCInformation\bin\Debug\IFCInformation.dll
 C:\Users\Windows 10\Documents\revit api\ArmoApi\IFCInformation\bin\Debug\IFCInformation.pdb
 C:\Users\Windows 10\Documents\revit api\ArmoApi\IFCInformation\bin\Debug\Common.dll
@@ -6,4 +7,4 @@ C:\Users\Windows 10\Documents\revit api\ArmoApi\IFCInformation\obj\Debug\IFCInfo
 C:\Users\Windows 10\Documents\revit api\ArmoApi\IFCInformation\obj\Debug\IFCInformation.Properties.Resources.resources
 C:\Users\Windows 10\Documents\revit api\ArmoApi\IFCInformation\obj\Debug\IFCInformation.csproj.GenerateResource.Cache
 C:\Users\Windows 10\Documents\revit api\ArmoApi\IFCInformation\obj\Debug\IFCInformation.dll
-C:\Users\Windows 10\Documents\revit api\ArmoApi\IFCInformation\obj\Debug\IFCInformation.pdb
+C:\Users\Windows 10\Documents\revit api\ArmoApi\IFCInformation\bin\Debug\FoxLearn.License.dll

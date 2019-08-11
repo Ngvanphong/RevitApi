@@ -27,8 +27,10 @@ namespace CreateBeamByCad
                     using (Transaction t = new Transaction(doc, "Create beam by cad"))
                     {
                         t.Start();
+                        
                         FamilySymbol familySymbol = new FilteredElementCollector(doc).OfClass(typeof(FamilySymbol)).Cast<FamilySymbol>()
                             .Where(x => x.Name == item.NameBeam).First();
+                        if (!familySymbol.IsActive) familySymbol.Activate();
                         familyInstance = doc.Create.NewFamilyInstance(item.LineCure, familySymbol, null, Autodesk.Revit.DB.Structure.StructuralType.Beam);
                         t.Commit();
                     }

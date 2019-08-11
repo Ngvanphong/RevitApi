@@ -22,7 +22,8 @@ namespace CreateBeamByCad
             string typeName = AppPanel.myFormCreate.dropNameBeam.GetItemText(AppPanel.myFormCreate.dropNameBeam.SelectedItem);
             var familySymbol = new FilteredElementCollector(doc).OfClass(typeof(FamilySymbol)).OfCategory(BuiltInCategory.OST_StructuralFraming)
                 .Cast<FamilySymbol>().Where(x => x.Name == typeName).First();
-            foreach(var item in listLine)
+            
+            foreach (var item in listLine)
             {
                 LocationCurve lineDetail = item.Location as LocationCurve;
                 Curve cureLine = lineDetail.Curve;              
@@ -32,7 +33,8 @@ namespace CreateBeamByCad
                     using (Transaction t= new Transaction(doc,"Create beam by cad"))
                     {
                         t.Start();
-                        familyInstance = doc.Create.NewFamilyInstance(cureLine, familySymbol, null, Autodesk.Revit.DB.Structure.StructuralType.Beam);   
+                        if (!familySymbol.IsActive) familySymbol.Activate();
+                        familyInstance = doc.Create.NewFamilyInstance(cureLine, familySymbol,null, Autodesk.Revit.DB.Structure.StructuralType.Beam);                        
                         t.Commit();
                     }
 

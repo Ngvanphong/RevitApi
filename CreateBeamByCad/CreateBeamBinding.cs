@@ -8,6 +8,7 @@ using Autodesk.Revit.Attributes;
 using Autodesk.Revit.DB;
 using Autodesk.Revit.UI;
 using Autodesk.Revit.UI.Selection;
+using Common.Extension;
 
 namespace CreateBeamByCad
 {
@@ -17,6 +18,10 @@ namespace CreateBeamByCad
         public frmCreateBeamCad myForm;
         public Result Execute(ExternalCommandData commandData, ref string message, ElementSet elements)
         {
+            if (CheckLicenseApi.CheckLicense() == false)
+            {
+                return Result.Succeeded;
+            }
             try
             {
                  UIApplication uiApp = commandData.Application;

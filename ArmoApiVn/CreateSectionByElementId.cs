@@ -10,6 +10,7 @@ using Autodesk.Revit.UI;
 using Autodesk.Revit.UI.Selection;
 using System.IO;
 using ArmoApiVn.Common;
+using Common.Extension;
 
 namespace ArmoApiVn
 {
@@ -23,7 +24,7 @@ namespace ArmoApiVn
         }
 
         public bool CreteListSection(List<FamilyElement> elements)
-        {
+        {          
             bool result = true;
             try
             {

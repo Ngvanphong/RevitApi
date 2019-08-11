@@ -8,6 +8,8 @@ using Autodesk.Revit.Attributes;
 using Autodesk.Revit.DB;
 using Autodesk.Revit.UI;
 using Autodesk.Revit.UI.Selection;
+using Common.Extension;
+
 namespace IFCInformation
 {
     [Transaction(TransactionMode.Manual)]
@@ -15,6 +17,10 @@ namespace IFCInformation
     {
         public Result Execute(ExternalCommandData commandData, ref string message, ElementSet elements)
         {
+            if (CheckLicenseApi.CheckLicense() == false)
+            {
+                return Result.Succeeded;
+            }
             UIApplication uiApp = commandData.Application;           
             Document doc = uiApp.ActiveUIDocument.Document;
             IFCChangeColor changeColorClass = new IFCChangeColor();
