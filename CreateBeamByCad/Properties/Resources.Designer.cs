@@ -73,9 +73,9 @@ namespace CreateBeamByCad.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap nine_black_tiles {
+        internal static System.Drawing.Bitmap network {
             get {
-                object obj = ResourceManager.GetObject("nine_black_tiles", resourceCulture);
+                object obj = ResourceManager.GetObject("network", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

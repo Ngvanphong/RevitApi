@@ -37,7 +37,7 @@ namespace CreateBeamByCad.Button
             {
                 panel = application.CreateRibbonPanel(ribbonTag, ribbonPanel);
             }
-            Image img = Properties.Resources.nine_black_tiles;
+            Image img = Properties.Resources.network;
             ImageSource imgSrc = ImageButton.GetImageSource(img);
             PushButtonData btnData = new PushButtonData("BeamCreateAll", "CreateAll", Assembly.GetExecutingAssembly().Location, "CreateBeamByCad.CreateBeamAllBinding")
             {
