@@ -3530,6 +3530,22 @@
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
         }
+        "2019"
+        {
+        "DisplayName" = "8:2019"
+        "IsDebugOnly" = "11:FALSE"
+        "IsReleaseOnly" = "11:FALSE"
+        "OutputFilename" = "8:2019\\ArmoApiVnSetup.msi"
+        "PackageFilesAs" = "3:2"
+        "PackageFileSize" = "3:-2147483648"
+        "CabType" = "3:1"
+        "Compression" = "3:2"
+        "SignOutput" = "11:FALSE"
+        "CertificateFile" = "8:"
+        "PrivateKeyFile" = "8:"
+        "TimeStampServer" = "8:"
+        "InstallerBootstrapper" = "3:2"
+        }
         "Debug"
         {
         "DisplayName" = "8:Debug"
@@ -6225,7 +6241,7 @@
         {
             "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_0901D84A6DCC4A10BD3789E66F1CC5EB"
             {
-            "SourcePath" = "8:..\\IFCInformation\\obj\\2018\\IFCInformation.dll"
+            "SourcePath" = "8:..\\IFCInformation\\obj\\2019\\IFCInformation.dll"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_770A7F600390469692FC3C712430108E"
@@ -6253,7 +6269,7 @@
             }
             "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_16E58E3172F140CC872987A09ABAF45C"
             {
-            "SourcePath" = "8:..\\Common\\obj\\2018\\Common.dll"
+            "SourcePath" = "8:..\\Common\\obj\\2019\\Common.dll"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_770A7F600390469692FC3C712430108E"
@@ -6281,7 +6297,7 @@
             }
             "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_681154AFDFC849E0B6CFF891369E2D18"
             {
-            "SourcePath" = "8:..\\MainProject\\obj\\2018\\MainProject.dll"
+            "SourcePath" = "8:..\\MainProject\\obj\\2019\\MainProject.dll"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_770A7F600390469692FC3C712430108E"
@@ -6309,7 +6325,7 @@
             }
             "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_9EE4E181D1044C98AA04486208F7E631"
             {
-            "SourcePath" = "8:..\\CreateBeamByCad\\obj\\2018\\CreateBeamByCad.dll"
+            "SourcePath" = "8:..\\CreateBeamByCad\\obj\\2019\\CreateBeamByCad.dll"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_770A7F600390469692FC3C712430108E"
@@ -6337,7 +6353,7 @@
             }
             "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_DD7F84BD001A4B74897A6E6523E8AC29"
             {
-            "SourcePath" = "8:..\\ArmoApiVn\\obj\\2018\\ArmoApiVn.dll"
+            "SourcePath" = "8:..\\ArmoApiVn\\obj\\2019\\ArmoApiVn.dll"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_770A7F600390469692FC3C712430108E"

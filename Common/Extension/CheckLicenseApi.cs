@@ -11,12 +11,17 @@ namespace Common.Extension
 {
     public static class CheckLicenseApi
     {
-        static string LicFile = @"C:\ProgramData\Autodesk\Revit\Addins\2018\Key.lic";
+        
         public static bool CheckLicense()
         {
             try
             {
+                string LicFile = @"C:\ProgramData\Autodesk\Revit\Addins\2018\Key.lic";
                 string machine = @"C:\ProgramData\Autodesk\Revit\Addins\2018\MachineID.txt";
+#if RELEASE2019
+                LicFile = @"C:\ProgramData\Autodesk\Revit\Addins\2019\Key.lic";
+                machine = @"C:\ProgramData\Autodesk\Revit\Addins\2019\MachineID.txt";
+#endif
                 String ProductID = string.Empty;
                 using (StreamReader sr = new StreamReader(machine))
                 {
