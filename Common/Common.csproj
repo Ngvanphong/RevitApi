@@ -29,6 +29,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == '2018|AnyCPU'">
+    <OutputPath>bin\2018\</OutputPath>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="FoxLearn.License">
       <HintPath>..\..\..\..\Downloads\FoxLearn.License fix\FoxLearn.License.dll</HintPath>
