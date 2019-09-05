@@ -1,7 +1,3 @@
-C:\Users\Windows 10\Documents\revit api\ArmoApi\CreateBeamByCad\bin\2018\CreateBeamByCad.dll
-C:\Users\Windows 10\Documents\revit api\ArmoApi\CreateBeamByCad\bin\2018\Common.dll
-C:\Users\Windows 10\Documents\revit api\ArmoApi\CreateBeamByCad\bin\2018\FoxLearn.License.dll
-C:\Users\Windows 10\Documents\revit api\ArmoApi\CreateBeamByCad\bin\2018\Common.pdb
 C:\Users\Windows 10\Documents\revit api\ArmoApi\CreateBeamByCad\bin\Debug\CreateBeamByCad.dll
 C:\Users\Windows 10\Documents\revit api\ArmoApi\CreateBeamByCad\bin\Debug\CreateBeamByCad.pdb
 C:\Users\Windows 10\Documents\revit api\ArmoApi\CreateBeamByCad\bin\Debug\Common.dll

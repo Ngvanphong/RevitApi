@@ -1,5 +1,3 @@
-C:\Users\Windows 10\Documents\revit api\ArmoApi\IFCInformation\bin\Debug\RevitUIAPI.dll
-C:\Users\Windows 10\Documents\revit api\ArmoApi\IFCInformation\bin\Debug\ru-RU\AdWindows.resources.dll
 C:\Users\Windows 10\Documents\revit api\ArmoApi\IFCInformation\bin\Debug\IFCInformation.dll
 C:\Users\Windows 10\Documents\revit api\ArmoApi\IFCInformation\bin\Debug\IFCInformation.pdb
 C:\Users\Windows 10\Documents\revit api\ArmoApi\IFCInformation\bin\Debug\Common.dll
@@ -44,6 +42,7 @@ C:\Users\Windows 10\Documents\revit api\ArmoApi\IFCInformation\bin\Debug\RevitAd
 C:\Users\Windows 10\Documents\revit api\ArmoApi\IFCInformation\bin\Debug\APIInterop.dll
 C:\Users\Windows 10\Documents\revit api\ArmoApi\IFCInformation\bin\Debug\UIFramework.dll
 C:\Users\Windows 10\Documents\revit api\ArmoApi\IFCInformation\bin\Debug\AddInManager.dll
+C:\Users\Windows 10\Documents\revit api\ArmoApi\IFCInformation\bin\Debug\RevitUIAPI.dll
 C:\Users\Windows 10\Documents\revit api\ArmoApi\IFCInformation\bin\Debug\BuildingSystemsUIAPI.dll
 C:\Users\Windows 10\Documents\revit api\ArmoApi\IFCInformation\bin\Debug\DesktopMFCAPI.dll
 C:\Users\Windows 10\Documents\revit api\ArmoApi\IFCInformation\bin\Debug\APIUIAPI.dll
@@ -68,6 +67,7 @@ C:\Users\Windows 10\Documents\revit api\ArmoApi\IFCInformation\bin\Debug\ja-JP\A
 C:\Users\Windows 10\Documents\revit api\ArmoApi\IFCInformation\bin\Debug\ko-KR\AdWindows.resources.dll
 C:\Users\Windows 10\Documents\revit api\ArmoApi\IFCInformation\bin\Debug\pl-PL\AdWindows.resources.dll
 C:\Users\Windows 10\Documents\revit api\ArmoApi\IFCInformation\bin\Debug\pt-BR\AdWindows.resources.dll
+C:\Users\Windows 10\Documents\revit api\ArmoApi\IFCInformation\bin\Debug\ru-RU\AdWindows.resources.dll
 C:\Users\Windows 10\Documents\revit api\ArmoApi\IFCInformation\bin\Debug\zh-CN\AdWindows.resources.dll
 C:\Users\Windows 10\Documents\revit api\ArmoApi\IFCInformation\bin\Debug\zh-TW\AdWindows.resources.dll
 C:\Users\Windows 10\Documents\revit api\ArmoApi\IFCInformation\obj\2019\IFCInformation.csprojResolveAssemblyReference.cache

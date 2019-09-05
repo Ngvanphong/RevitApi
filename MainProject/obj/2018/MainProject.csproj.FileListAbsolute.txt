@@ -1,7 +1,3 @@
-C:\Users\Windows 10\Documents\revit api\ArmoApi\MainProject\bin\2018\MainProject.dll
-C:\Users\Windows 10\Documents\revit api\ArmoApi\MainProject\bin\2018\Common.dll
-C:\Users\Windows 10\Documents\revit api\ArmoApi\MainProject\bin\2018\FoxLearn.License.dll
-C:\Users\Windows 10\Documents\revit api\ArmoApi\MainProject\bin\2018\Common.pdb
 C:\Users\Windows 10\Documents\revit api\ArmoApi\MainProject\bin\Debug\MainProject.dll
 C:\Users\Windows 10\Documents\revit api\ArmoApi\MainProject\bin\Debug\MainProject.pdb
 C:\Users\Windows 10\Documents\revit api\ArmoApi\MainProject\bin\Debug\Common.dll

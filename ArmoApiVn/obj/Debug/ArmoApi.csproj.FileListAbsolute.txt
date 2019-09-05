@@ -1,7 +1,0 @@
-C:\Users\Windows 10\Documents\revit api\ArmoApi\ArmoApiVn\obj\Debug\ArmoApiVn.Properties.Resources.resources
-C:\Users\Windows 10\Documents\revit api\ArmoApi\ArmoApiVn\obj\Debug\ArmoApi.csproj.GenerateResource.Cache
-C:\Users\Windows 10\Documents\revit api\ArmoApi\ArmoApiVn\bin\Debug\ArmoApiVn.dll
-C:\Users\Windows 10\Documents\revit api\ArmoApi\ArmoApiVn\bin\Debug\ArmoApiVn.pdb
-C:\Users\Windows 10\Documents\revit api\ArmoApi\ArmoApiVn\bin\Debug\AdWindows.dll
-C:\Users\Windows 10\Documents\revit api\ArmoApi\ArmoApiVn\obj\Debug\ArmoApiVn.dll
-C:\Users\Windows 10\Documents\revit api\ArmoApi\ArmoApiVn\obj\Debug\ArmoApiVn.pdb
