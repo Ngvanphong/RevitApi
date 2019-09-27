@@ -292,23 +292,34 @@ namespace CreateBeamByCad
             XYZ endLine = lineMiddle.GetEndPoint(1);
             XYZ middlePoint = (startLine + endLine) / 2;
             var collection = new FilteredElementCollector(doc, doc.ActiveView.Id).OfClass(typeof(TextNote)).Cast<TextNote>();
+            List<TextNote> listTextNears = new List<TextNote>();
             if (myFormAll.radioHorizontal.Checked)
             {
                collection=  collection.Where(x => x.Name == textStyle).Where(x => x.UpDirection.Normalize().IsAlmostEqualTo(XYZ.BasisY));
+                foreach(TextNote chooseText in collection)
+                {
+                    if (middlePoint.Y <= chooseText.Coord.Y)
+                    {
+                        listTextNears.Add(chooseText);
+                    }
+                }
                
             }
             else if (myFormAll.radioVertical.Checked)
             {
                 collection = collection.Where(x => x.Name == textStyle).Where(x => x.UpDirection.Normalize().IsAlmostEqualTo(-XYZ.BasisX));
+                foreach (TextNote chooseText in collection)
+                {
+                    if (middlePoint.X >= chooseText.Coord.X)
+                    {
+                        listTextNears.Add(chooseText);
+                    }
+                }
             }
-            else
-            {
-              
-            }
-           
+  
             double minDistance = 0;
             string valueText = "";
-            foreach (var textitem in collection)
+            foreach (var textitem in listTextNears)
             {
                 XYZ pointText = textitem.Coord as XYZ;              
                 var distance = Math.Sqrt((middlePoint.X - pointText.X) * (middlePoint.X - pointText.X) + (middlePoint.Y - pointText.Y) * (middlePoint.Y - pointText.Y));
