@@ -21,7 +21,7 @@ namespace MainProject.Button
             {
                 application.CreateRibbonTab(ribbonTag);
             }
-            catch (Exception ex) { }
+            catch  { }
             RibbonPanel panel = null;
             List<RibbonPanel> panels = application.GetRibbonPanels(ribbonTag);
             foreach (RibbonPanel pl in panels)
@@ -45,9 +45,20 @@ namespace MainProject.Button
                 Image = imgSrc,
                 LargeImage = imgSrc,
             };
+            SplitButtonData splitData = null;
+            SplitButton splitButton = null;
+            try
+            {
+                splitData = new SplitButtonData("Beams", "Beams");
+                splitButton = panel.AddItem(splitData) as SplitButton;
+            }
+            catch
+            {
+                splitButton = panel.GetItems().Where(x => x.ItemText == "Beams").ToList().First() as SplitButton;                
+            };
+            splitButton.IsSynchronizedWithCurrentItem = true;
+            splitButton.AddPushButton(btnData);
 
-            PushButton button = panel.AddItem(btnData) as PushButton;
-            button.Enabled = true;
 
         }
     }

@@ -60,8 +60,17 @@ namespace CreateBeamByCad.Button
                 LargeImage = imgSrc2,
             };
 
-            SplitButtonData splitData = new SplitButtonData("Beams", "Beams");
-            SplitButton splitButton = panel.AddItem(splitData) as SplitButton;
+            SplitButtonData splitData = null;
+            SplitButton splitButton = null;
+            try
+            {
+                splitData = new SplitButtonData("Beams", "Beams");
+                splitButton = panel.AddItem(splitData) as SplitButton;
+            }
+            catch
+            {
+                splitButton = panel.GetItems().Where(x => x.ItemText == "Beams").ToList().First() as SplitButton;
+            };
             splitButton.IsSynchronizedWithCurrentItem = true;
             splitButton.AddPushButton(btnData);
             splitButton.AddPushButton(btnData2);
