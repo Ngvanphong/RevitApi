@@ -27,10 +27,10 @@ namespace ArmoApiVn
         {
             CreateSectionForDoorButton createSectionClass = new CreateSectionForDoorButton();
             createSectionClass.CreateSection(application);
-            CreateTextForDoorButton createTextClass = new CreateTextForDoorButton();
-            createTextClass.CreateText(application);
-            UpdateSectionForDoorButton updateDoorClass = new UpdateSectionForDoorButton();
-            updateDoorClass.UpdateDoorSection(application);
+            //CreateTextForDoorButton createTextClass = new CreateTextForDoorButton();
+            //createTextClass.CreateText(application);
+            //UpdateSectionForDoorButton updateDoorClass = new UpdateSectionForDoorButton();
+            //updateDoorClass.UpdateDoorSection(application);
             return Result.Succeeded;
         }
 

@@ -49,8 +49,34 @@ namespace ArmoApiVn
                 LargeImage = imgSrc,
             };
 
-            PushButton button = panel.AddItem(btnData) as PushButton;
-            button.Enabled = true;
+            Image img2 = ArmoApiVn.Properties.Resources.iconfinder_48_62705;
+            ImageSource imgSrc2 = EntensionMethod.GetImageSource(img2);
+            PushButtonData btnData2 = new PushButtonData("DoorTag", "TagDoor", Assembly.GetExecutingAssembly().Location, "ArmoApiVn.CreateTextForDoorBinding")
+            {
+                ToolTip = "Create tag for door",
+                LongDescription = "Create tag for door",
+                Image = imgSrc2,
+                LargeImage = imgSrc2,
+            };
+
+            Image img3 = ArmoApiVn.Properties.Resources.iconfinder_back_undo_62658;
+            ImageSource imgSrc3 = EntensionMethod.GetImageSource(img3);
+            PushButtonData btnData3 = new PushButtonData("UpdateDoor", "UpdateDoor", Assembly.GetExecutingAssembly().Location, "ArmoApiVn.UpdateDoorBinding")
+            {
+                ToolTip = "Update section and tag for door",
+                LongDescription = "Update section and tag for door",
+                Image = imgSrc3,
+                LargeImage = imgSrc3,
+            };
+
+            SplitButtonData splitData = new SplitButtonData("Doors", "Doors");
+            SplitButton splitButton = panel.AddItem(splitData) as SplitButton;
+            splitButton.IsSynchronizedWithCurrentItem = true;
+            splitButton.AddPushButton(btnData);
+            splitButton.AddPushButton(btnData2);
+            splitButton.AddPushButton(btnData3);
+
+
         }
     }
 }
