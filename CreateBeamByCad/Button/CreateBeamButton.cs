@@ -50,8 +50,22 @@ namespace CreateBeamByCad.Button
                 LargeImage = imgSrc,
             };
 
-            PushButton button = panel.AddItem(btnData) as PushButton;
-            button.Enabled = true;
+            Image img2 = Properties.Resources.network;
+            ImageSource imgSrc2 = ImageButton.GetImageSource(img2);
+            PushButtonData btnData2 = new PushButtonData("BeamCreateAll", "CreateAll", Assembly.GetExecutingAssembly().Location, "CreateBeamByCad.CreateBeamAllBinding")
+            {
+                ToolTip = "Create beam all",
+                LongDescription = "Create beam all",
+                Image = imgSrc2,
+                LargeImage = imgSrc2,
+            };
+
+            SplitButtonData splitData = new SplitButtonData("Beams", "Beams");
+            SplitButton splitButton = panel.AddItem(splitData) as SplitButton;
+            splitButton.IsSynchronizedWithCurrentItem = true;
+            splitButton.AddPushButton(btnData);
+            splitButton.AddPushButton(btnData2);
+
         }
     }
 }

@@ -17,8 +17,8 @@ namespace CreateBeamByCad
         {
             CreateBeamButton createBeamClass = new CreateBeamButton();
             createBeamClass.CreateBeam(a);
-            CreateBeamAllButton createBeamAllClass = new CreateBeamAllButton();
-            createBeamAllClass.CreateButtonAll(a);          
+            //CreateBeamAllButton createBeamAllClass = new CreateBeamAllButton();
+            //createBeamAllClass.CreateButtonAll(a);          
             return Result.Succeeded;
         }
 
