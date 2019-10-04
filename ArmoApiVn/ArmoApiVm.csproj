@@ -123,11 +123,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="ArmoApiVn.addin" />
+    <None Include="Resources\iconfinder_48_62705.png" />
+    <None Include="Resources\iconfinder_back_undo_62658.png" />
+    <None Include="Resources\iconfinder_Create_132699.png" />
     <Content Include="Resources\laptop.png" />
     <None Include="packages.config" />
-    <None Include="Resources\iconfinder_Create_132699.png" />
-    <None Include="Resources\iconfinder_back_undo_62658.png" />
-    <None Include="Resources\iconfinder_48_62705.png" />
     <EmbeddedResource Include="Resources\cms.png" />
   </ItemGroup>
   <ItemGroup>

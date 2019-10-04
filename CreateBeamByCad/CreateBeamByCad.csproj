@@ -112,9 +112,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="CreateBeamByCad.addin" />
+    <None Include="Resources\beam.png" />
     <None Include="Resources\network.png" />
     <None Include="Resources\nine-black-tiles.png" />
-    <None Include="Resources\beam.png" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="frmCreateBeamAll.resx">

@@ -97,6 +97,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="MainProject.addin" />
+    <None Include="Resources\full_screen_arrows.png" />
     <None Include="Resources\full-screen-arrows.png" />
   </ItemGroup>
   <ItemGroup>
