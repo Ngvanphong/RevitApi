@@ -43,7 +43,7 @@
             this.groupBox1.Controls.Add(this.radioHorizontalExtend);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(301, 37);
+            this.groupBox1.Size = new System.Drawing.Size(330, 37);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Direction";
@@ -73,7 +73,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(347, 26);
+            this.label2.Location = new System.Drawing.Point(12, 64);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(95, 13);
             this.label2.TabIndex = 2;
@@ -81,7 +81,7 @@
             // 
             // txtMaximunExtend
             // 
-            this.txtMaximunExtend.Location = new System.Drawing.Point(453, 23);
+            this.txtMaximunExtend.Location = new System.Drawing.Point(111, 61);
             this.txtMaximunExtend.Name = "txtMaximunExtend";
             this.txtMaximunExtend.Size = new System.Drawing.Size(119, 20);
             this.txtMaximunExtend.TabIndex = 3;
@@ -89,9 +89,9 @@
             // 
             // btnExtendBeam
             // 
-            this.btnExtendBeam.Location = new System.Drawing.Point(454, 56);
+            this.btnExtendBeam.Location = new System.Drawing.Point(243, 56);
             this.btnExtendBeam.Name = "btnExtendBeam";
-            this.btnExtendBeam.Size = new System.Drawing.Size(118, 35);
+            this.btnExtendBeam.Size = new System.Drawing.Size(99, 28);
             this.btnExtendBeam.TabIndex = 4;
             this.btnExtendBeam.Text = "Extend";
             this.btnExtendBeam.UseVisualStyleBackColor = true;
@@ -101,7 +101,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(584, 102);
+            this.ClientSize = new System.Drawing.Size(362, 100);
             this.Controls.Add(this.btnExtendBeam);
             this.Controls.Add(this.txtMaximunExtend);
             this.Controls.Add(this.label2);
@@ -110,7 +110,7 @@
             this.MinimizeBox = false;
             this.Name = "fromExtendBeam";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "fromExtendBeam";
+            this.Text = "frmExtendBeam";
             this.TopMost = true;
             this.Load += new System.EventHandler(this.fromExtendBeam_Load);
             this.groupBox1.ResumeLayout(false);

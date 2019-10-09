@@ -49,11 +49,10 @@
             // 
             // btnBeamCreating
             // 
-            this.btnBeamCreating.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnBeamCreating.AutoSize = true;
             this.btnBeamCreating.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnBeamCreating.Enabled = false;
-            this.btnBeamCreating.Location = new System.Drawing.Point(623, 150);
+            this.btnBeamCreating.Location = new System.Drawing.Point(361, 51);
             this.btnBeamCreating.Name = "btnBeamCreating";
             this.btnBeamCreating.Size = new System.Drawing.Size(96, 38);
             this.btnBeamCreating.TabIndex = 0;
@@ -63,9 +62,8 @@
             // 
             // btnSelectLine
             // 
-            this.btnSelectLine.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnSelectLine.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSelectLine.Location = new System.Drawing.Point(507, 150);
+            this.btnSelectLine.Location = new System.Drawing.Point(361, 7);
             this.btnSelectLine.Name = "btnSelectLine";
             this.btnSelectLine.Size = new System.Drawing.Size(96, 38);
             this.btnSelectLine.TabIndex = 1;
@@ -76,7 +74,7 @@
             // dropNameBeam
             // 
             this.dropNameBeam.FormattingEnabled = true;
-            this.dropNameBeam.Location = new System.Drawing.Point(110, 31);
+            this.dropNameBeam.Location = new System.Drawing.Point(80, 7);
             this.dropNameBeam.Name = "dropNameBeam";
             this.dropNameBeam.Size = new System.Drawing.Size(238, 21);
             this.dropNameBeam.TabIndex = 3;
@@ -90,7 +88,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(42, 34);
+            this.label1.Location = new System.Drawing.Point(12, 10);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(65, 13);
             this.label1.TabIndex = 4;
@@ -102,7 +100,7 @@
             this.goupPosition.Controls.Add(this.radioOriginBeam);
             this.goupPosition.Controls.Add(this.radioLeftBeam);
             this.goupPosition.Controls.Add(this.radioCenterBeam);
-            this.goupPosition.Location = new System.Drawing.Point(45, 75);
+            this.goupPosition.Location = new System.Drawing.Point(12, 39);
             this.goupPosition.Name = "goupPosition";
             this.goupPosition.Size = new System.Drawing.Size(303, 41);
             this.goupPosition.TabIndex = 9;
@@ -148,7 +146,7 @@
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.txtStartOffset);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Location = new System.Drawing.Point(45, 139);
+            this.groupBox1.Location = new System.Drawing.Point(12, 90);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(445, 60);
             this.groupBox1.TabIndex = 10;
@@ -194,7 +192,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
-            this.ClientSize = new System.Drawing.Size(731, 211);
+            this.ClientSize = new System.Drawing.Size(467, 159);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.goupPosition);
             this.Controls.Add(this.label1);
