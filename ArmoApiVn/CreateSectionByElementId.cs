@@ -33,8 +33,8 @@ namespace ArmoApiVn
                 {
 
                     FamilyInstance element = doc.GetElement(item.ElementIdSection) as FamilyInstance;
-                    var width = element.Symbol.get_Parameter(BuiltInParameter.DOOR_WIDTH).AsDouble();
-                    var height = element.Symbol.get_Parameter(BuiltInParameter.DOOR_HEIGHT).AsDouble();
+                    var width = element.Symbol.get_Parameter(BuiltInParameter.DOOR_WIDTH).AsDouble();//check again
+                    var height = element.Symbol.get_Parameter(BuiltInParameter.DOOR_HEIGHT).AsDouble();//check again
                     var localPonint = element.Location as LocationPoint;
                     var hostWall = element.Host;
                     LocationCurve locationCurve = hostWall.Location as LocationCurve;
@@ -46,7 +46,7 @@ namespace ArmoApiVn
                     XYZ pt = lineWall.GetEndPoint(0);
                     XYZ qt = lineWall.GetEndPoint(1);
                     XYZ v = qt - pt;
-                    XYZ md = localPonint.Point;
+                    XYZ md = localPonint.Point;//check agian
 
                     //XYZ p;
                     //XYZ q;
