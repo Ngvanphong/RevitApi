@@ -61,3 +61,4 @@ C:\Users\Windows 10\Documents\revit api\ArmoApi\ArmoApiVn\obj\2019\ArmoApiVn.Pro
 C:\Users\Windows 10\Documents\revit api\ArmoApi\ArmoApiVn\obj\2019\ArmoApiVm.csproj.GenerateResource.Cache
 C:\Users\Windows 10\Documents\revit api\ArmoApi\ArmoApiVn\obj\2019\ArmoApiVn.dll
 C:\Users\Windows 10\Documents\revit api\ArmoApi\ArmoApiVn\obj\2019\ArmoApiVn.pdb
+C:\Users\Windows 10\Documents\revit api\ArmoApi\ArmoApiVn\obj\2019\ArmoApiVn.SettingDoor.frmSettingDoor.resources

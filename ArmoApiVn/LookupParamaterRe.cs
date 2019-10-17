@@ -8,6 +8,10 @@ using Autodesk.Revit.Attributes;
 using Autodesk.Revit.DB;
 using Autodesk.Revit.UI;
 using ArmoApiVn.Common;
+using System.IO;
+using System.Xml.Linq;
+using ArmoApiVn.SettingDoor;
+using System.Windows.Forms;
 
 namespace ArmoApiVn
 {
@@ -32,7 +36,16 @@ namespace ArmoApiVn
                 .Cast<Family>().Where<Family>(f => FamilyFirstSymbolCategoryEquals(f, categoryType));
 
             List<FamilyElement> familyElemtents = new List<FamilyElement>();
-
+            IEnumerable<XElement> xmlElement=null;
+            try
+            {
+                string name = _doc.Title + "DoorSetting.xml";
+                string fullPath = Path.GetFullPath(name);
+                var xmlDoc = XDocument.Load(fullPath);
+                xmlElement = xmlDoc.Element("Table").Elements("FamilyDoor");
+            }
+            catch {}
+            
             foreach (Family family in families)
             {
                 FamilySymbolFilter filterFamSym = new FamilySymbolFilter(family.Id);
@@ -44,7 +57,7 @@ namespace ArmoApiVn
                     foreach (FamilyInstance item in elementCategories)
                     {
 
-                        if (item.Symbol.FamilyName != ParameterCommon.FamilyNotUser&& item.Symbol.FamilyName != ParameterCommon.FamilyNotUser2)
+                        if (CheckFamilyExcept(item.Symbol.Name,xmlElement) == false)
                         {
                             if (item.Symbol.FamilyName == family.Name)
                             {
@@ -126,7 +139,7 @@ namespace ArmoApiVn
 
         }
 
-        static bool FamilyFirstSymbolCategoryEquals(Family f, BuiltInCategory bic)
+       public static bool FamilyFirstSymbolCategoryEquals(Family f, BuiltInCategory bic)
         {
             Document doc = f.Document;
 
@@ -135,6 +148,26 @@ namespace ArmoApiVn
             Category cat = (0 == ids.Count) ? null : doc.GetElement(ids.First<ElementId>()).Category;
 
             return null != cat && cat.Id.IntegerValue.Equals((int)bic);
+        }
+
+        public static bool CheckFamilyExcept(string familyName,IEnumerable<XElement> xmlElement)
+        {
+            bool except = false;
+            try
+            { 
+                if (xmlElement.Count() > 0)
+                {
+                    if (xmlElement.Where(x => x.Value == familyName).Count() > 0)
+                    {
+                        except = true;
+                    }
+                }
+            }
+            catch
+            {
+                return except;
+            }           
+            return except;
         }
 
         public static string ParameterToString(Parameter param)

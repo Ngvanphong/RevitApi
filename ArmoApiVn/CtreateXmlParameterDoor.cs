@@ -100,8 +100,7 @@ namespace ArmoApiVn
             string name = doc.Title + "valuetext.xml";
             string fullPath = Path.GetFullPath(name);
             try
-            {
-           
+            {           
                 var xmlDoc = XDocument.Load(fullPath);              
                 XElement elem = new XElement("TextDoor",
                 new XElement("Id", valueText.TextId.ToString()),
@@ -128,7 +127,6 @@ namespace ArmoApiVn
                 writer.WriteEndDocument();
                 writer.Close();
             }
-
         }
         public void CreateNodeText(ValueDoorText element, XmlTextWriter writer)
         {

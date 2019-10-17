@@ -79,6 +79,7 @@
     <Reference Include="System.Data.Linq" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.XML" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="WindowsBase" />
@@ -115,6 +116,14 @@
       <DesignTime>True</DesignTime>
     </Compile>
     <Compile Include="SelectionFilterCategory.cs" />
+    <Compile Include="SettingDoor\AppPenalSettingDoor.cs" />
+    <Compile Include="SettingDoor\frmSettingDoor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SettingDoor\frmSettingDoor.Designer.cs">
+      <DependentUpon>frmSettingDoor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SettingDoor\SettingDoorBinding.cs" />
     <Compile Include="UpdateDoor.cs" />
     <Compile Include="UpdateDoorBinding.cs" />
     <Compile Include="UpdateSectionDoor.cs" />
@@ -123,9 +132,13 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="ArmoApiVn.addin" />
+    <EmbeddedResource Include="SettingDoor\frmSettingDoor.resx">
+      <DependentUpon>frmSettingDoor.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Resources\iconfinder_48_62705.png" />
     <None Include="Resources\iconfinder_back_undo_62658.png" />
     <None Include="Resources\iconfinder_Create_132699.png" />
+    <None Include="Resources\icons8-gear-32.png" />
     <Content Include="Resources\laptop.png" />
     <None Include="packages.config" />
     <EmbeddedResource Include="Resources\cms.png" />

@@ -69,12 +69,23 @@ namespace ArmoApiVn
                 LargeImage = imgSrc3,
             };
 
+            Image img4 = ArmoApiVn.Properties.Resources.icons8_gear_32;
+            ImageSource imgSrc4 = EntensionMethod.GetImageSource(img4);
+            PushButtonData btnData4 = new PushButtonData("SettingDoor", "SettingDoor", Assembly.GetExecutingAssembly().Location, "ArmoApiVn.SettingDoor.SettingDoorBinding")
+            {
+                ToolTip = "Setting to create section door",
+                LongDescription = "Setting to create section door",
+                Image = imgSrc4,
+                LargeImage = imgSrc4,
+            };
+
             SplitButtonData splitData = new SplitButtonData("Doors", "Doors");
             SplitButton splitButton = panel.AddItem(splitData) as SplitButton;
             splitButton.IsSynchronizedWithCurrentItem = true;
             splitButton.AddPushButton(btnData);
             splitButton.AddPushButton(btnData2);
             splitButton.AddPushButton(btnData3);
+            splitButton.AddPushButton(btnData4);
 
 
         }

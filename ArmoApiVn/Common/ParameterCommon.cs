@@ -29,8 +29,5 @@ namespace ArmoApiVn.Common
 
         public const string SectionStypeChose = "Building Section";
 
-        public const string FamilyNotUser = "枠";
-
-        public const string FamilyNotUser2 = "枠";
     }
 }
