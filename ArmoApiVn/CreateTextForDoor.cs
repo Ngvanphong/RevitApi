@@ -90,20 +90,17 @@ namespace ArmoApiVn
                 var parameterfind = element.Symbol.LookupParameter(para);
                 if (parameterfind == null) parameterfind = element.LookupParameter(para);
                 string valueParameter = LookupParamaterRe.ParameterToString(parameterfind);
-                switch (para)
+                if(para== ParameterCommon.Door3)
                 {
-                    case ParameterCommon.Door3:
-                        valueText.Door3 = valueParameter;
-                        break;
-                    case ParameterCommon.Door4:
-                        valueText.Door4 = valueParameter;
-                        break;
-                    case ParameterCommon.Door5:
-                        valueText.Door5 = valueParameter;
-                        break;
+                    valueText.Door3 = valueParameter;
+                } else if(para == ParameterCommon.Door4)
+                {
+                    valueText.Door4 = valueParameter;
+                }else if(para== ParameterCommon.Door5)
+                {
+                    valueText.Door5 = valueParameter;
                 }
             }
-            
             return valueText;
         }
     }

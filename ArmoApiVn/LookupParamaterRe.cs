@@ -86,17 +86,17 @@ namespace ArmoApiVn
                     var parameterfind = element.Symbol.LookupParameter(para);
                     if (parameterfind == null) parameterfind = element.LookupParameter(para);
                     string valueParameter = ParameterToString(parameterfind);
-                    switch (para)
+                    if (para == ParameterCommon.Door3)
                     {
-                        case ParameterCommon.Door3:
-                            item.Door3 = valueParameter;
-                            break;
-                        case ParameterCommon.Door4:
-                            item.Door4 = valueParameter;
-                            break;
-                        case ParameterCommon.Door5:
-                            item.Door5 = valueParameter;
-                            break;
+                        item.Door3 = valueParameter;
+                    }
+                    else if (para == ParameterCommon.Door4)
+                    {
+                        item.Door4 = valueParameter;
+                    }
+                    else if (para == ParameterCommon.Door5)
+                    {
+                        item.Door5 = valueParameter;
                     }
                 }
 
@@ -120,21 +120,19 @@ namespace ArmoApiVn
                 var parameterfind = elementDoor.Symbol.LookupParameter(para);
                 if (parameterfind == null) parameterfind = elementDoor.LookupParameter(para);
                 string valueParameter = ParameterToString(parameterfind);
-                switch (para)
+                if (para == ParameterCommon.Door3)
                 {
-                    case ParameterCommon.Door3:
-                        familyElemtent.Door3 = valueParameter;
-                        break;
-                    case ParameterCommon.Door4:
-                        familyElemtent.Door4 = valueParameter;
-                        break;
-                    case ParameterCommon.Door5:
-                        familyElemtent.Door5 = valueParameter;
-                        break;
+                    familyElemtent.Door3 = valueParameter;
+                }
+                else if (para == ParameterCommon.Door4)
+                {
+                    familyElemtent.Door4 = valueParameter;
+                }
+                else if (para == ParameterCommon.Door5)
+                {
+                    familyElemtent.Door5 = valueParameter;
                 }
             }
-
-
             return familyElemtent;
 
         }
@@ -179,8 +177,6 @@ namespace ArmoApiVn
                 return val;
             }
 
-            // To get to the parameter value, we need to pause it depending on its storage type 
-
             switch (param.StorageType)
             {
                 case StorageType.Double:
@@ -188,16 +184,16 @@ namespace ArmoApiVn
                     val = dVal.ToString();
                     break;
                 case StorageType.Integer:
-                    int iVal = param.AsInteger();
-                    val = iVal.ToString();
+                    string iVal = param.AsValueString();
+                    val = iVal;
                     break;
                 case StorageType.String:
                     string sVal = param.AsString();
                     val = sVal;
                     break;
                 case StorageType.ElementId:
-                    ElementId idVal = param.AsElementId();
-                    val = idVal.IntegerValue.ToString();
+                    string idVal = param.AsValueString();
+                    val = idVal;
                     break;
                 case StorageType.None:
                     break;
