@@ -2,7 +2,7 @@
 <Table>
   <TextDoor>
     <Id>1093287</Id>
-    <Name>800 x 2101</Name>
+    <Name>800 x 2100</Name>
     <NameFamily>Single-Flush</NameFamily>
     <ElementId>422466</ElementId>
     <Width>800</Width>
@@ -11,7 +11,7 @@
   </TextDoor>
   <TextDoor>
     <Id>1093258</Id>
-    <Name>800 x 2101</Name>
+    <Name>800 x 2100</Name>
     <NameFamily>Single-Flush</NameFamily>
     <ElementId>422466</ElementId>
     <Width>800</Width>
