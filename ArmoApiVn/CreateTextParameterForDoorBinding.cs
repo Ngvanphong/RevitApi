@@ -25,6 +25,8 @@ namespace ArmoApiVn
             UIDocument uidoc = uiapp.ActiveUIDocument;
             Application app = uiapp.Application;
             Document doc = uidoc.Document;
+            string name= doc.Title + "DoorSetting.xml";
+            GetProperites.UpdateProperties(name);
             List<FamilyElement> listElemtParamenter = new List<FamilyElement>();
             LookupParamaterRe lookupClass = new LookupParamaterRe(uiapp);
             listElemtParamenter = lookupClass.LookValuePramater(ParameterCommon.Door, BuiltInCategory.OST_Doors);

@@ -10,8 +10,10 @@ namespace ArmoApiVn.SettingDoor
     {
         public static frmSettingDoor myFormSettingDoor;
         public static string nameDoorSetting = string.Empty;
+        public static int index;
         public static void ShowSettingDoor()
         {
+            index = 1;
             myFormSettingDoor = new frmSettingDoor();
             myFormSettingDoor.Show();
         }

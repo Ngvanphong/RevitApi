@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 
 namespace ArmoApiVn.Common
 {
@@ -29,12 +31,46 @@ namespace ArmoApiVn.Common
 
         public static string SectionStypeChose = "Building Section";
 
-        private static List<string> GetNamePara()
+    }
+    public class GetProperites
+    {
+        public GetProperites()
         {
-            List<string> listString = new List<string>();
-            return listString;
-        }
 
+        }
+        public static void UpdateProperties(string name)
+        {
+            try
+            {
+                string fullPath = Path.GetFullPath(name);
+                var xmlDoc = XDocument.Load(fullPath);
+                var xmlElement = xmlDoc.Element("Table").Elements("Properties");
+                int index = 0;
+                foreach(var element in xmlElement)
+                {
+                    if (index == 0)
+                    {
+                        ParameterCommon.Door3= element.Value; 
+                    } else if (index == 1)
+                    {
+                        ParameterCommon.Door4 = element.Value;
+                    }
+                    else if (index == 2)
+                    {
+                        ParameterCommon.Door5 = element.Value;
+                    }
+                    index = index+1;
+                }
+                ParameterCommon.TextTypeChose=  xmlDoc.Element("Table").Elements("TextType").First().Value;
+                ParameterCommon.SectionStypeChose = xmlDoc.Element("Table").Elements("SectionType").First().Value;
+                ParameterCommon.Door = ParameterCommon.Door3 + ";" + ParameterCommon.Door4 + ";" + ParameterCommon.Door5;
+            }
+            catch
+            {
+                ParameterCommon.Door = ParameterCommon.Door3 + ";" + ParameterCommon.Door4 + ";" + ParameterCommon.Door5;
+            }
+            
+        }
     }
     
 }

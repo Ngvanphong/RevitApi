@@ -139,6 +139,12 @@
     <None Include="Resources\iconfinder_back_undo_62658.png" />
     <None Include="Resources\iconfinder_Create_132699.png" />
     <None Include="Resources\icons8-gear-32.png" />
+    <None Include="Resources\icons8-chevron-down-32.png" />
+    <None Include="Resources\icons8-low-importance-16 222.png" />
+    <None Include="Resources\icons8-low-importance-64.png" />
+    <None Include="Resources\icons8-low-importance-40.png" />
+    <None Include="Resources\icons8-low-importance-32.png" />
+    <None Include="Resources\icons8-upward-arrow-32ggggg.png" />
     <Content Include="Resources\laptop.png" />
     <None Include="packages.config" />
     <EmbeddedResource Include="Resources\cms.png" />

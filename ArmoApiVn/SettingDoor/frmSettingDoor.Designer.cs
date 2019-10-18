@@ -37,7 +37,10 @@
             this.comboBoxTextNoteType = new System.Windows.Forms.ComboBox();
             this.comboBoxSectionType = new System.Windows.Forms.ComboBox();
             this.listViewChooseParameter = new System.Windows.Forms.ListView();
+            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.label4 = new System.Windows.Forms.Label();
+            this.btnTopParameter = new System.Windows.Forms.Button();
+            this.btnDownProperties = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // listViewFamilyDoor
@@ -45,9 +48,9 @@
             this.listViewFamilyDoor.CheckBoxes = true;
             this.listViewFamilyDoor.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader1});
-            this.listViewFamilyDoor.Location = new System.Drawing.Point(13, 29);
+            this.listViewFamilyDoor.Location = new System.Drawing.Point(287, 95);
             this.listViewFamilyDoor.Name = "listViewFamilyDoor";
-            this.listViewFamilyDoor.Size = new System.Drawing.Size(264, 186);
+            this.listViewFamilyDoor.Size = new System.Drawing.Size(271, 115);
             this.listViewFamilyDoor.TabIndex = 0;
             this.listViewFamilyDoor.UseCompatibleStateImageBehavior = false;
             this.listViewFamilyDoor.View = System.Windows.Forms.View.Details;
@@ -55,12 +58,12 @@
             // columnHeader1
             // 
             this.columnHeader1.Text = "Family Name";
-            this.columnHeader1.Width = 263;
+            this.columnHeader1.Width = 268;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(13, 10);
+            this.label1.Location = new System.Drawing.Point(284, 76);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(134, 13);
             this.label1.TabIndex = 1;
@@ -112,26 +115,64 @@
             // 
             // listViewChooseParameter
             // 
-            this.listViewChooseParameter.Location = new System.Drawing.Point(287, 100);
+            this.listViewChooseParameter.CheckBoxes = true;
+            this.listViewChooseParameter.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader2});
+            this.listViewChooseParameter.Location = new System.Drawing.Point(12, 29);
             this.listViewChooseParameter.Name = "listViewChooseParameter";
-            this.listViewChooseParameter.Size = new System.Drawing.Size(273, 115);
+            this.listViewChooseParameter.Size = new System.Drawing.Size(218, 217);
             this.listViewChooseParameter.TabIndex = 5;
             this.listViewChooseParameter.UseCompatibleStateImageBehavior = false;
+            this.listViewChooseParameter.View = System.Windows.Forms.View.Details;
+            // 
+            // columnHeader2
+            // 
+            this.columnHeader2.Text = "Pamameters";
+            this.columnHeader2.Width = 269;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(287, 81);
+            this.label4.Location = new System.Drawing.Point(12, 9);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(101, 13);
             this.label4.TabIndex = 6;
             this.label4.Text = "Choose parameters:";
             // 
+            // btnTopParameter
+            // 
+            this.btnTopParameter.BackColor = System.Drawing.SystemColors.Control;
+            this.btnTopParameter.BackgroundImage = global::ArmoApiVn.Properties.Resources.icons8_upward_arrow_32ggggg;
+            this.btnTopParameter.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnTopParameter.Location = new System.Drawing.Point(236, 95);
+            this.btnTopParameter.Name = "btnTopParameter";
+            this.btnTopParameter.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.btnTopParameter.Size = new System.Drawing.Size(39, 41);
+            this.btnTopParameter.TabIndex = 7;
+            this.btnTopParameter.UseVisualStyleBackColor = false;
+            this.btnTopParameter.Click += new System.EventHandler(this.btnTopParameter_Click);
+            // 
+            // btnDownProperties
+            // 
+            this.btnDownProperties.BackColor = System.Drawing.SystemColors.Control;
+            this.btnDownProperties.BackgroundImage = global::ArmoApiVn.Properties.Resources.icons8_low_importance_32;
+            this.btnDownProperties.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnDownProperties.Location = new System.Drawing.Point(236, 48);
+            this.btnDownProperties.Name = "btnDownProperties";
+            this.btnDownProperties.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.btnDownProperties.Size = new System.Drawing.Size(39, 41);
+            this.btnDownProperties.TabIndex = 7;
+            this.btnDownProperties.UseVisualStyleBackColor = false;
+            this.btnDownProperties.Click += new System.EventHandler(this.btnDownProperties_Click_1);
+            // 
             // frmSettingDoor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(572, 252);
+            this.BackColor = System.Drawing.SystemColors.Control;
+            this.ClientSize = new System.Drawing.Size(572, 258);
+            this.Controls.Add(this.btnDownProperties);
+            this.Controls.Add(this.btnTopParameter);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.listViewChooseParameter);
             this.Controls.Add(this.comboBoxSectionType);
@@ -141,6 +182,7 @@
             this.Controls.Add(this.btnSettingDoor);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.listViewFamilyDoor);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmSettingDoor";
@@ -163,5 +205,8 @@
         public System.Windows.Forms.ComboBox comboBoxSectionType;
         private System.Windows.Forms.Label label4;
         public System.Windows.Forms.ListView listViewChooseParameter;
+        private System.Windows.Forms.ColumnHeader columnHeader2;
+        public System.Windows.Forms.Button btnTopParameter;
+        public System.Windows.Forms.Button btnDownProperties;
     }
 }

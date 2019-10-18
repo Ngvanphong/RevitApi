@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Table>
+  <FamilyDoor>Curtain Wall Dbl Glass</FamilyDoor>
+  <FamilyDoor>Entrance door</FamilyDoor>
+  <Properties>VanPhong</Properties>
+  <Properties>Height</Properties>
+  <Properties>Width</Properties>
+  <SectionType>Building Section</SectionType>
+  <TextType>2.5mm Arial</TextType>
+</Table>

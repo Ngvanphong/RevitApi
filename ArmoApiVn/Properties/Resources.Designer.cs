@@ -93,9 +93,69 @@ namespace ArmoApiVn.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_chevron_down_32 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-chevron-down-32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_gear_32 {
             get {
                 object obj = ResourceManager.GetObject("icons8_gear_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_low_importance_16_222 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-low-importance-16 222", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_low_importance_32 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-low-importance-32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_low_importance_40 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-low-importance-40", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_low_importance_64 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-low-importance-64", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_upward_arrow_32ggggg {
+            get {
+                object obj = ResourceManager.GetObject("icons8-upward-arrow-32ggggg", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

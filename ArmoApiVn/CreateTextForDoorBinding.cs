@@ -25,6 +25,8 @@ namespace ArmoApiVn
             UIDocument uidoc = uiapp.ActiveUIDocument;
             Application app = uiapp.Application;
             Document doc = uidoc.Document;
+            string name = doc.Title + "DoorSetting.xml";
+            GetProperites.UpdateProperties(name);
             CreateTextForDoor textdoor = new CreateTextForDoor(uiapp);
             bool success;
             ValueDoorText valueText= textdoor.CreateText(ParameterCommon.Door,out success);

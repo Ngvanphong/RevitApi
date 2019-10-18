@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Table>
+  <Door>
+    <Id>422466</Id>
+    <NameFamily>M_Double-Flush</NameFamily>
+    <NameTypeFamily>1730 x 2134mm</NameTypeFamily>
+    <VanPhong>none</VanPhong>
+    <Height>2134</Height>
+    <Width>1730</Width>
+  </Door>
+  <Door>
+    <Id>425292</Id>
+    <NameFamily>Single-Flush</NameFamily>
+    <NameTypeFamily>800 x 2100</NameTypeFamily>
+    <VanPhong>0</VanPhong>
+    <Height>2100</Height>
+    <Width>800</Width>
+  </Door>
+  <Door>
+    <Id>906937</Id>
+    <NameFamily>Pocket_Slider_Door_5851</NameFamily>
+    <NameTypeFamily>2.027 x 0.945</NameTypeFamily>
+    <VanPhong>none</VanPhong>
+    <Height>2027</Height>
+    <Width>945</Width>
+  </Door>
+</Table>
