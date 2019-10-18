@@ -54,4 +54,13 @@
     <AnalyticConstruction>&lt;None&gt;</AnalyticConstruction>
     <ArchitraveOffset>none</ArchitraveOffset>
   </TextDoor>
+  <TextDoor>
+    <Id>1093808</Id>
+    <Name>800 x 2100</Name>
+    <NameFamily>Single-Flush</NameFamily>
+    <ElementId>422466</ElementId>
+    <Height>2100</Height>
+    <Width>800</Width>
+    <VanPhong>0</VanPhong>
+  </TextDoor>
 </Table>

@@ -4,32 +4,24 @@
     <Id>505974</Id>
     <NameFamily>Pocket_Slider_Door_5851</NameFamily>
     <NameTypeFamily>2.027 x 0.945</NameTypeFamily>
-    <AssemblyCode>C1020</AssemblyCode>
-    <AnalyticConstruction>&lt;None&gt;</AnalyticConstruction>
-    <ArchitraveOffset>5</ArchitraveOffset>
+    <Height>2027</Height>
+    <Width>945</Width>
+    <VanPhong>none</VanPhong>
   </Door>
   <Door>
     <Id>906937</Id>
     <NameFamily>M_Double-Flush</NameFamily>
     <NameTypeFamily>1730 x 2134mm</NameTypeFamily>
-    <AssemblyCode />
-    <AnalyticConstruction>Metal</AnalyticConstruction>
-    <ArchitraveOffset>none</ArchitraveOffset>
+    <Height>2134</Height>
+    <Width>1730</Width>
+    <VanPhong>none</VanPhong>
   </Door>
   <Door>
-    <Id>430997</Id>
-    <NameFamily>Single-Flush</NameFamily>
-    <NameTypeFamily>800 x 2101</NameTypeFamily>
-    <AssemblyCode>C1020</AssemblyCode>
-    <AnalyticConstruction>&lt;None&gt;</AnalyticConstruction>
-    <ArchitraveOffset>none</ArchitraveOffset>
-  </Door>
-  <Door>
-    <Id>431064</Id>
+    <Id>422466</Id>
     <NameFamily>Single-Flush</NameFamily>
     <NameTypeFamily>800 x 2100</NameTypeFamily>
-    <AssemblyCode>C1020</AssemblyCode>
-    <AnalyticConstruction>&lt;None&gt;</AnalyticConstruction>
-    <ArchitraveOffset>none</ArchitraveOffset>
+    <Height>2100</Height>
+    <Width>800</Width>
+    <VanPhong>0</VanPhong>
   </Door>
 </Table>
