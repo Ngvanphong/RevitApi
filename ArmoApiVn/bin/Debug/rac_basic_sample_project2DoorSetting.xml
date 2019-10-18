@@ -2,9 +2,9 @@
 <Table>
   <FamilyDoor>Curtain Wall Dbl Glass</FamilyDoor>
   <FamilyDoor>Entrance door</FamilyDoor>
-  <Properties>VanPhong</Properties>
-  <Properties>Height</Properties>
-  <Properties>Width</Properties>
-  <SectionType>Building Section</SectionType>
+  <Properties>Assembly Code</Properties>
+  <Properties>Analytic Construction</Properties>
+  <Properties>Architrave Offset</Properties>
+  <SectionType>Building Section 2</SectionType>
   <TextType>2.5mm Arial</TextType>
 </Table>

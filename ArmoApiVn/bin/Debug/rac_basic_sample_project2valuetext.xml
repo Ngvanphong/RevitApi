@@ -2,164 +2,56 @@
 <Table>
   <TextDoor>
     <Id>1093808</Id>
-    <Name>800 x 2100</Name>
-    <NameFamily>Single-Flush</NameFamily>
-    <ElementId>422466</ElementId>
-    <Width />
-    <Height />
-    <Door_W />
-  </TextDoor>
-  <TextDoor>
-    <Id>1093810</Id>
-    <Name>2.027 x 0.945</Name>
-    <NameFamily>Pocket_Slider_Door_5851</NameFamily>
-    <ElementId>505974</ElementId>
-    <Width />
-    <Height />
-    <Door_W />
-  </TextDoor>
-  <TextDoor>
-    <Id>1093812</Id>
-    <Name>2.027 x 0.945</Name>
-    <NameFamily>Pocket_Slider_Door_5851</NameFamily>
-    <ElementId>505974</ElementId>
-    <Width />
-    <Height />
-    <Door_W />
-  </TextDoor>
-  <TextDoor>
-    <Id>1093814</Id>
-    <Name>2.027 x 0.945</Name>
-    <NameFamily>Pocket_Slider_Door_5851</NameFamily>
-    <ElementId>505974</ElementId>
-    <Width />
-    <Height />
-    <Door_W />
-  </TextDoor>
-  <TextDoor>
-    <Id>1093808</Id>
-    <Name>800 x 2100</Name>
-    <NameFamily>Single-Flush</NameFamily>
-    <ElementId>422466</ElementId>
-    <Height />
-    <VanPhong />
-    <Width />
-  </TextDoor>
-  <TextDoor>
-    <Id>1093808</Id>
-    <Name>800 x 2100</Name>
-    <NameFamily>Single-Flush</NameFamily>
-    <ElementId>422466</ElementId>
-    <Height>2100</Height>
-    <VanPhong>0</VanPhong>
-    <Width>800</Width>
-  </TextDoor>
-  <TextDoor>
-    <Id>1093820</Id>
-    <Name>2.027 x 0.945</Name>
-    <NameFamily>Pocket_Slider_Door_5851</NameFamily>
-    <ElementId>505974</ElementId>
-    <Height>2027</Height>
-    <VanPhong>none</VanPhong>
-    <Width>945</Width>
-  </TextDoor>
-  <TextDoor>
-    <Id>1093870</Id>
     <Name>1730 x 2134mm</Name>
-    <NameFamily>M_Double-Flush</NameFamily>
-    <ElementId>906937</ElementId>
-    <Height>2134</Height>
-    <VanPhong>none</VanPhong>
-    <Width>1730</Width>
-  </TextDoor>
-  <TextDoor>
-    <Id>1093808</Id>
-    <Name>800 x 2100</Name>
     <NameFamily>Single-Flush</NameFamily>
     <ElementId>422466</ElementId>
-    <Width>800</Width>
-    <Height>2100</Height>
-    <Door_W>none</Door_W>
+    <AssemblyCode></AssemblyCode>
+    <AnalyticConstruction>Metal</AnalyticConstruction>
+    <ArchitraveOffset>none</ArchitraveOffset>
   </TextDoor>
   <TextDoor>
     <Id>1093810</Id>
     <Name>2.027 x 0.945</Name>
     <NameFamily>Pocket_Slider_Door_5851</NameFamily>
     <ElementId>505974</ElementId>
-    <Width>945</Width>
-    <Height>2027</Height>
-    <Door_W>none</Door_W>
-  </TextDoor>
-  <TextDoor>
-    <Id>1093839</Id>
-    <Name>800 x 2100</Name>
-    <NameFamily>Single-Flush</NameFamily>
-    <ElementId>422466</ElementId>
-    <Height>2100</Height>
-    <VanPhong>0</VanPhong>
-    <Width>800</Width>
-  </TextDoor>
-  <TextDoor>
-    <Id>1093808</Id>
-    <Name>800 x 2100</Name>
-    <NameFamily>Single-Flush</NameFamily>
-    <ElementId>422466</ElementId>
-    <Width>800</Width>
-    <Height>2100</Height>
-    <VanPhong>0</VanPhong>
-  </TextDoor>
-  <TextDoor>
-    <Id>1093810</Id>
-    <Name>2.027 x 0.945</Name>
-    <NameFamily>Pocket_Slider_Door_5851</NameFamily>
-    <ElementId>505974</ElementId>
-    <Width>945</Width>
-    <Height>2027</Height>
-    <VanPhong>none</VanPhong>
+    <AssemblyCode>C1020</AssemblyCode>
+    <AnalyticConstruction>&lt;None&gt;</AnalyticConstruction>
+    <ArchitraveOffset>5</ArchitraveOffset>
   </TextDoor>
   <TextDoor>
     <Id>1093812</Id>
     <Name>1730 x 2134mm</Name>
     <NameFamily>M_Double-Flush</NameFamily>
     <ElementId>906937</ElementId>
-    <Width>1730</Width>
-    <Height>2134</Height>
-    <VanPhong>none</VanPhong>
+    <AssemblyCode></AssemblyCode>
+    <AnalyticConstruction>Metal</AnalyticConstruction>
+    <ArchitraveOffset>none</ArchitraveOffset>
   </TextDoor>
   <TextDoor>
-    <Id>1093841</Id>
+    <Id>1093868</Id>
+    <Name>1730 x 2134mm</Name>
+    <NameFamily>Single-Flush</NameFamily>
+    <ElementId>425292</ElementId>
+    <AssemblyCode></AssemblyCode>
+    <AnalyticConstruction>Metal</AnalyticConstruction>
+    <ArchitraveOffset>none</ArchitraveOffset>
+  </TextDoor>
+  <TextDoor>
+    <Id>1093906</Id>
+    <Name>800 x 2101</Name>
+    <NameFamily>Single-Flush</NameFamily>
+    <ElementId>430997</ElementId>
+    <AssemblyCode>C1020</AssemblyCode>
+    <AnalyticConstruction>&lt;None&gt;</AnalyticConstruction>
+    <ArchitraveOffset>none</ArchitraveOffset>
+  </TextDoor>
+  <TextDoor>
+    <Id>1093974</Id>
     <Name>800 x 2100</Name>
     <NameFamily>Single-Flush</NameFamily>
-    <ElementId>422466</ElementId>
-    <VanPhong>0</VanPhong>
-    <Height>2100</Height>
-    <Width>800</Width>
-  </TextDoor>
-  <TextDoor>
-    <Id>1093843</Id>
-    <Name>2.027 x 0.945</Name>
-    <NameFamily>Pocket_Slider_Door_5851</NameFamily>
-    <ElementId>505974</ElementId>
-    <VanPhong>none</VanPhong>
-    <Height>2027</Height>
-    <Width>945</Width>
-  </TextDoor>
-  <TextDoor>
-    <Id>1093845</Id>
-    <Name>1730 x 2134mm</Name>
-    <NameFamily>M_Double-Flush</NameFamily>
-    <ElementId>906937</ElementId>
-    <VanPhong>none</VanPhong>
-    <Height>2134</Height>
-    <Width>1730</Width>
-  </TextDoor>
-  <TextDoor>
-    <Id>1093914</Id>
-    <Name>1730 x 2134mm</Name>
-    <NameFamily>M_Double-Flush</NameFamily>
-    <ElementId>422466</ElementId>
-    <VanPhong>none</VanPhong>
-    <Height>2134</Height>
-    <Width>1730</Width>
+    <ElementId>431064</ElementId>
+    <AssemblyCode>C1020</AssemblyCode>
+    <AnalyticConstruction>&lt;None&gt;</AnalyticConstruction>
+    <ArchitraveOffset>none</ArchitraveOffset>
   </TextDoor>
 </Table>

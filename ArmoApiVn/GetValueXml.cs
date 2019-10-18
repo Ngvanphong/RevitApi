@@ -31,13 +31,13 @@ namespace ArmoApiVn
                     familyElement.NameFamily = item.Element("NameFamily").Value;
                     familyElement.ElementIdSection = new ElementId(int.Parse(item.Element("Id").Value));
                     familyElement.NameTypeFamily = item.Element("NameTypeFamily").Value;
-                    familyElement.Door3 = item.Element(ParameterCommon.Door3).Value;
-                    familyElement.Door4 = item.Element(ParameterCommon.Door4).Value;
-                    familyElement.Door5 = item.Element(ParameterCommon.Door5).Value;
+                    familyElement.Door3 = item.Element(ParameterCommon.Door3.Replace(" ", "")).Value;
+                    familyElement.Door4 = item.Element(ParameterCommon.Door4.Replace(" ", "")).Value;
+                    familyElement.Door5 = item.Element(ParameterCommon.Door5.Replace(" ", "")).Value;
                     listElements.Add(familyElement);
                 }
             }
-            catch
+            catch (Exception ex)
             {
                 
             }
@@ -59,9 +59,9 @@ namespace ArmoApiVn
                     valueText.Name = item.Element("Name").Value;
                     valueText.NameFamily = item.Element("NameFamily").Value;
                     valueText.ElementIdSection = new ElementId(int.Parse(item.Element("ElementId").Value));
-                    valueText.Door3 = item.Element(ParameterCommon.Door3).Value;
-                    valueText.Door4 = item.Element(ParameterCommon.Door4).Value;
-                    valueText.Door5 = item.Element(ParameterCommon.Door5).Value;
+                    valueText.Door3 = item.Element(ParameterCommon.Door3.Replace(" ", "")).Value;
+                    valueText.Door4 = item.Element(ParameterCommon.Door4.Replace(" ", "")).Value;
+                    valueText.Door5 = item.Element(ParameterCommon.Door5.Replace(" ", "")).Value;
                     listValue.Add(valueText);
                 }
             }

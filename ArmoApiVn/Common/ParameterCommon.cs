@@ -10,7 +10,7 @@ namespace ArmoApiVn.Common
 {
     public static class ParameterCommon
     {
-        public static string Door = Door3 + ";" + Door4 + ";" + Door5;
+        public static string Door = Door3+ ";" + Door4+ ";" + Door5;
         //Not change
         public const string Door1 = "NameFamily";
 

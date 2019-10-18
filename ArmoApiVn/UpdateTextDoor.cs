@@ -41,9 +41,9 @@ namespace ArmoApiVn
                             if (row.Element("ElementId").Value == item.ElementIdSection.ToString())
                             {
                                 row.Element(ParameterCommon.Door2).Value = valueTextModel.Name;
-                                row.Element(ParameterCommon.Door3).Value = valueTextModel.Door3;
-                                row.Element(ParameterCommon.Door4).Value = valueTextModel.Door4;
-                                row.Element(ParameterCommon.Door5).Value = valueTextModel.Door5;
+                                row.Element(ParameterCommon.Door3.Replace(" ", "")).Value = valueTextModel.Door3;
+                                row.Element(ParameterCommon.Door4.Replace(" ", "")).Value = valueTextModel.Door4;
+                                row.Element(ParameterCommon.Door5.Replace(" ", "")).Value = valueTextModel.Door5;
                                 xmlDoc.Save(name);
                                 using (Transaction t = new Transaction(doc, "Update Text Door"))
                                 {
@@ -99,9 +99,9 @@ namespace ArmoApiVn
                                 if (row.Element("ElementId").Value == item.ElementIdSection.ToString())
                                 {
                                     row.Element(ParameterCommon.Door2).Value = valueTextModel.Name;
-                                    row.Element(ParameterCommon.Door3).Value = valueTextModel.Door3;
-                                    row.Element(ParameterCommon.Door4).Value = valueTextModel.Door4;
-                                    row.Element(ParameterCommon.Door5).Value = valueTextModel.Door5;
+                                    row.Element(ParameterCommon.Door3.Replace(" ", "")).Value = valueTextModel.Door3;
+                                    row.Element(ParameterCommon.Door4.Replace(" ", "")).Value = valueTextModel.Door4;
+                                    row.Element(ParameterCommon.Door5.Replace(" ", "")).Value = valueTextModel.Door5;
                                     xmlDoc.Save(name);
                                     using (Transaction t = new Transaction(doc, "Update Text Door"))
                                     {

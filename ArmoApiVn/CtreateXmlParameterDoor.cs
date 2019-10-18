@@ -46,9 +46,9 @@ namespace ArmoApiVn
             new XElement("Id", listElementDoor.ElementIdSection.ToString()),
             new XElement("NameFamily", listElementDoor.NameFamily),
             new XElement("NameTypeFamily", listElementDoor.NameTypeFamily),
-            new XElement(ParameterCommon.Door3, listElementDoor.Door3),
-            new XElement(ParameterCommon.Door4, listElementDoor.Door4),
-            new XElement(ParameterCommon.Door5, listElementDoor.Door5)
+            new XElement(ParameterCommon.Door3.Replace(" ", ""), listElementDoor.Door3),
+            new XElement(ParameterCommon.Door4.Replace(" ", ""), listElementDoor.Door4),
+            new XElement(ParameterCommon.Door5.Replace(" ", ""), listElementDoor.Door5)
          );
             xmlDoc.Element("Table").Add(elem);
             var xmltex = xmlDoc.Element("Table");
@@ -83,13 +83,13 @@ namespace ArmoApiVn
             writer.WriteStartElement("NameTypeFamily");
             writer.WriteString(element.NameTypeFamily);
             writer.WriteEndElement();
-            writer.WriteStartElement(ParameterCommon.Door3);
+            writer.WriteStartElement(ParameterCommon.Door3.Replace(" ", ""));
             writer.WriteString(element.Door3);
             writer.WriteEndElement();
-            writer.WriteStartElement(ParameterCommon.Door4);
+            writer.WriteStartElement(ParameterCommon.Door4.Replace(" ", ""));
             writer.WriteString(element.Door4);
             writer.WriteEndElement();
-            writer.WriteStartElement(ParameterCommon.Door5);
+            writer.WriteStartElement(ParameterCommon.Door5.Replace(" ", ""));
             writer.WriteString(element.Door5);
             writer.WriteEndElement();
             writer.WriteEndElement();
@@ -107,9 +107,9 @@ namespace ArmoApiVn
                 new XElement("Name", valueText.Name),
                 new XElement("NameFamily", valueText.NameFamily),
                 new XElement("ElementId", valueText.ElementIdSection.ToString()),
-                new XElement(ParameterCommon.Door3, valueText.Door3),
-                new XElement(ParameterCommon.Door4, valueText.Door4),
-                new XElement(ParameterCommon.Door5, valueText.Door5)
+                new XElement(ParameterCommon.Door3.Replace(" ",""), valueText.Door3),
+                new XElement(ParameterCommon.Door4.Replace(" ", ""), valueText.Door4),
+                new XElement(ParameterCommon.Door5.Replace(" ", ""), valueText.Door5)
              );
                 xmlDoc.Element("Table").Add(elem);
                 var xmltex = xmlDoc.Element("Table");
@@ -143,13 +143,13 @@ namespace ArmoApiVn
             writer.WriteStartElement("ElementId");
             writer.WriteString(element.ElementIdSection.ToString());
             writer.WriteEndElement();
-            writer.WriteStartElement(ParameterCommon.Door3);
+            writer.WriteStartElement(ParameterCommon.Door3.Replace(" ", ""));
             writer.WriteString(element.Door3);
             writer.WriteEndElement();
-            writer.WriteStartElement(ParameterCommon.Door4);
+            writer.WriteStartElement(ParameterCommon.Door4.Replace(" ", ""));
             writer.WriteString(element.Door4);
             writer.WriteEndElement();
-            writer.WriteStartElement(ParameterCommon.Door5);
+            writer.WriteStartElement(ParameterCommon.Door5.Replace(" ", ""));
             writer.WriteString(element.Door5);
             writer.WriteEndElement();
             writer.WriteEndElement();
