@@ -120,7 +120,7 @@
             this.columnHeader2});
             this.listViewChooseParameter.Location = new System.Drawing.Point(12, 29);
             this.listViewChooseParameter.Name = "listViewChooseParameter";
-            this.listViewChooseParameter.Size = new System.Drawing.Size(218, 217);
+            this.listViewChooseParameter.Size = new System.Drawing.Size(229, 217);
             this.listViewChooseParameter.TabIndex = 5;
             this.listViewChooseParameter.UseCompatibleStateImageBehavior = false;
             this.listViewChooseParameter.View = System.Windows.Forms.View.Details;
@@ -144,10 +144,12 @@
             this.btnTopParameter.BackColor = System.Drawing.SystemColors.Control;
             this.btnTopParameter.BackgroundImage = global::ArmoApiVn.Properties.Resources.icons8_upward_arrow_32ggggg;
             this.btnTopParameter.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnTopParameter.Location = new System.Drawing.Point(236, 95);
+            this.btnTopParameter.FlatAppearance.BorderSize = 0;
+            this.btnTopParameter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTopParameter.Location = new System.Drawing.Point(247, 67);
             this.btnTopParameter.Name = "btnTopParameter";
             this.btnTopParameter.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.btnTopParameter.Size = new System.Drawing.Size(39, 41);
+            this.btnTopParameter.Size = new System.Drawing.Size(31, 35);
             this.btnTopParameter.TabIndex = 7;
             this.btnTopParameter.UseVisualStyleBackColor = false;
             this.btnTopParameter.Click += new System.EventHandler(this.btnTopParameter_Click);
@@ -157,10 +159,13 @@
             this.btnDownProperties.BackColor = System.Drawing.SystemColors.Control;
             this.btnDownProperties.BackgroundImage = global::ArmoApiVn.Properties.Resources.icons8_low_importance_32;
             this.btnDownProperties.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnDownProperties.Location = new System.Drawing.Point(236, 48);
+            this.btnDownProperties.FlatAppearance.BorderColor = System.Drawing.Color.Gainsboro;
+            this.btnDownProperties.FlatAppearance.BorderSize = 0;
+            this.btnDownProperties.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDownProperties.Location = new System.Drawing.Point(247, 26);
             this.btnDownProperties.Name = "btnDownProperties";
             this.btnDownProperties.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.btnDownProperties.Size = new System.Drawing.Size(39, 41);
+            this.btnDownProperties.Size = new System.Drawing.Size(31, 38);
             this.btnDownProperties.TabIndex = 7;
             this.btnDownProperties.UseVisualStyleBackColor = false;
             this.btnDownProperties.Click += new System.EventHandler(this.btnDownProperties_Click_1);
@@ -189,6 +194,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmSettingDoor";
             this.TopMost = true;
+            this.Load += new System.EventHandler(this.frmSettingDoor_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

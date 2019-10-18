@@ -21,40 +21,48 @@ namespace ArmoApiVn.SettingDoor
 
         private void btnSettingDoor_Click(object sender, EventArgs e)
         {
-            var listDoorCheck = AppPenalSettingDoor.myFormSettingDoor.listViewFamilyDoor.CheckedItems;
-            string name = AppPenalSettingDoor.nameDoorSetting;
-            XmlTextWriter writer = new XmlTextWriter(name, System.Text.Encoding.UTF8);
-            writer.WriteStartDocument(true);
-            writer.Formatting = Formatting.Indented;
-            writer.Indentation = 2;
-            writer.WriteStartElement("Table");
-            foreach (ListViewItem item in listDoorCheck)
+            try
             {
-                writer.WriteStartElement("FamilyDoor");
-                writer.WriteString(item.Text);
+                var listDoorCheck = AppPenalSettingDoor.myFormSettingDoor.listViewFamilyDoor.CheckedItems;
+                string name = AppPenalSettingDoor.nameDoorSetting;
+                XmlTextWriter writer = new XmlTextWriter(name, System.Text.Encoding.UTF8);
+                writer.WriteStartDocument(true);
+                writer.Formatting = Formatting.Indented;
+                writer.Indentation = 2;
+                writer.WriteStartElement("Table");
+                foreach (ListViewItem item in listDoorCheck)
+                {
+                    writer.WriteStartElement("FamilyDoor");
+                    writer.WriteString(item.Text);
+                    writer.WriteEndElement();
+                }
+                var listPara = AppPenalSettingDoor.myFormSettingDoor.listViewChooseParameter.CheckedItems;
+                foreach (ListViewItem para in listPara)
+                {
+                    writer.WriteStartElement("Properties");
+                    writer.WriteString(para.Text);
+                    writer.WriteEndElement();
+                }
+                var typeSection = AppPenalSettingDoor.myFormSettingDoor.comboBoxSectionType.SelectedItem.ToString();
+                var typeNote = AppPenalSettingDoor.myFormSettingDoor.comboBoxTextNoteType.SelectedItem.ToString();
+                writer.WriteStartElement("SectionType");
+                writer.WriteString(typeSection);
                 writer.WriteEndElement();
+
+                writer.WriteStartElement("TextType");
+                writer.WriteString(typeNote);
+                writer.WriteEndElement();
+
+                writer.WriteEndElement();
+                writer.WriteEndDocument();
+                writer.Close();
+                AppPenalSettingDoor.myFormSettingDoor.Hide();
             }
-            var listPara = AppPenalSettingDoor.myFormSettingDoor.listViewChooseParameter.CheckedItems;
-            foreach(ListViewItem para in listPara)
+            catch
             {
-                writer.WriteStartElement("Properties");
-                writer.WriteString(para.Text);
-                writer.WriteEndElement();
+                MessageBox.Show("You must input properties");
             }
-            var typeSection = AppPenalSettingDoor.myFormSettingDoor.comboBoxSectionType.SelectedItem.ToString();
-            var typeNote= AppPenalSettingDoor.myFormSettingDoor.comboBoxTextNoteType.SelectedItem.ToString();
-            writer.WriteStartElement("SectionType");
-            writer.WriteString(typeSection);
-            writer.WriteEndElement();
-
-            writer.WriteStartElement("TextType");
-            writer.WriteString(typeNote);
-            writer.WriteEndElement();
-
-            writer.WriteEndElement();
-            writer.WriteEndDocument();
-            writer.Close();
-            AppPenalSettingDoor.myFormSettingDoor.Hide();          
+            
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -134,6 +142,11 @@ namespace ArmoApiVn.SettingDoor
                 }
             }
 
+
+        }
+
+        private void frmSettingDoor_Load(object sender, EventArgs e)
+        {
 
         }
     }

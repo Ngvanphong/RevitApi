@@ -63,4 +63,67 @@
     <Width>800</Width>
     <VanPhong>0</VanPhong>
   </TextDoor>
+  <TextDoor>
+    <Id>1093871</Id>
+    <Name>800 x 2100</Name>
+    <NameFamily>Single-Flush</NameFamily>
+    <ElementId>422466</ElementId>
+    <AnalyticConstruction>&lt;None&gt;</AnalyticConstruction>
+    <ArchitraveOffset>none</ArchitraveOffset>
+    <AssemblyCode>C1020</AssemblyCode>
+  </TextDoor>
+  <TextDoor>
+    <Id>1093873</Id>
+    <Name>2.027 x 0.945</Name>
+    <NameFamily>Pocket_Slider_Door_5851</NameFamily>
+    <ElementId>505974</ElementId>
+    <AnalyticConstruction>&lt;None&gt;</AnalyticConstruction>
+    <ArchitraveOffset>5</ArchitraveOffset>
+    <AssemblyCode>C1020</AssemblyCode>
+  </TextDoor>
+  <TextDoor>
+    <Id>1093875</Id>
+    <Name>1730 x 2134mm</Name>
+    <NameFamily>M_Double-Flush</NameFamily>
+    <ElementId>906937</ElementId>
+    <AnalyticConstruction>Metal</AnalyticConstruction>
+    <ArchitraveOffset>none</ArchitraveOffset>
+    <AssemblyCode></AssemblyCode>
+  </TextDoor>
+  <TextDoor>
+    <Id>1093877</Id>
+    <Name>1730 x 2134mm</Name>
+    <NameFamily>M_Double-Flush</NameFamily>
+    <ElementId>906937</ElementId>
+    <AnalyticConstruction>Metal</AnalyticConstruction>
+    <ArchitraveOffset>none</ArchitraveOffset>
+    <AssemblyCode></AssemblyCode>
+  </TextDoor>
+  <TextDoor>
+    <Id>1093879</Id>
+    <Name>800 x 2100</Name>
+    <NameFamily>Single-Flush</NameFamily>
+    <ElementId>422466</ElementId>
+    <AnalyticConstruction>&lt;None&gt;</AnalyticConstruction>
+    <ArchitraveOffset>none</ArchitraveOffset>
+    <AssemblyCode>C1020</AssemblyCode>
+  </TextDoor>
+  <TextDoor>
+    <Id>1093881</Id>
+    <Name>800 x 2100</Name>
+    <NameFamily>Single-Flush</NameFamily>
+    <ElementId>422466</ElementId>
+    <AnalyticConstruction>&lt;None&gt;</AnalyticConstruction>
+    <ArchitraveOffset>none</ArchitraveOffset>
+    <AssemblyCode>C1020</AssemblyCode>
+  </TextDoor>
+  <TextDoor>
+    <Id>1093883</Id>
+    <Name>800 x 2100</Name>
+    <NameFamily>Single-Flush</NameFamily>
+    <ElementId>422466</ElementId>
+    <AnalyticConstruction>&lt;None&gt;</AnalyticConstruction>
+    <ArchitraveOffset>none</ArchitraveOffset>
+    <AssemblyCode>C1020</AssemblyCode>
+  </TextDoor>
 </Table>
