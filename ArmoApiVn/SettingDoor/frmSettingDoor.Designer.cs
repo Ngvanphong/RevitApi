@@ -135,9 +135,9 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(12, 9);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(101, 13);
+            this.label4.Size = new System.Drawing.Size(229, 13);
             this.label4.TabIndex = 6;
-            this.label4.Text = "Choose parameters:";
+            this.label4.Text = "Choose parameters (You choose 3 parameter): ";
             // 
             // btnTopParameter
             // 

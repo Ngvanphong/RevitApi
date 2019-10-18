@@ -126,4 +126,13 @@
     <ArchitraveOffset>none</ArchitraveOffset>
     <AssemblyCode>C1020</AssemblyCode>
   </TextDoor>
+  <TextDoor>
+    <Id>1093808</Id>
+    <Name>800 x 2100</Name>
+    <NameFamily>Single-Flush</NameFamily>
+    <ElementId>422466</ElementId>
+    <Category>Doors</Category>
+    <CodeName></CodeName>
+    <ConstructionType />
+  </TextDoor>
 </Table>
