@@ -72,8 +72,6 @@ namespace ArmoApiVn.SettingDoor
                     AppPenalSettingDoor.myFormSettingDoor.listViewChooseParameter.Items.Add(item);
                 }
             }
-
-
         }
 
         private void btnTopParameter_Click(object sender, EventArgs e)
