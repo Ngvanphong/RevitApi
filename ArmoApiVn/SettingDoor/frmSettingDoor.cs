@@ -56,7 +56,7 @@ namespace ArmoApiVn.SettingDoor
                 writer.WriteEndElement();
                 writer.WriteEndDocument();
                 writer.Close();
-                AppPenalSettingDoor.myFormSettingDoor.Hide();
+                AppPenalSettingDoor.myFormSettingDoor.Close();
             }
             catch
             {
