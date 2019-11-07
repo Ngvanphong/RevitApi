@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Table>
+  <FamilyDoor>140_Door_Shutter</FamilyDoor>
+  <FamilyDoor>140_常開両開_180x180度</FamilyDoor>
+  <FamilyDoor>AR_Door opening symbol</FamilyDoor>
+  <FamilyDoor>Curtain Wall_Panel_Fix</FamilyDoor>
+  <FamilyDoor>Curtain Wall_Panel_Fix Glass+Panel</FamilyDoor>
+  <FamilyDoor>Door_Single_Flush</FamilyDoor>
+  <FamilyDoor>Door-Double-Flush_Panel</FamilyDoor>
+  <FamilyDoor>Single Flush_Signage</FamilyDoor>
+  <FamilyDoor>両開き親子 - ヒンジ2</FamilyDoor>
+  <FamilyDoor>引分</FamilyDoor>
+  <Properties>Air Tightness</Properties>
+  <Properties>Analytic Construction</Properties>
+  <Properties>Assembly Code</Properties>
+  <SectionType>Main Building Section</SectionType>
+  <TextType>2.0 mm Black</TextType>
+</Table>

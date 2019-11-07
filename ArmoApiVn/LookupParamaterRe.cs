@@ -57,7 +57,7 @@ namespace ArmoApiVn
                     foreach (FamilyInstance item in elementCategories)
                     {
 
-                        if (CheckFamilyExcept(item.Symbol.Name,xmlElement) == false)
+                        if (CheckFamilyExcept(item.Symbol.FamilyName,xmlElement) == false)
                         {
                             if (item.Symbol.FamilyName == family.Name)
                             {
