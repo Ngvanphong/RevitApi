@@ -58,7 +58,11 @@ namespace ArmoApiVn
                     FamilyElement paraElementModel = lookParaClass.LookValuePramaterForOneElement(ParameterCommon.Door, BuiltInCategory.OST_Doors, elementDoor);
                     if (paraElementModel.NameFamily == item.NameFamily && paraElementModel.NameTypeFamily == item.NameTypeFamily)
                     {
-                        updateSectionClass.UpdateMoveDoor(_uiApp, item.ElementIdSection.ToString());
+                        try
+                        {
+                            updateSectionClass.UpdateMoveDoor(_uiApp, item.ElementIdSection.ToString());
+                        }
+                        catch { };
                         updateTextClass.UpdateText(_uiApp);
                     }
                     else
@@ -76,7 +80,11 @@ namespace ArmoApiVn
                         }
                         else
                         {
-                            updateSectionClass.UpdateMoveDoor(_uiApp, item.ElementIdSection.ToString());
+                            try
+                            {
+                                updateSectionClass.UpdateMoveDoor(_uiApp, item.ElementIdSection.ToString());
+                            }
+                            catch { }
                             updateTextClass.UpdateText(_uiApp);
                             xmlFileCreateClass.RemoveItemFileDoor(doc, item);
                             xmlFileCreateClass.SaveFileDoor(doc, paraElementModel);

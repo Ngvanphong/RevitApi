@@ -57,8 +57,8 @@ C:\Users\Windows 10\Documents\revit api\ArmoApi\ArmoApiVn\bin\Debug\Common.pdb
 C:\Users\Windows 10\Documents\revit api\ArmoApi\ArmoApiVn\bin\Debug\RevitAPI.xml
 C:\Users\Windows 10\Documents\revit api\ArmoApi\ArmoApiVn\bin\Debug\RevitAPIUI.xml
 C:\Users\Windows 10\Documents\revit api\ArmoApi\ArmoApiVn\obj\2019\ArmoApiVm.csprojResolveAssemblyReference.cache
+C:\Users\Windows 10\Documents\revit api\ArmoApi\ArmoApiVn\obj\2019\ArmoApiVn.SettingDoor.frmSettingDoor.resources
 C:\Users\Windows 10\Documents\revit api\ArmoApi\ArmoApiVn\obj\2019\ArmoApiVn.Properties.Resources.resources
 C:\Users\Windows 10\Documents\revit api\ArmoApi\ArmoApiVn\obj\2019\ArmoApiVm.csproj.GenerateResource.Cache
 C:\Users\Windows 10\Documents\revit api\ArmoApi\ArmoApiVn\obj\2019\ArmoApiVn.dll
 C:\Users\Windows 10\Documents\revit api\ArmoApi\ArmoApiVn\obj\2019\ArmoApiVn.pdb
-C:\Users\Windows 10\Documents\revit api\ArmoApi\ArmoApiVn\obj\2019\ArmoApiVn.SettingDoor.frmSettingDoor.resources

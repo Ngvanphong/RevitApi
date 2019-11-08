@@ -32,8 +32,6 @@ namespace ArmoApiVn
                 Reference refDoor = _uIApp.ActiveUIDocument.Selection.PickObject(ObjectType.Element, new SelectionFilterCategory(cat));
                 FamilyInstance door = doc.GetElement(refDoor) as FamilyInstance;
                 double with = door.Symbol.get_Parameter(BuiltInParameter.DOOR_WIDTH).AsDouble();
-                LocationPoint locationDoor = door.Location as LocationPoint;
-                XYZ pointDoor = locationDoor.Point;
                 using (Transaction t = new Transaction(doc, "Create WorkPlane"))
                 {
                     t.Start();

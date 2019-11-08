@@ -36,8 +36,12 @@ namespace ArmoApiVn
                         FamilyInstance element = doc.GetElement(item.ElementIdSection) as FamilyInstance;
                         var width = element.Symbol.get_Parameter(BuiltInParameter.DOOR_WIDTH).AsDouble();//check again
                         var height = element.Symbol.get_Parameter(BuiltInParameter.DOOR_HEIGHT).AsDouble();//check again
-                        var localPonint = element.Location as LocationPoint;
+                        if (height == 0)
+                        {
+                            height = 8.62;
+                        }
                         var hostWall = element.Host;
+                        var localPonint = element.Location as LocationPoint;
                         LocationCurve locationCurve = hostWall.Location as LocationCurve;
                         Curve curve = locationCurve.Curve;
                         Line lineWall = curve as Line;
@@ -47,8 +51,22 @@ namespace ArmoApiVn
                         XYZ pt = lineWall.GetEndPoint(0);
                         XYZ qt = lineWall.GetEndPoint(1);
                         XYZ v = qt - pt;
-                        XYZ md = localPonint.Point;//check agian
-
+                        XYZ md = null;
+                        Double offset = 0.05 * d;
+                        XYZ min = new XYZ(-2 * d, -height, -offset);
+                        XYZ max = new XYZ(2 * d, 2 * height, offset);
+                        try
+                        {
+                            md = localPonint.Point;//check agian
+                        }
+                        catch
+                        {
+                            md = (pt+qt) / 2;
+                            d = Math.Sqrt((v.X * v.X + v.Y * v.Y + v.Z * v.Z));
+                            offset = 1.436;
+                            min = new XYZ(-d/2, -height, -offset);
+                            max = new XYZ(d/2, 2 * height, offset);
+                        }
                         //XYZ p;
                         //XYZ q;
                         ////Get location two point of door
@@ -67,11 +85,6 @@ namespace ArmoApiVn
                         //    q = new XYZ(md.X - Math.Sqrt(a) / 2, md.Y - v.Y * Math.Sqrt(a) / (2 * v.X), md.Z);
                         //}
                         //XYZ vc = q - p;
-
-                        Double offset = 0.05 * d;
-                        XYZ min = new XYZ(-2 * d, -height, -offset);
-                        XYZ max = new XYZ(2 * d, 2 * height, offset);
-
                         XYZ walldir = v.Normalize();
                         XYZ up = XYZ.BasisZ;
                         XYZ vierdir = walldir.CrossProduct(up);
@@ -88,8 +101,8 @@ namespace ArmoApiVn
                         using (Transaction t = new Transaction(doc))
                         {
                             t.Start("Create Section");
-                            ViewSection view = ViewSection.CreateSection(doc, familyView.Id, sectionBox);
-                            view.Name = element.Id.ToString();
+                                ViewSection view = ViewSection.CreateSection(doc, familyView.Id, sectionBox);
+                                view.Name = element.Id.ToString();
                             t.Commit();
                         }
                         ParameterRe parameter = new ParameterRe(_uiApp);
@@ -142,6 +155,10 @@ namespace ArmoApiVn
             FamilyInstance element = doc.GetElement(familiInstance.ElementIdSection) as FamilyInstance;
             var width = element.Symbol.get_Parameter(BuiltInParameter.DOOR_WIDTH).AsDouble();
             var height = element.Symbol.get_Parameter(BuiltInParameter.DOOR_HEIGHT).AsDouble();
+            if (height == 0)
+            {
+                height = 8.62;
+            }
             var localPonint = element.Location as LocationPoint;
             var hostWall = element.Host;
             LocationCurve locationCurve = hostWall.Location as LocationCurve;
@@ -153,11 +170,23 @@ namespace ArmoApiVn
             XYZ pt = lineWall.GetEndPoint(0);
             XYZ qt = lineWall.GetEndPoint(1);
             XYZ v = qt - pt;
-            XYZ md = localPonint.Point;
+            XYZ md = null;
             Double offset = 0.05 * d;
             XYZ min = new XYZ(-2 * d, -height, -offset);
             XYZ max = new XYZ(2 * d, 2 * height, offset);
-
+            try
+            {
+                md = localPonint.Point;
+            }
+            catch
+            {
+                md = (pt + qt) / 2;
+                d = Math.Sqrt((v.X * v.X + v.Y * v.Y + v.Z * v.Z));
+                offset = 1.436;
+                min = new XYZ(-d / 2, -height, -offset);
+                max = new XYZ(d / 2, 2 * height, offset);
+            }
+            
             XYZ walldir = v.Normalize();
             XYZ up = XYZ.BasisZ;
             XYZ vierdir = walldir.CrossProduct(up);
