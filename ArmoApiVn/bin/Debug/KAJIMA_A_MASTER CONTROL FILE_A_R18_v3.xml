@@ -1,2 +1,371 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<Table />
+<Table>
+  <Door>
+    <Id>1683050</Id>
+    <NameFamily>鋼製_大枠_片引_フラッシュ</NameFamily>
+    <NameTypeFamily>AR_LSD101_W900 H2400</NameTypeFamily>
+    <AirTightness />
+    <AnalyticConstruction>&lt;None&gt;</AnalyticConstruction>
+    <AssemblyCode />
+  </Door>
+  <Door>
+    <Id>1977564</Id>
+    <NameFamily>鋼製_大枠_片引_フラッシュ</NameFamily>
+    <NameTypeFamily>AR_LSD101_W1200 H2400</NameTypeFamily>
+    <AirTightness />
+    <AnalyticConstruction>&lt;None&gt;</AnalyticConstruction>
+    <AssemblyCode />
+  </Door>
+  <Door>
+    <Id>1742015</Id>
+    <NameFamily>Door_Single_Flush</NameFamily>
+    <NameTypeFamily>AR_LSD02_W900 H2400</NameTypeFamily>
+    <AirTightness />
+    <AnalyticConstruction>&lt;None&gt;</AnalyticConstruction>
+    <AssemblyCode />
+  </Door>
+  <Door>
+    <Id>1915672</Id>
+    <NameFamily>片袖片開き_ガラス四方框</NameFamily>
+    <NameTypeFamily>AR_AW113_W3400 H3100</NameTypeFamily>
+    <AirTightness />
+    <AnalyticConstruction>1/8 インチ ピルキントン一重ガラス</AnalyticConstruction>
+    <AssemblyCode />
+  </Door>
+  <Door>
+    <Id>1683013</Id>
+    <NameFamily>両開き_方ガラスB</NameFamily>
+    <NameTypeFamily>AR_SD03_W1800 H2200 FIRE=4h</NameTypeFamily>
+    <AirTightness>SAT</AirTightness>
+    <AnalyticConstruction>一重ガラス窓(大)</AnalyticConstruction>
+    <AssemblyCode />
+  </Door>
+  <Door>
+    <Id>1683299</Id>
+    <NameFamily>両開き_方ガラスB</NameFamily>
+    <NameTypeFamily>AR_SD03_W1800 H2200</NameTypeFamily>
+    <AirTightness>SAT</AirTightness>
+    <AnalyticConstruction>一重ガラス窓(大)</AnalyticConstruction>
+    <AssemblyCode />
+  </Door>
+  <Door>
+    <Id>1864348</Id>
+    <NameFamily>両開き_方ガラスB</NameFamily>
+    <NameTypeFamily>AR_SD03_W1600 H2200</NameTypeFamily>
+    <AirTightness>SAT</AirTightness>
+    <AnalyticConstruction>一重ガラス窓(大)</AnalyticConstruction>
+    <AssemblyCode />
+  </Door>
+  <Door>
+    <Id>1683048</Id>
+    <NameFamily>片開き_片ガラスB</NameFamily>
+    <NameTypeFamily>AR_SD02_W900 H2200</NameTypeFamily>
+    <AirTightness>SAT</AirTightness>
+    <AnalyticConstruction>一重ガラス窓(大)</AnalyticConstruction>
+    <AssemblyCode />
+  </Door>
+  <Door>
+    <Id>1683298</Id>
+    <NameFamily>片開き_片ガラスB</NameFamily>
+    <NameTypeFamily>AR_SD02_W900 H2200 FIRE=4h</NameTypeFamily>
+    <AirTightness>SAT</AirTightness>
+    <AnalyticConstruction>一重ガラス窓(大)</AnalyticConstruction>
+    <AssemblyCode />
+  </Door>
+  <Door>
+    <Id>1865069</Id>
+    <NameFamily>片開き_片ガラスB</NameFamily>
+    <NameTypeFamily>AR_SD02_W800 H2200</NameTypeFamily>
+    <AirTightness>SAT</AirTightness>
+    <AnalyticConstruction>一重ガラス窓(大)</AnalyticConstruction>
+    <AssemblyCode />
+  </Door>
+  <Door>
+    <Id>1683190</Id>
+    <NameFamily>引分</NameFamily>
+    <NameTypeFamily>AR_AW103_W3000</NameTypeFamily>
+    <AirTightness />
+    <AnalyticConstruction>&lt;None&gt;</AnalyticConstruction>
+    <AssemblyCode />
+  </Door>
+  <Door>
+    <Id>3133820</Id>
+    <NameFamily>引分</NameFamily>
+    <NameTypeFamily>AR_AW101_W1400</NameTypeFamily>
+    <AirTightness />
+    <AnalyticConstruction>&lt;None&gt;</AnalyticConstruction>
+    <AssemblyCode />
+  </Door>
+  <Door>
+    <Id>1683476</Id>
+    <NameFamily>両開き親子 - ヒンジ2</NameFamily>
+    <NameTypeFamily>AR_AW105_W1200 FIRE=4h</NameTypeFamily>
+    <AirTightness />
+    <AnalyticConstruction>&lt;None&gt;</AnalyticConstruction>
+    <AssemblyCode />
+  </Door>
+  <Door>
+    <Id>1741422</Id>
+    <NameFamily>両開き親子 - ヒンジ2</NameFamily>
+    <NameTypeFamily>AR_AW107_W1500</NameTypeFamily>
+    <AirTightness />
+    <AnalyticConstruction>&lt;None&gt;</AnalyticConstruction>
+    <AssemblyCode />
+  </Door>
+  <Door>
+    <Id>1741787</Id>
+    <NameFamily>両開き親子 - ヒンジ2</NameFamily>
+    <NameTypeFamily>AR_AW107_W1200</NameTypeFamily>
+    <AirTightness />
+    <AnalyticConstruction>&lt;None&gt;</AnalyticConstruction>
+    <AssemblyCode />
+  </Door>
+  <Door>
+    <Id>1773025</Id>
+    <NameFamily>両開き親子 - ヒンジ2</NameFamily>
+    <NameTypeFamily>AR_AW105_W1200</NameTypeFamily>
+    <AirTightness />
+    <AnalyticConstruction>&lt;None&gt;</AnalyticConstruction>
+    <AssemblyCode />
+  </Door>
+  <Door>
+    <Id>1762999</Id>
+    <NameFamily>両開き - ヒンジ2</NameFamily>
+    <NameTypeFamily>AR_AW108_W1500</NameTypeFamily>
+    <AirTightness />
+    <AnalyticConstruction>&lt;None&gt;</AnalyticConstruction>
+    <AssemblyCode />
+  </Door>
+  <Door>
+    <Id>3170572</Id>
+    <NameFamily>両開き - ヒンジ2</NameFamily>
+    <NameTypeFamily>AR_AW102_W2000</NameTypeFamily>
+    <AirTightness />
+    <AnalyticConstruction>&lt;None&gt;</AnalyticConstruction>
+    <AssemblyCode />
+  </Door>
+  <Door>
+    <Id>3041066</Id>
+    <NameFamily>140_常開両開_180x180度</NameFamily>
+    <NameTypeFamily>W3400xH2800</NameTypeFamily>
+    <AirTightness>SAT</AirTightness>
+    <AnalyticConstruction>&lt;None&gt;</AnalyticConstruction>
+    <AssemblyCode />
+  </Door>
+  <Door>
+    <Id>1722634</Id>
+    <NameFamily>140_Door_Shutter</NameFamily>
+    <NameTypeFamily>AR_SS04_W2500 H4000</NameTypeFamily>
+    <AirTightness />
+    <AnalyticConstruction>Metal</AnalyticConstruction>
+    <AssemblyCode>B2030400</AssemblyCode>
+  </Door>
+  <Door>
+    <Id>1722931</Id>
+    <NameFamily>140_Door_Shutter</NameFamily>
+    <NameTypeFamily>AR_SS05_D3000 H4000</NameTypeFamily>
+    <AirTightness />
+    <AnalyticConstruction>Metal</AnalyticConstruction>
+    <AssemblyCode>B2030400</AssemblyCode>
+  </Door>
+  <Door>
+    <Id>1722932</Id>
+    <NameFamily>140_Door_Shutter</NameFamily>
+    <NameTypeFamily>AR_SS04_W2500 H4000 FIRE=4h</NameTypeFamily>
+    <AirTightness />
+    <AnalyticConstruction>Metal</AnalyticConstruction>
+    <AssemblyCode>B2030400</AssemblyCode>
+  </Door>
+  <Door>
+    <Id>2815027</Id>
+    <NameFamily>140_Door_Shutter</NameFamily>
+    <NameTypeFamily>AR_SS03_W6000 H4500</NameTypeFamily>
+    <AirTightness />
+    <AnalyticConstruction>Metal</AnalyticConstruction>
+    <AssemblyCode>B2030400</AssemblyCode>
+  </Door>
+  <Door>
+    <Id>3009851</Id>
+    <NameFamily>140_Door_Shutter</NameFamily>
+    <NameTypeFamily>AR_SS02_W11500 H3000</NameTypeFamily>
+    <AirTightness />
+    <AnalyticConstruction>Metal</AnalyticConstruction>
+    <AssemblyCode>B2030400</AssemblyCode>
+  </Door>
+  <Door>
+    <Id>3010324</Id>
+    <NameFamily>140_Door_Shutter</NameFamily>
+    <NameTypeFamily>AR_SS01_W3900 H3000</NameTypeFamily>
+    <AirTightness />
+    <AnalyticConstruction>Metal</AnalyticConstruction>
+    <AssemblyCode>B2030400</AssemblyCode>
+  </Door>
+  <Door>
+    <Id>3033857</Id>
+    <NameFamily>140_Door_Shutter</NameFamily>
+    <NameTypeFamily>AR_SS06_W9000 H8000</NameTypeFamily>
+    <AirTightness />
+    <AnalyticConstruction>Metal</AnalyticConstruction>
+    <AssemblyCode>B2030400</AssemblyCode>
+  </Door>
+  <Door>
+    <Id>3034598</Id>
+    <NameFamily>140_Door_Shutter</NameFamily>
+    <NameTypeFamily>AR_SS07_W3900 H6300</NameTypeFamily>
+    <AirTightness />
+    <AnalyticConstruction>Metal</AnalyticConstruction>
+    <AssemblyCode>B2030400</AssemblyCode>
+  </Door>
+  <Door>
+    <Id>3035496</Id>
+    <NameFamily>140_Door_Shutter</NameFamily>
+    <NameTypeFamily>AR_SS08_W8600 H6300</NameTypeFamily>
+    <AirTightness />
+    <AnalyticConstruction>Metal</AnalyticConstruction>
+    <AssemblyCode>B2030400</AssemblyCode>
+  </Door>
+  <Door>
+    <Id>3035748</Id>
+    <NameFamily>140_Door_Shutter</NameFamily>
+    <NameTypeFamily>AR_SS09_W11600 H6300</NameTypeFamily>
+    <AirTightness />
+    <AnalyticConstruction>Metal</AnalyticConstruction>
+    <AssemblyCode>B2030400</AssemblyCode>
+  </Door>
+  <Door>
+    <Id>3035758</Id>
+    <NameFamily>140_Door_Shutter</NameFamily>
+    <NameTypeFamily>AR_SS08_W8300 H6300</NameTypeFamily>
+    <AirTightness />
+    <AnalyticConstruction>Metal</AnalyticConstruction>
+    <AssemblyCode>B2030400</AssemblyCode>
+  </Door>
+  <Door>
+    <Id>3036151</Id>
+    <NameFamily>140_Door_Shutter</NameFamily>
+    <NameTypeFamily>AR_SS10_W5900 H6300</NameTypeFamily>
+    <AirTightness />
+    <AnalyticConstruction>Metal</AnalyticConstruction>
+    <AssemblyCode>B2030400</AssemblyCode>
+  </Door>
+  <Door>
+    <Id>3329023</Id>
+    <NameFamily>140_Door_Shutter</NameFamily>
+    <NameTypeFamily>AR_SS07_W3900 H7550</NameTypeFamily>
+    <AirTightness />
+    <AnalyticConstruction>Metal</AnalyticConstruction>
+    <AssemblyCode>B2030400</AssemblyCode>
+  </Door>
+  <Door>
+    <Id>3329546</Id>
+    <NameFamily>140_Door_Shutter</NameFamily>
+    <NameTypeFamily>AR_SS07_W2600 H7550</NameTypeFamily>
+    <AirTightness />
+    <AnalyticConstruction>Metal</AnalyticConstruction>
+    <AssemblyCode>B2030400</AssemblyCode>
+  </Door>
+  <Door>
+    <Id>3206578</Id>
+    <NameFamily>引違い4枚</NameFamily>
+    <NameTypeFamily>AR_AW201 W3600 H1800</NameTypeFamily>
+    <AirTightness />
+    <AnalyticConstruction>メタル</AnalyticConstruction>
+    <AssemblyCode />
+  </Door>
+  <Door>
+    <Id>1683060</Id>
+    <NameFamily>Curtain Wall_Panel_Fix</NameFamily>
+    <NameTypeFamily>AR_AW104</NameTypeFamily>
+    <AirTightness />
+    <AnalyticConstruction>&lt;None&gt;</AnalyticConstruction>
+    <AssemblyCode />
+  </Door>
+  <Door>
+    <Id>1741446</Id>
+    <NameFamily>Curtain Wall_Panel_Fix</NameFamily>
+    <NameTypeFamily>AR_AW106C</NameTypeFamily>
+    <AirTightness />
+    <AnalyticConstruction>&lt;None&gt;</AnalyticConstruction>
+    <AssemblyCode />
+  </Door>
+  <Door>
+    <Id>1741594</Id>
+    <NameFamily>Curtain Wall_Panel_Fix</NameFamily>
+    <NameTypeFamily>AR_AW106D</NameTypeFamily>
+    <AirTightness />
+    <AnalyticConstruction>&lt;None&gt;</AnalyticConstruction>
+    <AssemblyCode />
+  </Door>
+  <Door>
+    <Id>1758216</Id>
+    <NameFamily>Curtain Wall_Panel_Fix</NameFamily>
+    <NameTypeFamily>AR_AW112</NameTypeFamily>
+    <AirTightness />
+    <AnalyticConstruction>&lt;None&gt;</AnalyticConstruction>
+    <AssemblyCode />
+  </Door>
+  <Door>
+    <Id>3161981</Id>
+    <NameFamily>Curtain Wall_Panel_Fix</NameFamily>
+    <NameTypeFamily>AR_AW110</NameTypeFamily>
+    <AirTightness />
+    <AnalyticConstruction>&lt;None&gt;</AnalyticConstruction>
+    <AssemblyCode />
+  </Door>
+  <Door>
+    <Id>3162025</Id>
+    <NameFamily>Curtain Wall_Panel_Fix</NameFamily>
+    <NameTypeFamily>AR_AW111</NameTypeFamily>
+    <AirTightness />
+    <AnalyticConstruction>&lt;None&gt;</AnalyticConstruction>
+    <AssemblyCode />
+  </Door>
+  <Door>
+    <Id>3217829</Id>
+    <NameFamily>Curtain Wall_Panel_Fix</NameFamily>
+    <NameTypeFamily>AR_AW202</NameTypeFamily>
+    <AirTightness />
+    <AnalyticConstruction>&lt;None&gt;</AnalyticConstruction>
+    <AssemblyCode />
+  </Door>
+  <Door>
+    <Id>3414446</Id>
+    <NameFamily>Curtain Wall_Panel_Fix</NameFamily>
+    <NameTypeFamily>AR_AW106B</NameTypeFamily>
+    <AirTightness />
+    <AnalyticConstruction>&lt;None&gt;</AnalyticConstruction>
+    <AssemblyCode />
+  </Door>
+  <Door>
+    <Id>3422254</Id>
+    <NameFamily>Curtain Wall_Panel_Fix</NameFamily>
+    <NameTypeFamily>AR_AW106A</NameTypeFamily>
+    <AirTightness />
+    <AnalyticConstruction>&lt;None&gt;</AnalyticConstruction>
+    <AssemblyCode />
+  </Door>
+  <Door>
+    <Id>3013937</Id>
+    <NameFamily>Single Flush_Signage</NameFamily>
+    <NameTypeFamily>AR_AD01_W600 H900</NameTypeFamily>
+    <AirTightness />
+    <AnalyticConstruction>&lt;None&gt;</AnalyticConstruction>
+    <AssemblyCode />
+  </Door>
+  <Door>
+    <Id>3058869</Id>
+    <NameFamily>Single Flush_Signage</NameFamily>
+    <NameTypeFamily>AR_AD01_W600 H900 FIRE=4h</NameTypeFamily>
+    <AirTightness />
+    <AnalyticConstruction>&lt;None&gt;</AnalyticConstruction>
+    <AssemblyCode />
+  </Door>
+  <Door>
+    <Id>3387078</Id>
+    <NameFamily>Door-Double-Flush_Panel</NameFamily>
+    <NameTypeFamily>AR_WD01_W1400 H2800</NameTypeFamily>
+    <AirTightness />
+    <AnalyticConstruction>Wooden</AnalyticConstruction>
+    <AssemblyCode>C1020</AssemblyCode>
+  </Door>
+</Table>

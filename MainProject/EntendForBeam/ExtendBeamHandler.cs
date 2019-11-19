@@ -8,6 +8,8 @@ using Autodesk.Revit.UI;
 using Autodesk.Revit.Attributes;
 using Autodesk.Revit.ApplicationServices;
 using MainProject.EntendForBeam;
+using System.Windows.Forms;
+
 namespace MainProject
 {
     public class ExtendBeamHandler : IExternalEventHandler
@@ -23,16 +25,53 @@ namespace MainProject
             {
                 listBeamAlls.Add(item);
             }
-            List<BeamConnect> listExtends = new List<BeamConnect>();
-            foreach (FamilyInstance beam in listBeamAlls)
+            var listBeamSelectIds = app.ActiveUIDocument.Selection.GetElementIds();
+            List<FamilyInstance> listBeamSelect = new List<FamilyInstance>();
+            foreach(ElementId id in listBeamSelectIds)
             {
-                BeamConnect beamConectItem = new BeamConnect();
-                beamConectItem = GetInforExtend(beam, listBeamAlls);
-                if (beamConectItem.StartBeam != null || beamConectItem.EndBeam != null)
+                try
                 {
-                    listExtends.Add(beamConectItem);
+                    FamilyInstance fa = doc.GetElement(id) as FamilyInstance;
+                    if(fa.Category.Name== "Structural Framing")
+                    {
+                        listBeamSelect.Add(fa);
+                    }
+                }
+                catch { continue; }
+            }
+
+            List<BeamConnect> listExtends = new List<BeamConnect>();
+            if (listBeamSelect.Count > 0)
+            {
+                foreach (FamilyInstance beam in listBeamSelect)
+                {
+                    BeamConnect beamConectItem = new BeamConnect();
+                    beamConectItem = GetInforExtend(beam, listBeamAlls);
+                    if (beamConectItem.StartBeam != null || beamConectItem.EndBeam != null)
+                    {
+                        listExtends.Add(beamConectItem);
+                    }
                 }
             }
+            else
+            {
+                string warning = "Do you want to extend all beam on view";
+                DialogResult result = MessageBox.Show(warning, "Extend Beam", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
+                if (result == DialogResult.Cancel)
+                {
+                    return;
+                }
+                foreach (FamilyInstance beam in listBeamAlls)
+                {
+                    BeamConnect beamConectItem = new BeamConnect();
+                    beamConectItem = GetInforExtend(beam, listBeamAlls);
+                    if (beamConectItem.StartBeam != null || beamConectItem.EndBeam != null)
+                    {
+                        listExtends.Add(beamConectItem);
+                    }
+                }
+            }
+           
             foreach (var extend in listExtends)
             {
                 using (Transaction t = new Transaction(doc, "CreateBeam"))
