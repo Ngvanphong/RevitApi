@@ -17,10 +17,10 @@ namespace MainProject
     {
         public Result Execute(ExternalCommandData commandData, ref string message, ElementSet elements)
         {
-            if (CheckLicenseApi.CheckLicense() == false)
-            {
-                return Result.Succeeded;
-            }
+            //if (CheckLicenseApi.CheckLicense() == false)
+            //{
+            //    return Result.Succeeded;
+            //}
             UIApplication uiapp = commandData.Application;
             UIDocument uidoc = uiapp.ActiveUIDocument;
             Application app = uiapp.Application;

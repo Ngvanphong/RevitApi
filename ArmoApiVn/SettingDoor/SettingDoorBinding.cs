@@ -18,15 +18,15 @@ namespace ArmoApiVn.SettingDoor
     {
         public Result Execute(ExternalCommandData commandData, ref string message, ElementSet elements)
         {
-            if (CheckLicenseApi.CheckLicense() == true)
-            {
+            //if (CheckLicenseApi.CheckLicense() == true)
+            //{
                 Document doc = commandData.Application.ActiveUIDocument.Document;
                 AppPenalSettingDoor.nameDoorSetting = doc.Title + "DoorSetting.xml";
                 AppPenalSettingDoor.ShowSettingDoor();
                 GetInforDoor(doc);
                 GetPropertiesInfor(doc);
                 GetTypeNoteSection(doc);
-            }
+            //}
             return Result.Succeeded;
         }
 

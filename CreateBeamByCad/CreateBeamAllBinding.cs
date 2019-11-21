@@ -18,10 +18,10 @@ namespace CreateBeamByCad
       
         public  Result Execute(ExternalCommandData commandData, ref string message, ElementSet elements)
         {
-            if (CheckLicenseApi.CheckLicense() == false)
-            {
-                return Result.Succeeded;
-            }
+            //if (CheckLicenseApi.CheckLicense() == false)
+            //{
+            //    return Result.Succeeded;
+            //}
             UIApplication uiApp = commandData.Application;          
             Document doc = uiApp.ActiveUIDocument.Document;
             AppPanelAll.ShowCreateForm(uiApp);
