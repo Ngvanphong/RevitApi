@@ -74,4 +74,3 @@ C:\Users\Windows 10\Documents\revit api\ArmoApi\Common\bin\Debug\zh-CN\AdWindows
 C:\Users\Windows 10\Documents\revit api\ArmoApi\Common\bin\Debug\zh-TW\AdWindows.resources.dll
 C:\Users\Windows 10\Documents\revit api\ArmoApi\Common\obj\2020\Common.dll
 C:\Users\Windows 10\Documents\revit api\ArmoApi\Common\obj\2020\Common.pdb
-C:\Users\Windows 10\Documents\revit api\ArmoApi\Common\obj\2020\Common.csprojResolveAssemblyReference.cache
