@@ -16,4 +16,8 @@
     <EnableUnmanagedDebugging>true</EnableUnmanagedDebugging>
     <EnableSQLServerDebugging>true</EnableSQLServerDebugging>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == '2020|AnyCPU'">
+    <StartProgram>C:\Program Files\Autodesk\Revit 2020\Revit.exe</StartProgram>
+    <StartAction>Program</StartAction>
+  </PropertyGroup>
 </Project>

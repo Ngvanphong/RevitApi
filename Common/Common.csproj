@@ -30,11 +30,11 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == '2018|AnyCPU'">
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == '2020|AnyCPU' ">
     <OutputPath>bin\Debug\</OutputPath>
     <DebugType>full</DebugType>
     <DebugSymbols>true</DebugSymbols>
-    <DefineConstants>RELEASE2018</DefineConstants>
+    <DefineConstants>RELEASE2020</DefineConstants>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == '2019|AnyCPU'">
     <OutputPath>bin\Debug\</OutputPath>
@@ -48,11 +48,11 @@
       <HintPath>..\..\..\..\Downloads\FoxLearn.License fix\FoxLearn.License.dll</HintPath>
     </Reference>
     <Reference Include="PresentationCore" />
-    <Reference Include="RevitAPI" Condition="'$(Configuration)' == '2018'">
-      <HintPath>..\..\..\..\..\..\..\..\..\..\Program Files\Autodesk\Revit 2018\RevitAPI.dll</HintPath>
+    <Reference Include="RevitAPI" Condition="'$(Configuration)' == '2020'">
+      <HintPath>..\..\..\..\..\..\..\..\..\..\Program Files\Autodesk\Revit 2020\RevitAPI.dll</HintPath>
     </Reference>
-    <Reference Include="RevitAPIUI" Condition="'$(Configuration)' == '2018'">
-      <HintPath>..\..\..\..\..\..\..\..\..\..\Program Files\Autodesk\Revit 2018\RevitAPIUI.dll</HintPath>
+    <Reference Include="RevitAPIUI" Condition="'$(Configuration)' == '2020'">
+      <HintPath>..\..\..\..\..\..\..\..\..\..\Program Files\Autodesk\Revit 2020\RevitAPIUI.dll</HintPath>
     </Reference>
     <Reference Include="RevitAPI" Condition="'$(Configuration)' == '2019'">
       <HintPath>..\..\..\..\..\..\..\..\..\..\Program Files\Autodesk\Revit 2019\RevitAPI.dll</HintPath>

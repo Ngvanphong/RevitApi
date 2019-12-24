@@ -34,19 +34,19 @@ namespace IFCInformation
                     setting.SetProjectionLineColor(color);
                     setting.SetCutLineColor(color);
 
-#if RELEASE2018
-                    setting.SetProjectionFillColor(color);
-                    setting.SetCutFillColor(color);
-                    setting.SetCutFillPatternId(pSolidFillPattern.Id);
-                    setting.SetProjectionFillPatternVisible(true);
-                    setting.SetCutFillPatternVisible(true);
-#else
+//#if RELEASE2018
+//                    setting.SetProjectionFillColor(color);
+//                    setting.SetCutFillColor(color);
+//                    setting.SetCutFillPatternId(pSolidFillPattern.Id);
+//                    setting.SetProjectionFillPatternVisible(true);
+//                    setting.SetCutFillPatternVisible(true);
+//#else
                     setting.SetSurfaceForegroundPatternColor(color);
                     setting.SetCutForegroundPatternColor(color);
                     setting.SetCutForegroundPatternId(pSolidFillPattern.Id);
                     setting.SetSurfaceForegroundPatternVisible(true);
                     setting.SetCutForegroundPatternVisible(true);
-#endif
+//#endif
                     setting.SetSurfaceTransparency(0);
                     doc.ActiveView.SetElementOverrides(element.Id, setting);
                     ICollection<ElementId> Lmats = element.GetMaterialIds(false);

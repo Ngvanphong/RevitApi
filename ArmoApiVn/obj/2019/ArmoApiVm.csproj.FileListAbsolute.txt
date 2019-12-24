@@ -1,3 +1,7 @@
+C:\Users\Windows 10\Documents\revit api\ArmoApi\ArmoApiVn\obj\2019\ArmoApiVm.csprojResolveAssemblyReference.cache
+C:\Users\Windows 10\Documents\revit api\ArmoApi\ArmoApiVn\obj\2019\ArmoApiVn.SettingDoor.frmSettingDoor.resources
+C:\Users\Windows 10\Documents\revit api\ArmoApi\ArmoApiVn\obj\2019\ArmoApiVn.Properties.Resources.resources
+C:\Users\Windows 10\Documents\revit api\ArmoApi\ArmoApiVn\obj\2019\ArmoApiVm.csproj.GenerateResource.Cache
 C:\Users\Windows 10\Documents\revit api\ArmoApi\ArmoApiVn\bin\Debug\ArmoApiVn.dll
 C:\Users\Windows 10\Documents\revit api\ArmoApi\ArmoApiVn\bin\Debug\ArmoApiVn.pdb
 C:\Users\Windows 10\Documents\revit api\ArmoApi\ArmoApiVn\bin\Debug\AdWindows.dll
@@ -6,6 +10,7 @@ C:\Users\Windows 10\Documents\revit api\ArmoApi\ArmoApiVn\bin\Debug\RevitAPI.dll
 C:\Users\Windows 10\Documents\revit api\ArmoApi\ArmoApiVn\bin\Debug\RevitAPIUI.dll
 C:\Users\Windows 10\Documents\revit api\ArmoApi\ArmoApiVn\bin\Debug\FoxLearn.License.dll
 C:\Users\Windows 10\Documents\revit api\ArmoApi\ArmoApiVn\bin\Debug\ManagedMC3.dll
+C:\Users\Windows 10\Documents\revit api\ArmoApi\ArmoApiVn\bin\Debug\AdpSDKCSharpWrapper.dll
 C:\Users\Windows 10\Documents\revit api\ArmoApi\ArmoApiVn\bin\Debug\RevitAPIFoundation.dll
 C:\Users\Windows 10\Documents\revit api\ArmoApi\ArmoApiVn\bin\Debug\RevitDBAPI.dll
 C:\Users\Windows 10\Documents\revit api\ArmoApi\ArmoApiVn\bin\Debug\PersistenceDBAPI.dll
@@ -39,7 +44,6 @@ C:\Users\Windows 10\Documents\revit api\ArmoApi\ArmoApiVn\bin\Debug\StairRampDBA
 C:\Users\Windows 10\Documents\revit api\ArmoApi\ArmoApiVn\bin\Debug\AnalysisAppsDBAPI.dll
 C:\Users\Windows 10\Documents\revit api\ArmoApi\ArmoApiVn\bin\Debug\MaterialDBAPI.dll
 C:\Users\Windows 10\Documents\revit api\ArmoApi\ArmoApiVn\bin\Debug\DBManagedServices.dll
-C:\Users\Windows 10\Documents\revit api\ArmoApi\ArmoApiVn\bin\Debug\RevitAddInUtility.dll
 C:\Users\Windows 10\Documents\revit api\ArmoApi\ArmoApiVn\bin\Debug\APIInterop.dll
 C:\Users\Windows 10\Documents\revit api\ArmoApi\ArmoApiVn\bin\Debug\UIFramework.dll
 C:\Users\Windows 10\Documents\revit api\ArmoApi\ArmoApiVn\bin\Debug\AddInManager.dll
@@ -52,13 +56,13 @@ C:\Users\Windows 10\Documents\revit api\ArmoApi\ArmoApiVn\bin\Debug\EssentialsUI
 C:\Users\Windows 10\Documents\revit api\ArmoApi\ArmoApiVn\bin\Debug\EnergyAnalysisUtilitiesAPI.dll
 C:\Users\Windows 10\Documents\revit api\ArmoApi\ArmoApiVn\bin\Debug\DetailUIAPI.dll
 C:\Users\Windows 10\Documents\revit api\ArmoApi\ArmoApiVn\bin\Debug\UIFrameworkServices.dll
+C:\Users\Windows 10\Documents\revit api\ArmoApi\ArmoApiVn\bin\Debug\RevitAddInUtility.dll
+C:\Users\Windows 10\Documents\revit api\ArmoApi\ArmoApiVn\bin\Debug\Autodesk.UI.Themes.dll
 C:\Users\Windows 10\Documents\revit api\ArmoApi\ArmoApiVn\bin\Debug\Xceed.Wpf.AvalonDock.dll
+C:\Users\Windows 10\Documents\revit api\ArmoApi\ArmoApiVn\bin\Debug\Autodesk.UI.Windows.dll
 C:\Users\Windows 10\Documents\revit api\ArmoApi\ArmoApiVn\bin\Debug\Common.pdb
 C:\Users\Windows 10\Documents\revit api\ArmoApi\ArmoApiVn\bin\Debug\RevitAPI.xml
 C:\Users\Windows 10\Documents\revit api\ArmoApi\ArmoApiVn\bin\Debug\RevitAPIUI.xml
-C:\Users\Windows 10\Documents\revit api\ArmoApi\ArmoApiVn\obj\2019\ArmoApiVm.csprojResolveAssemblyReference.cache
-C:\Users\Windows 10\Documents\revit api\ArmoApi\ArmoApiVn\obj\2019\ArmoApiVn.SettingDoor.frmSettingDoor.resources
-C:\Users\Windows 10\Documents\revit api\ArmoApi\ArmoApiVn\obj\2019\ArmoApiVn.Properties.Resources.resources
-C:\Users\Windows 10\Documents\revit api\ArmoApi\ArmoApiVn\obj\2019\ArmoApiVm.csproj.GenerateResource.Cache
+C:\Users\Windows 10\Documents\revit api\ArmoApi\ArmoApiVn\bin\Debug\RevitAddInUtility.xml
 C:\Users\Windows 10\Documents\revit api\ArmoApi\ArmoApiVn\obj\2019\ArmoApiVn.dll
 C:\Users\Windows 10\Documents\revit api\ArmoApi\ArmoApiVn\obj\2019\ArmoApiVn.pdb
