@@ -16,8 +16,8 @@ namespace Common.Extension
         {
             try
             {
-                string LicFile = @"C:\ProgramData\Autodesk\Revit\Addins\2018\Key.lic";
-                string machine = @"C:\ProgramData\Autodesk\Revit\Addins\2018\MachineID.txt";
+                string LicFile = @"C:\ProgramData\Autodesk\Revit\Addins\2020\Key.lic";
+                string machine = @"C:\ProgramData\Autodesk\Revit\Addins\2020\MachineID.txt";
 #if RELEASE2019
                 LicFile = @"C:\ProgramData\Autodesk\Revit\Addins\2019\Key.lic";
                 machine = @"C:\ProgramData\Autodesk\Revit\Addins\2019\MachineID.txt";
