@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+  <AddIn Type="Command">
+    <Text>Command IFCInformation</Text>
+    <Description>Some description for IFCInformation</Description>
+    <Assembly>IFCInformation.dll</Assembly>
+    <FullClassName>IFCInformation.Command</FullClassName>
+    <ClientId>56208d97-64e4-4621-b0bf-b58fd5e0a203</ClientId>
+    <VendorId>com.typepad.thebuildingcoder</VendorId>
+    <VendorDescription>The Building Coder, http://thebuildingcoder.typepad.com</VendorDescription>
+  </AddIn>
+  <AddIn Type="Application">
+    <Name>Application IFCInformation</Name>
+    <Assembly>IFCInformation.dll</Assembly>
+    <FullClassName>IFCInformation.App</FullClassName>
+    <ClientId>db9b4e9c-ddc9-4051-a5b9-19963745cf4c</ClientId>
+    <VendorId>com.typepad.thebuildingcoder</VendorId>
+    <VendorDescription>The Building Coder, http://thebuildingcoder.typepad.com</VendorDescription>
+  </AddIn>
+</RevitAddIns>

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+  <AddIn Type="Command">
+    <Text>Command CreateBeamByCad</Text>
+    <Description>Some description for CreateBeamByCad</Description>
+    <Assembly>CreateBeamByCad.dll</Assembly>
+    <FullClassName>CreateBeamByCad.Command</FullClassName>
+    <ClientId>7be76ad9-ea66-4ed2-b4f6-1a478bcb2920</ClientId>
+    <VendorId>com.typepad.thebuildingcoder</VendorId>
+    <VendorDescription>The Building Coder, http://thebuildingcoder.typepad.com</VendorDescription>
+  </AddIn>
+  <AddIn Type="Application">
+    <Name>Application CreateBeamByCad</Name>
+    <Assembly>CreateBeamByCad.dll</Assembly>
+    <FullClassName>CreateBeamByCad.App</FullClassName>
+    <ClientId>c3a0a97d-5ae8-4bd9-88e8-59b8b2721def</ClientId>
+    <VendorId>com.typepad.thebuildingcoder</VendorId>
+    <VendorDescription>The Building Coder, http://thebuildingcoder.typepad.com</VendorDescription>
+  </AddIn>
+</RevitAddIns>

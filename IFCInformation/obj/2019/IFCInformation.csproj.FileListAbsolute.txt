@@ -1,0 +1,156 @@
+C:\Users\Windows 10\Documents\revit api\ArmoApi\IFCInformation\bin\Debug\IFCInformation.dll
+C:\Users\Windows 10\Documents\revit api\ArmoApi\IFCInformation\bin\Debug\IFCInformation.pdb
+C:\Users\Windows 10\Documents\revit api\ArmoApi\IFCInformation\bin\Debug\Common.dll
+C:\Users\Windows 10\Documents\revit api\ArmoApi\IFCInformation\bin\Debug\RevitAPI.dll
+C:\Users\Windows 10\Documents\revit api\ArmoApi\IFCInformation\bin\Debug\RevitAPIUI.dll
+C:\Users\Windows 10\Documents\revit api\ArmoApi\IFCInformation\bin\Debug\FoxLearn.License.dll
+C:\Users\Windows 10\Documents\revit api\ArmoApi\IFCInformation\bin\Debug\RevitAPIFoundation.dll
+C:\Users\Windows 10\Documents\revit api\ArmoApi\IFCInformation\bin\Debug\RevitDBAPI.dll
+C:\Users\Windows 10\Documents\revit api\ArmoApi\IFCInformation\bin\Debug\PersistenceDBAPI.dll
+C:\Users\Windows 10\Documents\revit api\ArmoApi\IFCInformation\bin\Debug\UtilityAPI.dll
+C:\Users\Windows 10\Documents\revit api\ArmoApi\IFCInformation\bin\Debug\APIDBAPI.dll
+C:\Users\Windows 10\Documents\revit api\ArmoApi\IFCInformation\bin\Debug\GraphicsAPI.dll
+C:\Users\Windows 10\Documents\revit api\ArmoApi\IFCInformation\bin\Debug\ElementGroupDBAPI.dll
+C:\Users\Windows 10\Documents\revit api\ArmoApi\IFCInformation\bin\Debug\EssentialsDBAPI.dll
+C:\Users\Windows 10\Documents\revit api\ArmoApi\IFCInformation\bin\Debug\GeomUtilAPI.dll
+C:\Users\Windows 10\Documents\revit api\ArmoApi\IFCInformation\bin\Debug\FamilyDBAPI.dll
+C:\Users\Windows 10\Documents\revit api\ArmoApi\IFCInformation\bin\Debug\DetailDBAPI.dll
+C:\Users\Windows 10\Documents\revit api\ArmoApi\IFCInformation\bin\Debug\CurtainGridFamilyDBAPI.dll
+C:\Users\Windows 10\Documents\revit api\ArmoApi\IFCInformation\bin\Debug\ArrayElemsDBAPI.dll
+C:\Users\Windows 10\Documents\revit api\ArmoApi\IFCInformation\bin\Debug\EnergyAnalysisDBAPI.dll
+C:\Users\Windows 10\Documents\revit api\ArmoApi\IFCInformation\bin\Debug\BuildingSystemsDBAPI.dll
+C:\Users\Windows 10\Documents\revit api\ArmoApi\IFCInformation\bin\Debug\HostObjDBAPI.dll
+C:\Users\Windows 10\Documents\revit api\ArmoApi\IFCInformation\bin\Debug\RoomAreaPlanDBAPI.dll
+C:\Users\Windows 10\Documents\revit api\ArmoApi\IFCInformation\bin\Debug\SiteDBAPI.dll
+C:\Users\Windows 10\Documents\revit api\ArmoApi\IFCInformation\bin\Debug\SculptingDBAPI.dll
+C:\Users\Windows 10\Documents\revit api\ArmoApi\IFCInformation\bin\Debug\StructuralDBAPI.dll
+C:\Users\Windows 10\Documents\revit api\ArmoApi\IFCInformation\bin\Debug\InterfaceAPI.dll
+C:\Users\Windows 10\Documents\revit api\ArmoApi\IFCInformation\bin\Debug\InterfaceUtilAPI.dll
+C:\Users\Windows 10\Documents\revit api\ArmoApi\IFCInformation\bin\Debug\RebarDBAPI.dll
+C:\Users\Windows 10\Documents\revit api\ArmoApi\IFCInformation\bin\Debug\StructuralAnalysisDBAPI.dll
+C:\Users\Windows 10\Documents\revit api\ArmoApi\IFCInformation\bin\Debug\MassingDBAPI.dll
+C:\Users\Windows 10\Documents\revit api\ArmoApi\IFCInformation\bin\Debug\AssemblyDBAPI.dll
+C:\Users\Windows 10\Documents\revit api\ArmoApi\IFCInformation\bin\Debug\DPartDBAPI.dll
+C:\Users\Windows 10\Documents\revit api\ArmoApi\IFCInformation\bin\Debug\NumberingDBAPI.dll
+C:\Users\Windows 10\Documents\revit api\ArmoApi\IFCInformation\bin\Debug\PointCloudAccessAPI.dll
+C:\Users\Windows 10\Documents\revit api\ArmoApi\IFCInformation\bin\Debug\StairRampDBAPI.dll
+C:\Users\Windows 10\Documents\revit api\ArmoApi\IFCInformation\bin\Debug\AnalysisAppsDBAPI.dll
+C:\Users\Windows 10\Documents\revit api\ArmoApi\IFCInformation\bin\Debug\MaterialDBAPI.dll
+C:\Users\Windows 10\Documents\revit api\ArmoApi\IFCInformation\bin\Debug\DBManagedServices.dll
+C:\Users\Windows 10\Documents\revit api\ArmoApi\IFCInformation\bin\Debug\AdWindows.dll
+C:\Users\Windows 10\Documents\revit api\ArmoApi\IFCInformation\bin\Debug\RevitAddInUtility.dll
+C:\Users\Windows 10\Documents\revit api\ArmoApi\IFCInformation\bin\Debug\APIInterop.dll
+C:\Users\Windows 10\Documents\revit api\ArmoApi\IFCInformation\bin\Debug\UIFramework.dll
+C:\Users\Windows 10\Documents\revit api\ArmoApi\IFCInformation\bin\Debug\AddInManager.dll
+C:\Users\Windows 10\Documents\revit api\ArmoApi\IFCInformation\bin\Debug\RevitUIAPI.dll
+C:\Users\Windows 10\Documents\revit api\ArmoApi\IFCInformation\bin\Debug\BuildingSystemsUIAPI.dll
+C:\Users\Windows 10\Documents\revit api\ArmoApi\IFCInformation\bin\Debug\DesktopMFCAPI.dll
+C:\Users\Windows 10\Documents\revit api\ArmoApi\IFCInformation\bin\Debug\APIUIAPI.dll
+C:\Users\Windows 10\Documents\revit api\ArmoApi\IFCInformation\bin\Debug\RevitMFCAPI.dll
+C:\Users\Windows 10\Documents\revit api\ArmoApi\IFCInformation\bin\Debug\EssentialsUIAPI.dll
+C:\Users\Windows 10\Documents\revit api\ArmoApi\IFCInformation\bin\Debug\EnergyAnalysisUtilitiesAPI.dll
+C:\Users\Windows 10\Documents\revit api\ArmoApi\IFCInformation\bin\Debug\DetailUIAPI.dll
+C:\Users\Windows 10\Documents\revit api\ArmoApi\IFCInformation\bin\Debug\UIFrameworkServices.dll
+C:\Users\Windows 10\Documents\revit api\ArmoApi\IFCInformation\bin\Debug\ManagedMC3.dll
+C:\Users\Windows 10\Documents\revit api\ArmoApi\IFCInformation\bin\Debug\Xceed.Wpf.AvalonDock.dll
+C:\Users\Windows 10\Documents\revit api\ArmoApi\IFCInformation\bin\Debug\Common.pdb
+C:\Users\Windows 10\Documents\revit api\ArmoApi\IFCInformation\bin\Debug\RevitAPI.xml
+C:\Users\Windows 10\Documents\revit api\ArmoApi\IFCInformation\bin\Debug\RevitAPIUI.xml
+C:\Users\Windows 10\Documents\revit api\ArmoApi\IFCInformation\bin\Debug\cs-CZ\AdWindows.resources.dll
+C:\Users\Windows 10\Documents\revit api\ArmoApi\IFCInformation\bin\Debug\de-DE\AdWindows.resources.dll
+C:\Users\Windows 10\Documents\revit api\ArmoApi\IFCInformation\bin\Debug\en-GB\AdWindows.resources.dll
+C:\Users\Windows 10\Documents\revit api\ArmoApi\IFCInformation\bin\Debug\en-US\AdWindows.resources.dll
+C:\Users\Windows 10\Documents\revit api\ArmoApi\IFCInformation\bin\Debug\es-ES\AdWindows.resources.dll
+C:\Users\Windows 10\Documents\revit api\ArmoApi\IFCInformation\bin\Debug\fr-FR\AdWindows.resources.dll
+C:\Users\Windows 10\Documents\revit api\ArmoApi\IFCInformation\bin\Debug\it-IT\AdWindows.resources.dll
+C:\Users\Windows 10\Documents\revit api\ArmoApi\IFCInformation\bin\Debug\ja-JP\AdWindows.resources.dll
+C:\Users\Windows 10\Documents\revit api\ArmoApi\IFCInformation\bin\Debug\ko-KR\AdWindows.resources.dll
+C:\Users\Windows 10\Documents\revit api\ArmoApi\IFCInformation\bin\Debug\pl-PL\AdWindows.resources.dll
+C:\Users\Windows 10\Documents\revit api\ArmoApi\IFCInformation\bin\Debug\pt-BR\AdWindows.resources.dll
+C:\Users\Windows 10\Documents\revit api\ArmoApi\IFCInformation\bin\Debug\ru-RU\AdWindows.resources.dll
+C:\Users\Windows 10\Documents\revit api\ArmoApi\IFCInformation\bin\Debug\zh-CN\AdWindows.resources.dll
+C:\Users\Windows 10\Documents\revit api\ArmoApi\IFCInformation\bin\Debug\zh-TW\AdWindows.resources.dll
+C:\Users\Windows 10\Documents\revit api\ArmoApi\IFCInformation\obj\2019\IFCInformation.csprojResolveAssemblyReference.cache
+C:\Users\Windows 10\Documents\revit api\ArmoApi\IFCInformation\obj\2019\IFCInformation.Properties.Resources.resources
+C:\Users\Windows 10\Documents\revit api\ArmoApi\IFCInformation\obj\2019\IFCInformation.csproj.GenerateResource.Cache
+C:\Users\Windows 10\Documents\revit api\ArmoApi\IFCInformation\obj\2019\IFCInformation.dll
+C:\Users\Windows 10\Documents\revit api\ArmoApi\IFCInformation\obj\2019\IFCInformation.pdb
+C:\Users\ngvan\Documents\Ngvanphong\RevitApi\IFCInformation\bin\Debug\IFCInformation.dll
+C:\Users\ngvan\Documents\Ngvanphong\RevitApi\IFCInformation\bin\Debug\IFCInformation.pdb
+C:\Users\ngvan\Documents\Ngvanphong\RevitApi\IFCInformation\bin\Debug\Common.dll
+C:\Users\ngvan\Documents\Ngvanphong\RevitApi\IFCInformation\bin\Debug\RevitAPI.dll
+C:\Users\ngvan\Documents\Ngvanphong\RevitApi\IFCInformation\bin\Debug\RevitAPIUI.dll
+C:\Users\ngvan\Documents\Ngvanphong\RevitApi\IFCInformation\bin\Debug\FoxLearn.License.dll
+C:\Users\ngvan\Documents\Ngvanphong\RevitApi\IFCInformation\bin\Debug\RevitAPIFoundation.dll
+C:\Users\ngvan\Documents\Ngvanphong\RevitApi\IFCInformation\bin\Debug\RevitDBAPI.dll
+C:\Users\ngvan\Documents\Ngvanphong\RevitApi\IFCInformation\bin\Debug\PersistenceDBAPI.dll
+C:\Users\ngvan\Documents\Ngvanphong\RevitApi\IFCInformation\bin\Debug\UtilityAPI.dll
+C:\Users\ngvan\Documents\Ngvanphong\RevitApi\IFCInformation\bin\Debug\APIDBAPI.dll
+C:\Users\ngvan\Documents\Ngvanphong\RevitApi\IFCInformation\bin\Debug\GraphicsAPI.dll
+C:\Users\ngvan\Documents\Ngvanphong\RevitApi\IFCInformation\bin\Debug\ElementGroupDBAPI.dll
+C:\Users\ngvan\Documents\Ngvanphong\RevitApi\IFCInformation\bin\Debug\EssentialsDBAPI.dll
+C:\Users\ngvan\Documents\Ngvanphong\RevitApi\IFCInformation\bin\Debug\GeomUtilAPI.dll
+C:\Users\ngvan\Documents\Ngvanphong\RevitApi\IFCInformation\bin\Debug\FamilyDBAPI.dll
+C:\Users\ngvan\Documents\Ngvanphong\RevitApi\IFCInformation\bin\Debug\DetailDBAPI.dll
+C:\Users\ngvan\Documents\Ngvanphong\RevitApi\IFCInformation\bin\Debug\CurtainGridFamilyDBAPI.dll
+C:\Users\ngvan\Documents\Ngvanphong\RevitApi\IFCInformation\bin\Debug\ArrayElemsDBAPI.dll
+C:\Users\ngvan\Documents\Ngvanphong\RevitApi\IFCInformation\bin\Debug\EnergyAnalysisDBAPI.dll
+C:\Users\ngvan\Documents\Ngvanphong\RevitApi\IFCInformation\bin\Debug\BuildingSystemsDBAPI.dll
+C:\Users\ngvan\Documents\Ngvanphong\RevitApi\IFCInformation\bin\Debug\HostObjDBAPI.dll
+C:\Users\ngvan\Documents\Ngvanphong\RevitApi\IFCInformation\bin\Debug\RoomAreaPlanDBAPI.dll
+C:\Users\ngvan\Documents\Ngvanphong\RevitApi\IFCInformation\bin\Debug\SiteDBAPI.dll
+C:\Users\ngvan\Documents\Ngvanphong\RevitApi\IFCInformation\bin\Debug\SculptingDBAPI.dll
+C:\Users\ngvan\Documents\Ngvanphong\RevitApi\IFCInformation\bin\Debug\StructuralDBAPI.dll
+C:\Users\ngvan\Documents\Ngvanphong\RevitApi\IFCInformation\bin\Debug\InterfaceAPI.dll
+C:\Users\ngvan\Documents\Ngvanphong\RevitApi\IFCInformation\bin\Debug\InterfaceUtilAPI.dll
+C:\Users\ngvan\Documents\Ngvanphong\RevitApi\IFCInformation\bin\Debug\RebarDBAPI.dll
+C:\Users\ngvan\Documents\Ngvanphong\RevitApi\IFCInformation\bin\Debug\StructuralAnalysisDBAPI.dll
+C:\Users\ngvan\Documents\Ngvanphong\RevitApi\IFCInformation\bin\Debug\MassingDBAPI.dll
+C:\Users\ngvan\Documents\Ngvanphong\RevitApi\IFCInformation\bin\Debug\AssemblyDBAPI.dll
+C:\Users\ngvan\Documents\Ngvanphong\RevitApi\IFCInformation\bin\Debug\DPartDBAPI.dll
+C:\Users\ngvan\Documents\Ngvanphong\RevitApi\IFCInformation\bin\Debug\NumberingDBAPI.dll
+C:\Users\ngvan\Documents\Ngvanphong\RevitApi\IFCInformation\bin\Debug\PointCloudAccessAPI.dll
+C:\Users\ngvan\Documents\Ngvanphong\RevitApi\IFCInformation\bin\Debug\StairRampDBAPI.dll
+C:\Users\ngvan\Documents\Ngvanphong\RevitApi\IFCInformation\bin\Debug\AnalysisAppsDBAPI.dll
+C:\Users\ngvan\Documents\Ngvanphong\RevitApi\IFCInformation\bin\Debug\MaterialDBAPI.dll
+C:\Users\ngvan\Documents\Ngvanphong\RevitApi\IFCInformation\bin\Debug\DBManagedServices.dll
+C:\Users\ngvan\Documents\Ngvanphong\RevitApi\IFCInformation\bin\Debug\AdWindows.dll
+C:\Users\ngvan\Documents\Ngvanphong\RevitApi\IFCInformation\bin\Debug\RevitAddInUtility.dll
+C:\Users\ngvan\Documents\Ngvanphong\RevitApi\IFCInformation\bin\Debug\APIInterop.dll
+C:\Users\ngvan\Documents\Ngvanphong\RevitApi\IFCInformation\bin\Debug\UIFramework.dll
+C:\Users\ngvan\Documents\Ngvanphong\RevitApi\IFCInformation\bin\Debug\AddInManager.dll
+C:\Users\ngvan\Documents\Ngvanphong\RevitApi\IFCInformation\bin\Debug\RevitUIAPI.dll
+C:\Users\ngvan\Documents\Ngvanphong\RevitApi\IFCInformation\bin\Debug\BuildingSystemsUIAPI.dll
+C:\Users\ngvan\Documents\Ngvanphong\RevitApi\IFCInformation\bin\Debug\DesktopMFCAPI.dll
+C:\Users\ngvan\Documents\Ngvanphong\RevitApi\IFCInformation\bin\Debug\APIUIAPI.dll
+C:\Users\ngvan\Documents\Ngvanphong\RevitApi\IFCInformation\bin\Debug\RevitMFCAPI.dll
+C:\Users\ngvan\Documents\Ngvanphong\RevitApi\IFCInformation\bin\Debug\EssentialsUIAPI.dll
+C:\Users\ngvan\Documents\Ngvanphong\RevitApi\IFCInformation\bin\Debug\EnergyAnalysisUtilitiesAPI.dll
+C:\Users\ngvan\Documents\Ngvanphong\RevitApi\IFCInformation\bin\Debug\DetailUIAPI.dll
+C:\Users\ngvan\Documents\Ngvanphong\RevitApi\IFCInformation\bin\Debug\UIFrameworkServices.dll
+C:\Users\ngvan\Documents\Ngvanphong\RevitApi\IFCInformation\bin\Debug\ManagedMC3.dll
+C:\Users\ngvan\Documents\Ngvanphong\RevitApi\IFCInformation\bin\Debug\Xceed.Wpf.AvalonDock.dll
+C:\Users\ngvan\Documents\Ngvanphong\RevitApi\IFCInformation\bin\Debug\Common.pdb
+C:\Users\ngvan\Documents\Ngvanphong\RevitApi\IFCInformation\bin\Debug\RevitAPI.xml
+C:\Users\ngvan\Documents\Ngvanphong\RevitApi\IFCInformation\bin\Debug\RevitAPIUI.xml
+C:\Users\ngvan\Documents\Ngvanphong\RevitApi\IFCInformation\bin\Debug\cs-CZ\AdWindows.resources.dll
+C:\Users\ngvan\Documents\Ngvanphong\RevitApi\IFCInformation\bin\Debug\de-DE\AdWindows.resources.dll
+C:\Users\ngvan\Documents\Ngvanphong\RevitApi\IFCInformation\bin\Debug\en-GB\AdWindows.resources.dll
+C:\Users\ngvan\Documents\Ngvanphong\RevitApi\IFCInformation\bin\Debug\en-US\AdWindows.resources.dll
+C:\Users\ngvan\Documents\Ngvanphong\RevitApi\IFCInformation\bin\Debug\es-ES\AdWindows.resources.dll
+C:\Users\ngvan\Documents\Ngvanphong\RevitApi\IFCInformation\bin\Debug\fr-FR\AdWindows.resources.dll
+C:\Users\ngvan\Documents\Ngvanphong\RevitApi\IFCInformation\bin\Debug\it-IT\AdWindows.resources.dll
+C:\Users\ngvan\Documents\Ngvanphong\RevitApi\IFCInformation\bin\Debug\ja-JP\AdWindows.resources.dll
+C:\Users\ngvan\Documents\Ngvanphong\RevitApi\IFCInformation\bin\Debug\ko-KR\AdWindows.resources.dll
+C:\Users\ngvan\Documents\Ngvanphong\RevitApi\IFCInformation\bin\Debug\pl-PL\AdWindows.resources.dll
+C:\Users\ngvan\Documents\Ngvanphong\RevitApi\IFCInformation\bin\Debug\pt-BR\AdWindows.resources.dll
+C:\Users\ngvan\Documents\Ngvanphong\RevitApi\IFCInformation\bin\Debug\ru-RU\AdWindows.resources.dll
+C:\Users\ngvan\Documents\Ngvanphong\RevitApi\IFCInformation\bin\Debug\zh-CN\AdWindows.resources.dll
+C:\Users\ngvan\Documents\Ngvanphong\RevitApi\IFCInformation\bin\Debug\zh-TW\AdWindows.resources.dll
+C:\Users\ngvan\Documents\Ngvanphong\RevitApi\IFCInformation\obj\2019\IFCInformation.csprojAssemblyReference.cache
+C:\Users\ngvan\Documents\Ngvanphong\RevitApi\IFCInformation\obj\2019\IFCInformation.Properties.Resources.resources
+C:\Users\ngvan\Documents\Ngvanphong\RevitApi\IFCInformation\obj\2019\IFCInformation.csproj.GenerateResource.cache
+C:\Users\ngvan\Documents\Ngvanphong\RevitApi\IFCInformation\obj\2019\IFCInformation.csproj.CoreCompileInputs.cache
+C:\Users\ngvan\Documents\Ngvanphong\RevitApi\IFCInformation\obj\2019\IFCInformation.csproj.CopyComplete
+C:\Users\ngvan\Documents\Ngvanphong\RevitApi\IFCInformation\obj\2019\IFCInformation.dll
+C:\Users\ngvan\Documents\Ngvanphong\RevitApi\IFCInformation\obj\2019\IFCInformation.pdb

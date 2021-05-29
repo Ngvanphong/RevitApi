@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Table>
+  <TextDoor>
+    <Id>3537282</Id>
+    <Name>AR_SD03_W1800 H2200 FIRE=4h</Name>
+    <NameFamily>両開き_方ガラスB</NameFamily>
+    <ElementId>1683013</ElementId>
+    <AirTightness>SAT</AirTightness>
+    <AnalyticConstruction>一重ガラス窓(大)</AnalyticConstruction>
+    <FamilyName>両開き_方ガラスB</FamilyName>
+  </TextDoor>
+</Table>

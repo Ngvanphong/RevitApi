@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+  <AddIn Type="Command">
+    <Text>Command ArmoApiVn</Text>
+    <Description>Some description for ArmoApiVn</Description>
+    <Assembly>ArmoApiVn.dll</Assembly>
+    <FullClassName>ArmoApiVn.Command</FullClassName>
+    <ClientId>2409dc62-8a68-4604-8d7a-62390a34c41d</ClientId>
+    <VendorId>com.typepad.thebuildingcoder</VendorId>
+    <VendorDescription>The Building Coder, http://thebuildingcoder.typepad.com</VendorDescription>
+  </AddIn>
+  <AddIn Type="Application">
+    <Name>Application ArmoApiVn</Name>
+    <Assembly>ArmoApiVn.dll</Assembly>
+    <FullClassName>ArmoApiVn.App</FullClassName>
+    <ClientId>9a2188f6-332e-49e0-88fa-f02a7ed058cd</ClientId>
+    <VendorId>com.typepad.thebuildingcoder</VendorId>
+    <VendorDescription>The Building Coder, http://thebuildingcoder.typepad.com</VendorDescription>
+  </AddIn>
+</RevitAddIns>

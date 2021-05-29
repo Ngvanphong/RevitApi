@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Table>
+  <TextDoor>
+    <Id>988709</Id>
+    <Name>Door-Curtain-Wall-Double-Glass</Name>
+    <NameFamily>Door-Curtain-Wall-Double-Glass</NameFamily>
+    <ElementId>966050</ElementId>
+    <AnalyticConstruction>&lt;None&gt;</AnalyticConstruction>
+    <AssemblyCode>B2030100</AssemblyCode>
+    <AssemblyDescription>Glazed Doors &amp; Entrances</AssemblyDescription>
+  </TextDoor>
+  <TextDoor>
+    <Id>988711</Id>
+    <Name>Door-Curtain-Wall-Single-Glass</Name>
+    <NameFamily>Door-Curtain-Wall-Single-Glass</NameFamily>
+    <ElementId>966042</ElementId>
+    <AnalyticConstruction>&lt;None&gt;</AnalyticConstruction>
+    <AssemblyCode>B2030100</AssemblyCode>
+    <AssemblyDescription>Glazed Doors &amp; Entrances</AssemblyDescription>
+  </TextDoor>
+  <TextDoor>
+    <Id>989392</Id>
+    <Name>68" x 80"</Name>
+    <NameFamily>Door-Double-Flush_Panel</NameFamily>
+    <ElementId>989167</ElementId>
+    <AnalyticConstruction>Wooden</AnalyticConstruction>
+    <AssemblyCode>C1020</AssemblyCode>
+    <AssemblyDescription>Interior Doors</AssemblyDescription>
+  </TextDoor>
+  <TextDoor>
+    <Id>989394</Id>
+    <Name>68" x 80"</Name>
+    <NameFamily>Door-Double-Sliding</NameFamily>
+    <ElementId>989203</ElementId>
+    <AnalyticConstruction>Wood frame, double glass door </AnalyticConstruction>
+    <AssemblyCode>C1020</AssemblyCode>
+    <AssemblyDescription>Interior Doors</AssemblyDescription>
+  </TextDoor>
+  <TextDoor>
+    <Id>989610</Id>
+    <Name>36" x 84"</Name>
+    <NameFamily>Door-Single-Flush_Panel_Double-Acting</NameFamily>
+    <ElementId>989568</ElementId>
+    <AnalyticConstruction>Wooden</AnalyticConstruction>
+    <AssemblyCode>C1020300</AssemblyCode>
+    <AssemblyDescription>Interior Doors with Frames</AssemblyDescription>
+  </TextDoor>
+  <TextDoor>
+    <Id>989612</Id>
+    <Name>68" x 80"</Name>
+    <NameFamily>Door-Double-Sliding</NameFamily>
+    <ElementId>989203</ElementId>
+    <AnalyticConstruction>Wood frame, double glass door </AnalyticConstruction>
+    <AssemblyCode>C1020</AssemblyCode>
+    <AssemblyDescription>Interior Doors</AssemblyDescription>
+  </TextDoor>
+  <TextDoor>
+    <Id>989617</Id>
+    <Name>Door-Curtain-Wall-Single-Glass</Name>
+    <NameFamily>Door-Curtain-Wall-Single-Glass</NameFamily>
+    <ElementId>966042</ElementId>
+    <AnalyticConstruction>&lt;None&gt;</AnalyticConstruction>
+    <AssemblyCode>B2030100</AssemblyCode>
+    <AssemblyDescription>Glazed Doors &amp; Entrances</AssemblyDescription>
+  </TextDoor>
+  <TextDoor>
+    <Id>989623</Id>
+    <Name>Door-Curtain-Wall-Double-Glass</Name>
+    <NameFamily>Door-Curtain-Wall-Double-Glass</NameFamily>
+    <ElementId>966050</ElementId>
+    <AnalyticConstruction>&lt;None&gt;</AnalyticConstruction>
+    <AssemblyCode>B2030100</AssemblyCode>
+    <AssemblyDescription>Glazed Doors &amp; Entrances</AssemblyDescription>
+  </TextDoor>
+  <TextDoor>
+    <Id>989737</Id>
+    <Name>36" x 84"</Name>
+    <NameFamily>Door-Single-Flush_Panel_Double-Acting</NameFamily>
+    <ElementId>989568</ElementId>
+    <AnalyticConstruction>Wooden</AnalyticConstruction>
+    <AssemblyCode>C1020300</AssemblyCode>
+    <AssemblyDescription>Interior Doors with Frames</AssemblyDescription>
+  </TextDoor>
+  <TextDoor>
+    <Id>989739</Id>
+    <Name>Door-Curtain-Wall-Double-Glass</Name>
+    <NameFamily>Door-Curtain-Wall-Double-Glass</NameFamily>
+    <ElementId>966050</ElementId>
+    <AnalyticConstruction>&lt;None&gt;</AnalyticConstruction>
+    <AssemblyCode>B2030100</AssemblyCode>
+    <AssemblyDescription>Glazed Doors &amp; Entrances</AssemblyDescription>
+  </TextDoor>
+  <TextDoor>
+    <Id>989741</Id>
+    <Name>Door-Curtain-Wall-Single-Glass</Name>
+    <NameFamily>Door-Curtain-Wall-Single-Glass</NameFamily>
+    <ElementId>966042</ElementId>
+    <AnalyticConstruction>&lt;None&gt;</AnalyticConstruction>
+    <AssemblyCode>B2030100</AssemblyCode>
+    <AssemblyDescription>Glazed Doors &amp; Entrances</AssemblyDescription>
+  </TextDoor>
+</Table>

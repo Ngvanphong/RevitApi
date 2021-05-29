@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Table>
+  <TextDoor>
+    <Id>1093808</Id>
+    <Name>1730 x 2134mm</Name>
+    <NameFamily>Single-Flush</NameFamily>
+    <ElementId>422466</ElementId>
+    <AssemblyCode></AssemblyCode>
+    <AnalyticConstruction>Metal</AnalyticConstruction>
+    <ArchitraveOffset>none</ArchitraveOffset>
+  </TextDoor>
+  <TextDoor>
+    <Id>1093810</Id>
+    <Name>2.027 x 0.945</Name>
+    <NameFamily>Pocket_Slider_Door_5851</NameFamily>
+    <ElementId>505974</ElementId>
+    <AssemblyCode>C1020</AssemblyCode>
+    <AnalyticConstruction>&lt;None&gt;</AnalyticConstruction>
+    <ArchitraveOffset>5</ArchitraveOffset>
+  </TextDoor>
+  <TextDoor>
+    <Id>1093812</Id>
+    <Name>1730 x 2134mm</Name>
+    <NameFamily>M_Double-Flush</NameFamily>
+    <ElementId>906937</ElementId>
+    <AssemblyCode></AssemblyCode>
+    <AnalyticConstruction>Metal</AnalyticConstruction>
+    <ArchitraveOffset>none</ArchitraveOffset>
+  </TextDoor>
+  <TextDoor>
+    <Id>1093868</Id>
+    <Name>1730 x 2134mm</Name>
+    <NameFamily>Single-Flush</NameFamily>
+    <ElementId>425292</ElementId>
+    <AssemblyCode></AssemblyCode>
+    <AnalyticConstruction>Metal</AnalyticConstruction>
+    <ArchitraveOffset>none</ArchitraveOffset>
+  </TextDoor>
+  <TextDoor>
+    <Id>1093906</Id>
+    <Name>800 x 2101</Name>
+    <NameFamily>Single-Flush</NameFamily>
+    <ElementId>430997</ElementId>
+    <AssemblyCode>C1020</AssemblyCode>
+    <AnalyticConstruction>&lt;None&gt;</AnalyticConstruction>
+    <ArchitraveOffset>none</ArchitraveOffset>
+  </TextDoor>
+  <TextDoor>
+    <Id>1093974</Id>
+    <Name>800 x 2100</Name>
+    <NameFamily>Single-Flush</NameFamily>
+    <ElementId>431064</ElementId>
+    <AssemblyCode>C1020</AssemblyCode>
+    <AnalyticConstruction>&lt;None&gt;</AnalyticConstruction>
+    <ArchitraveOffset>none</ArchitraveOffset>
+  </TextDoor>
+  <TextDoor>
+    <Id>1093808</Id>
+    <Name>800 x 2100</Name>
+    <NameFamily>Single-Flush</NameFamily>
+    <ElementId>422466</ElementId>
+    <Height>2100</Height>
+    <Width>800</Width>
+    <VanPhong>0</VanPhong>
+  </TextDoor>
+  <TextDoor>
+    <Id>1093871</Id>
+    <Name>800 x 2100</Name>
+    <NameFamily>Single-Flush</NameFamily>
+    <ElementId>422466</ElementId>
+    <AnalyticConstruction>&lt;None&gt;</AnalyticConstruction>
+    <ArchitraveOffset>none</ArchitraveOffset>
+    <AssemblyCode>C1020</AssemblyCode>
+  </TextDoor>
+  <TextDoor>
+    <Id>1093873</Id>
+    <Name>2.027 x 0.945</Name>
+    <NameFamily>Pocket_Slider_Door_5851</NameFamily>
+    <ElementId>505974</ElementId>
+    <AnalyticConstruction>&lt;None&gt;</AnalyticConstruction>
+    <ArchitraveOffset>5</ArchitraveOffset>
+    <AssemblyCode>C1020</AssemblyCode>
+  </TextDoor>
+  <TextDoor>
+    <Id>1093875</Id>
+    <Name>1730 x 2134mm</Name>
+    <NameFamily>M_Double-Flush</NameFamily>
+    <ElementId>906937</ElementId>
+    <AnalyticConstruction>Metal</AnalyticConstruction>
+    <ArchitraveOffset>none</ArchitraveOffset>
+    <AssemblyCode></AssemblyCode>
+  </TextDoor>
+  <TextDoor>
+    <Id>1093877</Id>
+    <Name>1730 x 2134mm</Name>
+    <NameFamily>M_Double-Flush</NameFamily>
+    <ElementId>906937</ElementId>
+    <AnalyticConstruction>Metal</AnalyticConstruction>
+    <ArchitraveOffset>none</ArchitraveOffset>
+    <AssemblyCode></AssemblyCode>
+  </TextDoor>
+  <TextDoor>
+    <Id>1093879</Id>
+    <Name>800 x 2100</Name>
+    <NameFamily>Single-Flush</NameFamily>
+    <ElementId>422466</ElementId>
+    <AnalyticConstruction>&lt;None&gt;</AnalyticConstruction>
+    <ArchitraveOffset>none</ArchitraveOffset>
+    <AssemblyCode>C1020</AssemblyCode>
+  </TextDoor>
+  <TextDoor>
+    <Id>1093881</Id>
+    <Name>800 x 2100</Name>
+    <NameFamily>Single-Flush</NameFamily>
+    <ElementId>422466</ElementId>
+    <AnalyticConstruction>&lt;None&gt;</AnalyticConstruction>
+    <ArchitraveOffset>none</ArchitraveOffset>
+    <AssemblyCode>C1020</AssemblyCode>
+  </TextDoor>
+  <TextDoor>
+    <Id>1093883</Id>
+    <Name>800 x 2100</Name>
+    <NameFamily>Single-Flush</NameFamily>
+    <ElementId>422466</ElementId>
+    <AnalyticConstruction>&lt;None&gt;</AnalyticConstruction>
+    <ArchitraveOffset>none</ArchitraveOffset>
+    <AssemblyCode>C1020</AssemblyCode>
+  </TextDoor>
+  <TextDoor>
+    <Id>1093808</Id>
+    <Name>800 x 2100</Name>
+    <NameFamily>Single-Flush</NameFamily>
+    <ElementId>422466</ElementId>
+    <Category>Doors</Category>
+    <CodeName></CodeName>
+    <ConstructionType />
+  </TextDoor>
+</Table>
